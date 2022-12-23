@@ -10,7 +10,10 @@ Maximilian Craig
 
 ---
 ![bg left height:6in](0_20210126_114348.jpg)
-## Analysis of a Psychopath
+## Justification
+* He's Crazy
+* Everyone hates him
+* Is Greek
 
 ---
 ![bg left](devil.jpg)
@@ -29,6 +32,8 @@ def respond(question: str) -> str:
 
     return "Gay"
 ```
-
+---
+[Link](https://maxcraig112.github.io/shorsed.jpg)
+---
 
 
