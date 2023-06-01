@@ -13,12 +13,12 @@
   </head>
   <body style="background-color: black">
 
-    <py-tutor modules="basic_giffy/src/main.py">
+    <py-tutor modules="main.py">
       <py-config>
-        packages = ["requests"]
+
       </py-config>
 
-      <py-script src="basic_giffy/src/main.py"> import requests</py-script>
+      <py-script src="main.py"> import requests</py-script>
     </py-tutor>
     <div class="bg-animation">
       <div id="stars"></div>
@@ -38,7 +38,7 @@
           A multipurpose application designed to allow the manipulation,
           tagging, archiving and retrieval of gifs.
         </p>
-        <img
+        <img id="gifSeason"
           class="gif center"
           src="https://c.tenor.com/oylHwLtwhbsAAAAC/gif-jif.gif"
           alt="Animated GIF"
@@ -48,9 +48,18 @@
           (seperated by commas) into the searchbar below to serach for caption
           gifs
         </p>
-        <input class="center" id="searchBar" py-onkeydown="search_gif()" placeholder="e.g. dog, cat" /><span
+        <div class="container center">
+          <input class="" id="searchBar"  placeholder="e.g. dog, cat" /><span
           id="index"
         ></span>
+        <div id = "searchButton" py-onclick="search_gif()" class="btn" style="height: 18px;
+        width: 80px;">
+          <p class="text">search</p>
+        </div>
+        </div>
+        <div class="big-window center" id="resultWindow">
+
+        </div>
         <div class="container">
           <a
             href="https://github.com/maxcraig112/Giffy-bot"

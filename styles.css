@@ -146,6 +146,18 @@ body {
   padding: 2em;
 }
 
+.result-gif{
+  margin-bottom: 10px; /* Adjust the value as needed for the desired gap */
+  max-width: 100%;
+  height: auto;
+}
+.big-window {
+  max-width: 70%;
+  background-color: whitesmoke;
+  border-style: outset;
+  padding: 2em;
+}
+
 .page {
   height: 100%;
   width: 100%;

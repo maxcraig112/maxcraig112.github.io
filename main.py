@@ -1,4 +1,10 @@
-{
+#import json
+#import requests
+# from shutil import *
+# from enum import Enum
+
+
+json_archived = {
     "global": {
         "https://c.tenor.com/2ia9pQINPDQAAAAC/day-ruined.gif": [
             "893315253989933096",
@@ -45552,2495 +45558,5967 @@
             ]
         ]
     },
-    "guild": {
-        "893315253989933096": {
-            "https://c.tenor.com/2ia9pQINPDQAAAAC/day-ruined.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/899248394718044170/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/893667384437669960/e79667e2-227b-11ec-855f-5cf370a080b0.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/899219573549694986/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/899226714167709706/caption.gif": null
+}
+json_tags = {
+    "global": {
+        "wake": {
+            "https://c.tenor.com/2ia9pQINPDQAAAAC/day-ruined.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/724976219757609030/787550618994475018/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/369883233594376194/706237394403459183/avdsdfrgewreasd.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/759192495782625292/806460891080032266/day_ruined.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/8UpMdIyCN8UAAAAC/wake-the-fuck-up-crewmate-we-have-an-imposter-to-eject.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ]
         },
-        "470896999722516480": {
-            "https://media.discordapp.net/attachments/712243005519560736/899241334534209556/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/900349123209887764/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/900601768268951613/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/893832451741351986/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/898083343596396554/temp.gif": null,
-            "https://c.tenor.com/6fytJzsJEWIAAAAd/croatia-za-dom-spremni.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/898494344066109460/temp.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/897997315023986728/caption.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/897470188176441344/temp.gif": null,
-            "https://media.discordapp.net/attachments/869082890951077899/897455046684463144/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/897025959889346611/temp.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/896722284667080734/temp.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/895942839261888522/caption.gif": null,
-            "https://c.tenor.com/t92wUp_0JWEAAAAd/cope.gif": null,
-            "https://c.tenor.com/Zv7uuLEgr4IAAAAd/walter-walter-white.gif": null,
-            "https://c.tenor.com/PIO1nVffhLcAAAAC/cat-kitty.gif": null,
-            "https://c.tenor.com/xzJ0ElD2xCEAAAAd/cope-dont-care.gif": null,
-            "https://c.tenor.com/QVG2cI007l4AAAAd/cope.gif": null,
-            "https://c.tenor.com/fxHLvf8YMeMAAAAd/rotationplasty-cope.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/895447083463606272/temp.gif": null,
-            "https://c.tenor.com/pzpUPfUTNwoAAAAC/get-real-scott-the-woz.gif": null,
-            "https://c.tenor.com/dZ3RePDJvd8AAAAC/get-real-getting-real.gif": null,
-            "https://media.discordapp.net/attachments/868888972120702999/893810509361606676/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/886622045692125194/caption.gif": null,
-            "https://media.discordapp.net/attachments/836423592345731102/893437087787937792/7d874b72-227e-11ec-885c-5cf370a080b0.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/893354278670987294/caption.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/893350326307004426/caption.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/893349960400121856/caption.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/893006258888658964/image0_1.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/892950873947402261/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/892953437937991720/caption.gif": null,
-            "https://c.tenor.com/IdoszhcrJOoAAAAd/rule10-jiren.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/892344363026350111/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/891605367967059998/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/890530269738725416/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/890530250910494730/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/890501639100842004/caption.gif": null,
-            "https://media.discordapp.net/attachments/846175975560839178/890474168460664872/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/890020553270911016/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/890017432159256606/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/890016072999264316/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/889432100573421618/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/889140853921157162/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/875776548144312441/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/875776880215752734/caption.gif": null,
-            "https://c.tenor.com/2Crx_8CF_-YAAAAd/ifunny-necronomicon.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/887959806193836072/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/885490811192614942/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/885490511933239328/caption.gif": null,
-            "https://c.tenor.com/Kvyg2uwmZYcAAAAd/kanye-north-kanye-east.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/884665213696245821/caption.gif": null,
-            "https://c.tenor.com/I439W-Kh7toAAAAC/hate-workfrank.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/884289415382466570/caption.gif": null,
-            "https://c.tenor.com/h6IN7RC1rfUAAAAC/dumb-ding.gif": null,
-            "https://c.tenor.com/oQeGWQJfn_sAAAAC/youre-mom-bingus.gif": null,
-            "https://c.tenor.com/5mtsM96LdrAAAAAC/get-real-nintendo.gif": null,
-            "https://media.discordapp.net/attachments/544146545797234688/883839620670947359/image0.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/877859428764901436/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/877692508023431188/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/877070830662717450/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/876648850067165236/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/875623622251778108/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/875623386808717312/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/875619721989459978/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/874540209725923388/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/873848326380990475/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/872064533215215676/caption.gif": null,
-            "https://media.discordapp.net/attachments/551797187734929418/774652810813243422/image0.gif": null,
-            "https://media.discordapp.net/attachments/726995202773876857/862363985953292338/image0-89.gif": null,
-            "https://media.discordapp.net/attachments/835870618422870057/851450751925878854/image0.gif": null,
-            "https://c.tenor.com/0EuXTArbTfUAAAAd/space-legs-odyssey.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/871568150095888384/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/871392658256445470/caption.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/870483776931782666/image0.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/870483789078487060/image0.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/870188807465631814/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/870175749158633492/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/870175508472684594/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/870174951674634240/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/870172584468181002/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/827168255948226581/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/836817060331388938/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833317493565030440/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/827381686568353852/caption.gif": null,
-            "https://c.tenor.com/ezXkPh9ixiIAAAAd/dawko-sex2.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/809259973053251594/image1.gif": null,
-            "https://c.tenor.com/66rv4KLKAWcAAAAC/sonichu-thanos-rodrick-lalo-the-mask2kira-killer-queen.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/869463292517683231/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/866529312097304619/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/865240078024179732/caption.gif": null,
-            "https://c.tenor.com/UhQkFlPcQKIAAAAd/terry-crews.gif": null,
-            "https://c.tenor.com/ZwUQDEZJS40AAAAC/epic-embed-fail-embed-win.gif": null,
-            "https://c.tenor.com/3VjIQLJKM40AAAAd/rage-cat.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/857978718692966460/caption.gif": null,
-            "https://media.discordapp.net/attachments/806714809462161478/865228852157218876/1626281100295.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/865144899606282280/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/865144292389421086/caption.gif": null,
-            "https://media.discordapp.net/attachments/782447104785252363/864703677427089418/67f.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/864419870115233812/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/864419486538006528/speed.gif": null,
-            "https://media.discordapp.net/attachments/625157923605315595/856441340429860864/caption-2.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/864026306571141120/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/863938558708285450/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/861878409269739530/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/857984267136794624/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/856087806441816074/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/855076585496641536/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/855075732899627028/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/855074802057871380/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/853875415218126858/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/853874492116172841/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/853593766865535027/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/852421145068437524/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/851713956019699762/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/851667157547745300/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/851657761812643850/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/851656829699883068/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/851653004633309194/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/851031646324654080/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/848925659266547722/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/848924528901357588/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/848924182922133555/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/847671426084765716/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/847648325179408485/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846924758259597362/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846707659032756264/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846707788495323146/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846678191107604500/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/843007259025735701/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846641949590814740/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846642182681133056/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846641738637901844/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846641135749562388/caption.gif": null,
-            "https://media.discordapp.net/attachments/744854780421341184/846307044550115348/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846257227161010196/caption.gif": null,
-            "https://media.discordapp.net/attachments/813971285339668500/846246070194667530/speed.gif": null,
-            "https://media.discordapp.net/attachments/813971285339668500/846245928130183208/caption.gif": null,
-            "https://media.discordapp.net/attachments/813971285339668500/846236146073206824/caption.gif": null,
-            "https://media.discordapp.net/attachments/813971285339668500/846228583936163871/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846166935824629810/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846166353940316170/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846166176660848700/caption.gif": null,
-            "https://media.discordapp.net/attachments/745789186237399121/845303564536512553/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/845301073623384064/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/845300613372837948/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/845123026169495552/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/845122720026066984/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/844851286645538836/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/844431317328068659/caption.gif": null,
-            "https://media.discordapp.net/attachments/744854780421341184/844850087146160128/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/842699267847356436/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/842698629226430464/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/842697412971200512/caption.gif": null,
-            "https://media.discordapp.net/attachments/836423592345731102/841249040489250856/caption-3.gif": null,
-            "https://media.discordapp.net/attachments/836423592345731102/841252549444501524/mg9avb9dbht.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841203026614419466/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841182864753688596/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841182663209254922/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841182561086734386/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841181027464773662/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841174282725883904/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841173461179301918/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841173037830242314/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841168092789080074/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841165258630496257/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841163696503652372/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841162729385361408/caption.gif": null,
-            "https://c.tenor.com/P4SVi-Ws6-AAAAAC/embed-fix-basketball.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/836826937283837982/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/836826716583493632/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/836825044419477504/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/836816567559258132/caption.gif": null,
-            "https://media.discordapp.net/attachments/690819748929470475/836490531629957160/ezgif-3-4a99f5674569.gif": null,
-            "https://c.tenor.com/QPTDPSQSeVoAAAAC/gmod-funny.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/836063617438449755/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/836062183992590336/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/836062252523585546/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/836058759402487868/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/836054514800525362/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/835122662849773568/caption.gif": null,
-            "https://c.tenor.com/oWBPj1Kfmc8AAAAC/abd-aba.gif": null,
-            "https://c.tenor.com/k1fTLZ2G_wgAAAAC/jarvis-vtuber.gif": null,
-            "https://c.tenor.com/Yq0JQSesikkAAAAC/jarvis-discord.gif": null,
-            "https://c.tenor.com/B0EuT4qUS5MAAAAC/amogus-jarvis.gif": null,
-            "https://c.tenor.com/YR6JrzjWoBwAAAAC/jarvis-tony-stark.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/834081391246704650/JarvisType.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/834290040560943145/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833554330241597490/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833316144865083402/freeze.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833315732477181972/freeze.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833314881843363870/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833314806915924038/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833314396075458620/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833314161999740978/speed.gif": null,
-            "https://c.tenor.com/qcCKONKF3iMAAAAd/swag-city-discord.gif": null,
-            "https://c.tenor.com/5-HvXe4Epu8AAAAd/esmbot-tyler1.gif": null,
-            "https://c.tenor.com/3bPa0svP7l0AAAAd/esm-bot-discord.gif": null,
-            "https://c.tenor.com/4TQRnMP614wAAAAd/esmbot-discord.gif": null,
-            "https://c.tenor.com/TvsVH4A5mvwAAAAC/esmbot-esmbot-try-to-function.gif": null,
-            "https://c.tenor.com/TIBYzVj46KYAAAAC/cry-about.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833285572898193458/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833261933880147998/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833261632813531146/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/831045175941005322/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/831027226869891102/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/831025905014931508/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/831025813083390002/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/831017439546441768/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/831016365887586344/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/830959000064753674/5dy5j3ci58f.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/830704208306110514/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/827392030111825980/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/827391342111752232/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/827167824534568980/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/825952303022473216/caption.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/825944507824209940/caption.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/825944551142457414/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/825939387346321428/caption.gif": null,
-            "https://c.tenor.com/HubfXlK2w50AAAAd/mutual-servers-trollface.gif": null,
-            "https://c.tenor.com/7YNdeRzktjMAAAAC/darthy-gexxel.gif": null,
-            "https://c.tenor.com/IRbgeS8CymAAAAAC/darthy-gexxel.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/824114609966678066/caption.gif": null,
-            "https://media.discordapp.net/attachments/359589001688252446/819116931067019284/image0-7.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/823848783099592714/caption.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/823376181104476170/caption.gif": null,
-            "https://c.tenor.com/7NL8QR6JdZMAAAAC/epic-embed-fail-ryan-gosling.gif": null,
-            "https://media.discordapp.net/attachments/383898468462100481/821543729471029268/discord.gif": null,
-            "https://c.tenor.com/b2fJSphrhWUAAAAC/jerma985-jeremy.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/722176879909666826/caption.gif": null,
-            "https://c.tenor.com/THI53orYKhMAAAAd/jerma-jerma985.gif": null,
-            "https://c.tenor.com/GGAg9SRbFuoAAAAd/big-chungus.gif": null,
-            "https://c.tenor.com/rd_CpyUldQQAAAAC/troll-troll-face.gif": null,
-            "https://media.discordapp.net/attachments/710317808222732321/719414769907400774/image1_1.gif": null,
-            "https://media.discordapp.net/attachments/710317808222732321/719414747782709319/image0-7-1.gif": null,
-            "https://media.discordapp.net/attachments/280809737447276544/817397910307864586/image0-8.gif": null,
-            "https://media.discordapp.net/attachments/604407073156890637/817851784377925702/image0-54-1.gif": null,
-            "https://media.discordapp.net/attachments/464249518729330688/768318469921833010/image0-18.gif": null,
-            "https://media.discordapp.net/attachments/464249518729330688/768318468767350814/image0-15.gif": null,
-            "https://c.tenor.com/wphIipSQJIYAAAAd/jesus-ballin-mars-bars.gif": null,
-            "https://c.tenor.com/AaeTdYoo0hkAAAAC/based.gif": null,
-            "https://media.discordapp.net/attachments/800349854152130570/816504884357759006/sportsbet.gif": null,
-            "https://c.tenor.com/fNHkmcKFZ9UAAAAC/speed-dead-chat.gif": null,
-            "https://media.discordapp.net/attachments/719672251951218720/809452304171925524/image0.gif": null,
-            "https://c.tenor.com/oFUpD7aEGEUAAAAd/canadian-riot-push-trash-can.gif": null,
-            "https://c.tenor.com/Z-2S2ZvR98EAAAAC/no-bobux-0bobux.gif": null,
-            "https://c.tenor.com/wkynFFZgqLoAAAAd/bobux-0bobux.gif": null,
-            "https://c.tenor.com/i0lkNaW-9jwAAAAd/bobux-big-chungus.gif": null,
-            "https://c.tenor.com/Rn4wWYlku-0AAAAC/p0larred-bobux.gif": null,
-            "https://c.tenor.com/-qHZZdSEWX4AAAAd/bobux.gif": null,
-            "https://c.tenor.com/iH-D1tmA7jgAAAAC/bobux-your-shipment-of-bobux-has-arrived.gif": null,
-            "https://c.tenor.com/6DSsKCIbfjsAAAAC/bobux-delivery.gif": null,
-            "https://images-ext-2.discordapp.net/external/F1Qsr8urvaemKmhsUMOdZgq7VFvD-0S-owru6nyvH1I/https/images-ext-2.discordapp.net/external/sYEF6oKKRbPi2hZaGYqH6FgiCFEDNTMLNIMN8prN9KQ/https/media.discordapp.net/attachments/792961507923198012/809927184831479838/image0_1.gif": null,
-            "https://c.tenor.com/b-NZGgbBMqAAAAAC/jerma-germaphobe.gif": null,
-            "https://media.discordapp.net/attachments/642742386190974986/799860274747670580/image0.gif": null,
-            "https://c.tenor.com/CXt_4UtOgv8AAAAd/the-garf.gif": null,
-            "https://c.tenor.com/xT6IyvR09qAAAAAC/the-garf-scary-the.gif": null,
-            "https://c.tenor.com/UEcooGmob7YAAAAC/the-garf-scary-the.gif": null,
-            "https://c.tenor.com/Es_CQTAoQxEAAAAC/troll-get-trolled.gif": null,
-            "https://c.tenor.com/4o4ddvWWYpsAAAAC/no-anime.gif": null,
-            "https://c.tenor.com/uXQcNNZEfPsAAAAC/server-cat.gif": null,
-            "https://media.discordapp.net/attachments/758070747653734554/765176776745287690/image0.gif": null,
-            "https://c.tenor.com/weB0PGdBKZgAAAAC/cope.gif": null,
-            "https://c.tenor.com/Ctz1jO-y0fcAAAAC/waiting-for-memes-memes.gif": null,
-            "https://c.tenor.com/1TX9Z0FIvE8AAAAd/ice-eating.gif": null,
-            "https://media.discordapp.net/attachments/673711276395986975/800977403325186068/image0-16.gif": null,
-            "https://media.discordapp.net/attachments/493336712429174784/782283030261661697/3fvqdw22hu161.gif": null,
-            "https://c.tenor.com/d6XZhVcT1x4AAAAC/get-real-cat.gif": null,
-            "https://media.discordapp.net/attachments/602362713863094322/769106897830805524/image0-1.gif": null,
-            "https://media.discordapp.net/attachments/579729473797357580/809117158058623016/image0.gif": null,
-            "https://media.discordapp.net/attachments/743105041770086412/766396962417016903/savetweetvid_EkJ0FZfVcAAqJcD.gif": null,
-            "https://media.discordapp.net/attachments/775752263981072414/808395513379684382/image0.gif": null,
-            "https://media.discordapp.net/attachments/768186012534702111/768783185853022218/image0.gif": null,
-            "https://media.discordapp.net/attachments/614649229008437250/805951384712642560/image0.gif": null,
-            "https://c.tenor.com/cLIYo_vGRcEAAAAC/mircord-zabloing.gif": null,
-            "https://c.tenor.com/JGRK4YW7SxYAAAAC/do-not-post-rhino-shit-gif-rhino.gif": null,
-            "https://c.tenor.com/QFB9uDn4pSQAAAAC/yo-mama-stairway-to-heaven.gif": null,
-            "https://c.tenor.com/Tr0DC7maFcoAAAAC/the-toast-toast.gif": null,
-            "https://media.discordapp.net/attachments/338857510460981251/793772824007278592/glassesbad.gif": null,
-            "https://media.discordapp.net/attachments/343215734035316737/804900417447919686/image0_3.gif": null,
-            "https://c.tenor.com/CqJmSfEsuwwAAAAd/cbt-fire-cbt.gif": null,
-            "https://media.discordapp.net/attachments/396090984242479114/804539939597451285/england.gif": null,
-            "https://media.discordapp.net/attachments/368551490572517377/764571988512997466/image0.gif": null,
-            "https://media.discordapp.net/attachments/639239867607416901/706571399912882236/image0-23.gif": null,
-            "https://media.discordapp.net/attachments/381916320423215104/804456716740853851/99109e1-2.gif": null,
-            "https://c.tenor.com/qXmiv4L9KYkAAAAd/top.gif": null,
-            "https://media.discordapp.net/attachments/669705005208567811/804849920087293982/image0.gif": null,
-            "https://media.discordapp.net/attachments/804524644643635264/804851793007738880/Gamestop_wallstreet.gif": null,
-            "https://media.discordapp.net/attachments/505215538591432704/803476146292391936/venezuela.gif": null,
-            "https://media.discordapp.net/attachments/564544696995676177/687093145447825418/bc04416f2d5a911b25e34b89cbaca0f2564c3552d3875c65013e04071cf09ce8_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/804419934003527750/image0_8.gif": null,
-            "https://i.kym-cdn.com/photos/images/original/002/001/882/d0a.gif": null,
-            "https://media.discordapp.net/attachments/439519668819066880/676413470912020500/image0-20-1.gif": null,
-            "https://c.tenor.com/F1wugXTBO2gAAAAd/monkey-d-luffy-harambe.gif": null,
-            "https://c.tenor.com/-aOjanfFLawAAAAC/keller-4chan-keller.gif": null,
-            "https://media.discordapp.net/attachments/528927344690200576/800987048323973153/caption_1.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/803418611891830845/image0.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/803424778987110440/image0-4.gif": null,
-            "https://images-ext-2.discordapp.net/external/Yrss94ufxPQ8-jYkf7vDi1RFpHANH0Hsrq7uZBpFrnU/https/media.discordapp.net/attachments/439519668819066880/753374556395405460/3d580297d90a002e26dd27264026129d404192ccc3e52a29f9276e18ae8f24e0_1.gif.gif": null,
-            "https://c.tenor.com/NCsca_exmC0AAAAC/cry-about-it.gif": null,
-            "https://c.tenor.com/Jy6WtdF_gJ0AAAAd/imposter-among-us.gif": null,
-            "https://c.tenor.com/KoraOVopTMsAAAAd/when-the-imposter-is-sus-jerma.gif": null,
-            "https://media.discordapp.net/attachments/796176182117924864/802652138660298832/ezgif-3-fbd0e05adcbf.gif": null,
-            "https://media.discordapp.net/attachments/675497549020397568/802131640360108092/image0-12-2.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/802539965556195358/bf9a3712c1549a0288a865a817d246d38b5faaa4554a799193f7a054514af749_1.gif-1.gif": null,
-            "https://images-ext-2.discordapp.net/external/fQzrCqaXs_HfeDCyhqnqH_Cecud-cMCa4ZbXU2Np3Zk/%3Fwidth%3D384%26height%3D384/https/images-ext-2.discordapp.net/external/5tNkhYuTqovf8UrL77znYWmefPK7JQBzEZdZN5oPeuQ/https/images-ext-1.discordapp.net/external/udEVaBydfzjHsi0R2kraD8MSCrYh0R17q9QlLw6_4Js/https/i.redd.it/hnoxf201kkc61.gif?width=307&height=307": null,
-            "https://c.tenor.com/zq_B4nOWvyIAAAAC/mute-discord.gif": null,
-            "https://c.tenor.com/n5mBi8UJnsUAAAAC/traps-abs.gif": null,
-            "https://c.tenor.com/62TZCIlufVYAAAAd/tasty-burgers-pov.gif": null,
-            "https://c.tenor.com/RZQU1_c6suwAAAAd/bodeguys-you-can-be-racist-to-me.gif": null,
-            "https://images-ext-1.discordapp.net/external/6uXxHr_AqrCYBt-B2TjHUJYpwWYlZFPG4BSL6Dz1tJg/https/media.discordapp.net/attachments/647238259105333268/751198854019547136/image1.gif": null,
-            "https://media.discordapp.net/attachments/666676467723272212/798944916679163934/image0.gif": null,
-            "https://media.discordapp.net/attachments/775752263981072414/801150788021649428/image0-5_1.gif": null,
-            "https://media.discordapp.net/attachments/459845122067005440/706208664029102110/image0.gif": null,
-            "https://media.discordapp.net/attachments/588825472637337631/800913408202375168/caption-2.gif": null,
-            "https://media.discordapp.net/attachments/745048287182061590/787496566016704572/image0.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/800476880376692736/image0.gif": null,
-            "https://media.discordapp.net/attachments/724009203072761876/772232443092533268/image0-118.gif": null,
-            "https://media.discordapp.net/attachments/775752263981072414/798697233599692840/image0.gif?width=351&height=369": null,
-            "https://media.discordapp.net/attachments/712276670697963561/774118964296679454/9c51368.gif": null,
-            "https://images-ext-1.discordapp.net/external/37iFP5z9rd4ybL0Q84Sy4XxMQpVbAfCBONrxlqwpm4o/https/media.discordapp.net/attachments/764218776706613289/765177287602601984/image0.gif?width=481&height=406": null,
-            "https://media.discordapp.net/attachments/765639735129407518/786949976890540072/79bcede45c032962e486527fc127f2f7f9882cc6065be78fca03d5589651098f_1.gif": null,
-            "https://media.discordapp.net/attachments/724009203072761876/771999032918540288/image0.gif": null,
-            "https://media.discordapp.net/attachments/751618423238426685/769264649203875860/image0.gif": null,
-            "https://c.tenor.com/aF3mrjRFNDEAAAAC/damon-albarn-sleeper-agent.gif": null,
-            "https://media.discordapp.net/attachments/719904374473883700/798532585612509224/oi_l.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/791148536455757834/image0.gif": null,
-            "https://media.discordapp.net/attachments/624650750748000285/785884274858655744/5ba84ce533a0dfe46a5f160461ca06603dd1bcdd0abfb3d5f62c96866bedd3d2_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/498943000353964032/765694395579760670/image0.gif": null,
-            "https://media.discordapp.net/attachments/456230331507277824/789951717952192522/image0.gif": null,
-            "https://c.tenor.com/x9-rb7oIGF4AAAAC/me-looking-for-funny-looking-for-the-funny.gif": null,
-            "https://media.discordapp.net/attachments/488036672697663499/798323067079884850/image0.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/797132683758010418/image0.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/787550618994475018/image0.gif": null,
-            "https://c.tenor.com/JY0_XO6eF-EAAAAd/glowcord-discord.gif": null,
-            "https://c.tenor.com/ig0ptbc-TUAAAAAd/nigga-cat-big-chungus.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/785344698361315328/image0.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/782639914922934313/image0.gif": null,
-            "https://c.tenor.com/OhwZT_4pq08AAAAd/bladerunner2049.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/780016034622996501/image0-43-1.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/779005755687960657/black_lel.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/778840776561524776/3a9db51.gif": null,
-            "https://media.discordapp.net/attachments/724975122842255471/776355795503546418/image0-1.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/774845988761370634/a1d4de9.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/773593473991311370/b5ce6dcb5221fa341163f4954458a40006431df932b35ce65d02310df7ed7f42_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/767883689311862784/767883703954702366/image0.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/767037615999942666/image0-45.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/767037614846378004/image0.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/767037614368358420/image0-12.gif": null,
-            "https://c.tenor.com/mr_JoOGaIkMAAAAC/chicken-twerking.gif": null,
-            "https://c.tenor.com/jclBVgW144UAAAAd/second-graders-final-stand.gif": null,
-            "https://c.tenor.com/pmlN9tTyOwcAAAAd/discord-mods-discord.gif": null,
-            "https://images-ext-2.discordapp.net/external/OJiL4IGnW7eQCAn7Qqp7fn3Q9Y9Sro8RbRkzprrc8Lw/https/media.discordapp.net/attachments/389730082899623947/690615544713445406/2b03e9bb1ed566f0d41ce769bd2956aa6a11ccf570ca74130f6929c62f1b9ffc_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/753202701969653792/760116616448180264/7064d8a00b2a3bad425cf70a0954c2863f2a5b89b3e1b0bc53b7497c7c08e471_1.gif.gif": null,
-            "https://c.tenor.com/CsnEoKNTHx0AAAAd/funny-cow.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/759801496145100800/image0-20.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/759919132845539359/image0-1-2-1.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/758744282818674728/image0-122.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/749541839413051422/romanian.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/757721230965997578/image1.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/757721230014152754/image0.gif": null,
-            "https://c.tenor.com/CHC6gl8ef60AAAAd/skill-issue-ratio.gif": null,
-            "https://c.tenor.com/QYf5TIRJtS4AAAAd/deltarune-noelle.gif": null,
-            "https://media.discordapp.net/attachments/730160817953308716/890857076513964072/image0.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/890948323459104909/caption.gif": null,
-            "https://media.discordapp.net/attachments/615065654508257310/890555315093901312/image0-2-1.gif": null,
-            "https://c.tenor.com/PVEGJ_XKawAAAAAd/michigan-chungus-michigan.gif": null,
-            "https://c.tenor.com/PyisCt1hN40AAAAd/me-when-the-when-the.gif": null,
-            "https://media.discordapp.net/attachments/783040026829127710/879471964023042078/image0-25.gif": null,
-            "https://c.tenor.com/ZYPXJctKRwoAAAAC/soy-soyboy.gif": null,
-            "https://c.tenor.com/VtQoxocQSoMAAAAd/its-uncanny-how-easy-it-is-its-uncanny-how-hard-it-is.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/885484853510955058/caption.gif": null,
-            "https://c.tenor.com/hGpIkDBtGJ8AAAAd/twitter-twitter-users.gif": null,
-            "https://c.tenor.com/ReVdsc4W0nwAAAAd/embed-fail.gif": null,
-            "https://media.discordapp.net/attachments/654882504360067073/884137552561451068/caption.gif": null,
-            "https://c.tenor.com/U6iV5ca7q_cAAAAd/epic-embed-fail-embed-fail.gif": null,
-            "https://c.tenor.com/0LIEs1v5yXUAAAAC/getreal.gif": null,
-            "https://c.tenor.com/_81VDAqa54kAAAAd/locked-away-for-eternity-nonlooping-locked.gif": null,
-            "https://media.discordapp.net/attachments/616859985665589261/883599792117276722/392.gif": null,
-            "https://media.discordapp.net/attachments/861429532234219540/882469036296925184/image0.gif": null,
-            "https://c.tenor.com/Zlm7xazS-I4AAAAd/hello-chat-cat.gif": null,
-            "https://c.tenor.com/T5fTPzX-mLoAAAAC/roingus-jerboa.gif": null,
-            "https://c.tenor.com/nood1PLXipkAAAAC/fnaf-cat.gif": null,
-            "https://c.tenor.com/rK3diIf7RZ4AAAAd/bobs-burgers-bob-ross.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/880501653223145502/image0-1-1-2.gif": null,
-            "https://c.tenor.com/f5x7wP1_3Q4AAAAC/no-yoinky-sploinky-that-yoinky-sploinky.gif": null,
-            "https://c.tenor.com/uJNs4UuxsAsAAAAC/obtain-realism.gif": null,
-            "https://media.discordapp.net/attachments/869665288000516146/869689067833536572/gif.gif": null,
-            "https://media.discordapp.net/attachments/544146545797234688/876674272947470376/image0-8.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/876360609216737330/caption-1-1-1.gif": null,
-            "https://i.kym-cdn.com/photos/images/original/002/171/239/eb9.gif": null,
-            "https://c.tenor.com/eTy7XFQ1NxAAAAAd/peugeot-jumpscare.gif": null,
-            "https://media.discordapp.net/attachments/861429532234219540/874663606317350983/get_breaded.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/874545610798292992/image0-66.gif": null,
-            "https://c.tenor.com/DpTQnLZ4RQsAAAAC/quaint-isaac.gif": null,
-            "https://media.discordapp.net/attachments/560285839226175491/872974781035737128/image0-165.gif": null,
-            "https://media.discordapp.net/attachments/560285839226175491/872974780553371648/image0-106.gif": null,
-            "https://c.tenor.com/efh1eoH96i8AAAAC/cry-about-it.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/872755363106148382/image0.gif": null,
-            "https://media.discordapp.net/attachments/861429532234219540/871045464114491432/321.gif": null,
-            "https://c.tenor.com/8s0tdOS99SsAAAAC/what-the.gif": null,
-            "https://c.tenor.com/vryf32uQU68AAAAd/cry-about-it.gif": null,
-            "https://media.discordapp.net/attachments/864878407993131058/870865148091465769/1627309127180.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/838978412042256404/caption.gif": null,
-            "https://c.tenor.com/GCDpMwDb6CsAAAAC/drill-awesome.gif": null,
-            "https://c.tenor.com/tDplRm0HDyYAAAAC/sussy-among-us.gif": null,
-            "https://c.tenor.com/v8P2kGhgv1gAAAAC/hylics-die.gif": null,
-            "https://c.tenor.com/IMpBQ3NgIdEAAAAC/cat-clock.gif": null,
-            "https://c.tenor.com/Ewf7ouYJ7JkAAAAC/capybara-cbt.gif": null,
-            "https://c.tenor.com/GNFS55aOQEkAAAAd/potemkin-guilty-gear.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/868506999397187675/caption.gif": null,
-            "https://c.tenor.com/70gYt82XxIwAAAAd/dbz-dbgt.gif": null,
-            "https://c.tenor.com/1hdsn62I4tkAAAAC/turtle-cute.gif": null,
-            "https://media.discordapp.net/attachments/418415615577948170/867461941155725352/ezgif.com-gif-maker6.gif": null,
-            "https://media.discordapp.net/attachments/278323568998350850/867225135152103504/caption-1.gif": null,
-            "https://c.tenor.com/HJ5rw5ASIcgAAAAC/among-us-sus.gif": null,
-            "https://media.discordapp.net/attachments/570224854041886721/867331282341855242/caption.gif": null,
-            "https://media.discordapp.net/attachments/752329837925892106/863909557374156800/image0.gif": null,
-            "https://c.tenor.com/xx_HaPQXOgYAAAAC/pee-shop.gif": null,
-            "https://c.tenor.com/t0_J2zRZbrUAAAAd/get-real-guilty-gear-strive.gif": null,
-            "https://c.tenor.com/kNRNoSWSASMAAAAd/beast-beast-mode.gif": null,
-            "https://c.tenor.com/XMRnHdhvVvcAAAAC/cry-about-it-cry.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/865034752792854558/caption-1.gif": null,
-            "https://c.tenor.com/JZxtpY7RZhoAAAAd/when-the-drip-is-respectful-when-the-camel.gif": null,
-            "https://c.tenor.com/ZtsG3KlHKyYAAAAd/trolling.gif": null,
-            "https://media.discordapp.net/attachments/260170566529449994/847693813203599360/Texas.gif": null,
-            "https://c.tenor.com/9-C9qXQ_qisAAAAC/mac-macthollomew.gif": null,
-            "https://c.tenor.com/CDdKaEGM-eUAAAAC/lemon-demon-neil-cicierega.gif": null,
-            "https://media.discordapp.net/attachments/620296455424442395/860563606302490624/hussein.gif": null,
-            "https://c.tenor.com/zs_mdgJZqVUAAAAC/ignore-the.gif": null,
-            "https://media.discordapp.net/attachments/757434098456461338/860511210175725598/caption.gif": null,
-            "https://c.tenor.com/MmjgJjOHEhEAAAAd/die-hbox.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/860493160887091220/caption-3-2.gif": null,
-            "https://media.discordapp.net/attachments/369444616833073164/860515880966029353/speed.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/859467587372580884/image0-23-1.gif": null,
-            "https://media.discordapp.net/attachments/830842566727303208/851144387428614184/image0.gif": null,
-            "https://64.media.tumblr.com/595a499cfc332aa17f131c64cc975ae3/76ac0eaeade44824-ab/s400x600/3ab722f1157d6befbcbf6b4a43a42e96d4f8f9bb.gif": null,
-            "https://c.tenor.com/M2_iWUrxltwAAAAC/steam-valve.gif": null,
-            "https://c.tenor.com/SkDCpfivU-gAAAAd/darth-vader-soda.gif": null,
-            "https://media.discordapp.net/attachments/523282321303142400/841069380267671573/d2877d1.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/858397792695091200/ezgif-1-af9f5165c482.gif": null,
-            "https://c.tenor.com/5lihZ3xC3AcAAAAC/what-the-dog-doing-roblox.gif": null,
-            "https://c.tenor.com/OQx7MMLlAAYAAAAd/sick-tricks-kiryu-kiryu.gif": null,
-            "https://c.tenor.com/zRSFsFP9CdYAAAAd/monkey-coin-joeseppi.gif": null,
-            "https://media.discordapp.net/attachments/832779933364650004/852319017934651401/image0.gif": null,
-            "https://media.discordapp.net/attachments/560285839226175491/854602980124524554/RDT_20210615_1902351661112122636315042.gif": null,
-            "https://c.tenor.com/RcVvYcyTjxQAAAAC/epic-embed.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/847295965022257162/caption.gif?width=308&height=406": null,
-            "https://c.tenor.com/gzAk__5GmY4AAAAC/this-cat-water.gif": null,
-            "https://c.tenor.com/TQUXJQ5QDPAAAAAC/what-the-dog-doin-what.gif": null,
-            "https://media.discordapp.net/attachments/611720099287662592/833149742330019861/image0.gif": null,
-            "https://media.discordapp.net/attachments/545435908506124320/843991026544934912/freggy.gif": null,
-            "https://c.tenor.com/oulv0W5JfDEAAAAC/kitty-review.gif": null,
-            "https://media.discordapp.net/attachments/837565213003350016/838264876081086484/image0.gif": null,
-            "https://media.discordapp.net/attachments/399633269022261261/850550883287957514/image0.gif": null,
-            "https://c.tenor.com/yQ-EWroC114AAAAd/hello-chat-hello.gif": null,
-            "https://c.tenor.com/Nw3AdeOJhY0AAAAC/hello-chat.gif": null,
-            "https://c.tenor.com/3SYjAXlGV54AAAAd/devil-may-cry-dante.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/845950932390379540/caption.gif": null,
-            "https://c.tenor.com/nrm8eUGu4uoAAAAC/kitty-review.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/843897941986246716/image0-198.gif": null,
-            "https://c.tenor.com/ctEhZczu-iMAAAAd/no-more-monkeys-1984.gif": null,
-            "https://c.tenor.com/A6iWuIvhjT4AAAAC/thanos-dies-of-cringe.gif": null,
-            "https://media.discordapp.net/attachments/783426400899563600/843203710627741726/rats_when.gif": null,
-            "https://c.tenor.com/8aGF4_EaNRoAAAAd/gator-sheesh.gif": null,
-            "https://media.discordapp.net/attachments/693670629550850088/838184846908063794/1a9d3d5fd3d3743ed6d60acd2d430766cf149c1f4eac68f26553230841f64837_1.gif.gif": null,
-            "https://c.tenor.com/EEcyk91ruucAAAAC/kfc.gif": null,
-            "https://media.discordapp.net/attachments/560285839226175491/842504311366877235/caption.gif": null,
-            "https://media.discordapp.net/attachments/472407010042707989/841535569602412574/18b04a1.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/841336063309250590/caption.gif": null,
-            "https://c.tenor.com/SCUoBE6iAGcAAAAd/joe-mama.gif": null,
-            "https://media.discordapp.net/attachments/680928395399266314/840014314538795108/image0.gif": null,
-            "https://media.discordapp.net/attachments/759468968397504512/840564756334641162/image0-6.gif": null,
-            "https://media.discordapp.net/attachments/482958702211497994/838469511694778368/image0-8.gif": null,
-            "https://media.discordapp.net/attachments/822850855556087855/840698781737680926/strolling.gif": null,
-            "https://c.tenor.com/Af51qrAYP_sAAAAC/russian-true.gif": null,
-            "https://media.discordapp.net/attachments/821009355234082836/836233956113383424/antichrist.gif": null,
-            "https://media.discordapp.net/attachments/459046467743776779/840665421236797450/image0.gif": null,
-            "https://c.tenor.com/EGmbkFPw4m4AAAAC/get-real-vaporeon.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/840066549531803708/12840835aee48a7de30a4f4de189bae5f3b93ca55d7fda86bca2eef11007579e_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/705216707412885585/829377227552587836/1615988488315.gif": null,
-            "https://media.discordapp.net/attachments/825782329384763412/838528290024718346/image0.gif": null,
-            "https://c.tenor.com/5rCJ9g-3UdMAAAAd/solar-panel-sunlight.gif": null,
-            "https://c.tenor.com/d4ASwH5bPW0AAAAd/yakuza-like-a-dragon.gif": null,
-            "https://c.tenor.com/tj5BoI6kPoMAAAAd/enjoyer-enjoy.gif": null,
-            "https://media.discordapp.net/attachments/627085797086068737/823542352202432512/breadchat.gif": null,
-            "https://media.discordapp.net/attachments/422403986621071370/757306096925802656/image0.gif": null,
-            "https://c.tenor.com/f4_xU85jgj4AAAAC/epic-embed-fail-tv.gif": null,
-            "https://media.discordapp.net/attachments/738548949488762954/834957630203494460/image0.gif": null,
-            "https://media.discordapp.net/attachments/671819620369432607/837492484929880154/image0.gif": null,
-            "https://c.tenor.com/TPMYmwHdYv8AAAAC/reaction-discord.gif": null,
-            "https://c.tenor.com/7oLs8T8si9AAAAAd/persona-fans-persona.gif": null,
-            "https://c.tenor.com/YrtHatxSnAkAAAAC/sussy-sus.gif": null,
-            "https://c.tenor.com/IF7Yx9BLpfgAAAAC/epic-embed-fail-avgn.gif": null,
-            "https://media.discordapp.net/attachments/498634123347361812/836231653587288104/get_real.gif": null,
-            "https://media.discordapp.net/attachments/399633269022261261/831725029598953480/image0.gif": null,
-            "https://c.tenor.com/yoRmoGSy9jQAAAAC/drywall-garfield.gif": null,
-            "https://c.tenor.com/m7Ha2jXSnYwAAAAC/me-when-u-have-no-swag-swag.gif": null,
-            "https://c.tenor.com/RIIFhLU3EAsAAAAC/magically-compression.gif": null,
-            "https://media.discordapp.net/attachments/767703189319057438/835624874768334868/caption.gif": null,
-            "https://media.discordapp.net/attachments/735570260609990726/834053255327776828/image0.gif": null,
-            "https://media.discordapp.net/attachments/695501612621496336/828010284588204062/f72r27t3goq61.gif": null,
-            "https://c.tenor.com/zayMIpfp110AAAAC/blacksite-zeta-blacksite.gif": null,
-            "https://media.discordapp.net/attachments/326106290973704195/834095220005404712/image0.gif": null,
-            "https://media.discordapp.net/attachments/464249518729330688/834906206799003729/caption-2.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/835299992876875816/image0.gif": null,
-            "https://media.discordapp.net/attachments/452219191580295168/831193206078046208/image0.gif": null,
-            "https://c.tenor.com/crpwdkDhBK0AAAAC/roblox-stolen-gif.gif": null,
-            "https://c.tenor.com/RgAG9-gQJjMAAAAC/kitty-review.gif": null,
-            "https://c.tenor.com/UeBhTeSpZlkAAAAd/doing-youre.gif": null,
-            "https://c.tenor.com/PNQ0s0TQAaIAAAAd/black-mesa-military.gif": null,
-            "https://c.tenor.com/DkVt9B84ZtIAAAAC/my-beloved-heart-locket.gif": null,
-            "https://c.tenor.com/ccawi_aFrMwAAAAC/epic-embed-fail-epic-embed-win.gif": null,
-            "https://c.tenor.com/E2X9X-ckhYYAAAAd/embed-epic-embed.gif": null,
-            "https://c.tenor.com/Gm0mSTUaVFgAAAAd/cry-about-it-amogus.gif": null,
-            "https://media.discordapp.net/attachments/324176411772321792/828831515151564830/image0.gif": null,
-            "https://media.discordapp.net/attachments/648400331583258631/675742481362452491/f3a6834147a534677fba6365b275d781b4c024e2d569bf0fbf345d9cd84b139c_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/833476059856502813/unknown.gif": null,
-            "https://c.tenor.com/YD9kY4Xb7wsAAAAC/detroit-when-the.gif": null,
-            "https://c.tenor.com/hTdXqYwOnscAAAAC/cryaboutit-bowling.gif": null,
-            "https://media.discordapp.net/attachments/245465054416207872/831933143426269204/image0.gif": null,
-            "https://c.tenor.com/mKF0sfoFE8wAAAAd/girl-gamer-when-i-see-the-gamer-girl-feet.gif": null,
-            "https://c.tenor.com/FfRTvCPghAoAAAAd/dragon-ball-fans.gif": null,
-            "https://media.discordapp.net/attachments/564544696995676177/754894238050680872/image0_10.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/827994208819216394/unknown.gif": null,
-            "https://c.tenor.com/Zppcgi1q1n4AAAAd/he-was.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/827907514216874024/bab6e8c6d56b7b07b8eea9ce455fb16dec9f289fe2122a6df7d33513b84f88f9_1.gif": null,
-            "https://media.discordapp.net/attachments/399690081054490656/827532032379977758/image0.gif": null,
-            "https://c.tenor.com/7OZvk7ivrRkAAAAd/epic-embed-fail-gypsy-crusader.gif": null,
-            "https://c.tenor.com/UOqYEPA6xVoAAAAd/get-real-meme.gif": null,
-            "https://c.tenor.com/D1Lr5qmW2UMAAAAC/get-real-jungle.gif": null,
-            "https://media.discordapp.net/attachments/719170891451465749/809730885858623538/HECANTSWIM.gif": null,
-            "https://c.tenor.com/WgjUlE9JkrYAAAAd/cat-review.gif": null,
-            "https://c.tenor.com/BwqC75gBI0gAAAAd/steam.gif": null,
-            "https://c.tenor.com/kakBl4i4NAEAAAAd/omw-troll.gif": null,
-            "https://media.discordapp.net/attachments/659996109460209700/825337531314733056/6-2ccffc20671c.gif": null,
-            "https://media.discordapp.net/attachments/149987585102577675/765784255770263583/image0-1.gif": null,
-            "https://media.discordapp.net/attachments/783760671015698473/823344637204103178/speed.gif": null,
-            "https://c.tenor.com/csxVZv7SrQIAAAAd/get-real-trombone.gif": null,
-            "https://c.tenor.com/0x3Iz5kIqTgAAAAC/waynecord-clairecord.gif": null,
-            "https://c.tenor.com/jlvbpvErcDoAAAAd/eat-shut.gif": null,
-            "https://c.tenor.com/9tW8QqdpihgAAAAd/joker-persona5.gif": null,
-            "https://media.discordapp.net/attachments/791728663246536758/821014275198812170/caption.gif": null,
-            "https://c.tenor.com/uY8_WWOZbHIAAAAd/mom-lunch.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/768461240028627004/image0-2.gif": null,
-            "https://media.discordapp.net/attachments/149087807426658304/764996747604393984/tumblr_ox2gp53A8f1ryfacfo1_540.gif": null,
-            "https://c.tenor.com/XRkrcKpgbUwAAAAC/mad-anger.gif": null,
-            "https://c.tenor.com/DNNUGATQFUEAAAAC/fnaf-meme.gif": null,
-            "https://media.discordapp.net/attachments/739764785054482432/821898324738441227/image0.gif": null,
-            "https://c.tenor.com/AB7-WGu8vrgAAAAC/choppcord-choppingboss.gif": null,
-            "https://media.discordapp.net/attachments/354838893754843137/821196114924798002/image0-67.gif": null,
-            "https://media.discordapp.net/attachments/175054042177863680/821054750925520906/final_604f8872205527005246b3f4_126277.gif": null,
-            "https://media.discordapp.net/attachments/470168157148020756/810379227315830798/image0.gif": null,
-            "https://c.tenor.com/mle8651hqQ8AAAAd/charmx-mfw.gif": null,
-            "https://c.tenor.com/NamOczLhpHwAAAAd/shoplifters-shoplifting.gif": null,
-            "https://media.discordapp.net/attachments/655105479684653072/819934624523223040/image0.gif": null,
-            "https://c.tenor.com/yd5HU8T6AfoAAAAd/skyrim-meme.gif": null,
-            "https://c.tenor.com/sEbTUPDMAuwAAAAd/monkey-presentable.gif": null,
-            "https://media.discordapp.net/attachments/772417751540170792/815875030311108629/image0-60.gif": null,
-            "https://c.tenor.com/ouwGxYUVf0MAAAAC/reddit-gold-harambe.gif": null,
-            "https://c.tenor.com/9yLvJjv3JoAAAAAC/oh-yeah-my-man.gif": null,
-            "https://c.tenor.com/9SEvoT4CdWwAAAAd/meme-among-us.gif": null,
-            "https://c.tenor.com/oXP04XKFeyoAAAAC/cat-meme.gif": null,
-            "https://c.tenor.com/AaZ2nm_m48oAAAAd/i-have-your-ip-address-garfield.gif": null,
-            "https://c.tenor.com/6dGnOUKfCxgAAAAC/fifi-the-doggo-doggo.gif": null,
-            "https://c.tenor.com/olXd1lfDUH8AAAAd/mario-clan-chungus-clan.gif": null,
-            "https://c.tenor.com/jLNA4Nv0mOIAAAAC/spies-in-disguise-reddit.gif": null,
-            "https://media.discordapp.net/attachments/722288324328423457/817472314757218384/image0-5.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/820058971653799996/3ab2cc2e10e374f55a4982b5ba390b381058317e08dde45faed99ac0cf83a668_1.gif.gif": null,
-            "https://c.tenor.com/hD0iXoljUxsAAAAd/genshin-genshin-impact.gif": null,
-            "https://media.discordapp.net/attachments/197619940340006912/818748708669489162/no_loud.gif": null,
-            "https://i.redd.it/51uur6ukn0m61.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/818512173956333568/image0.gif": null,
-            "https://media.discordapp.net/attachments/776667565425557506/810777448919597086/image0.gif": null,
-            "https://media.discordapp.net/attachments/624014259751485441/818323760633217075/Reality.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/817466940129017926/fs2.gif": null,
-            "https://c.tenor.com/IWWdK0XEI4QAAAAC/death-book.gif": null,
-            "https://c.tenor.com/iijUMzzYuXAAAAAC/morshu.gif": null,
-            "https://media.discordapp.net/attachments/347254691966615552/801095491550314526/f64709d1060bb123f8ce3bc2c7eb16cbcdc121491f6bde95a15109ba65974010_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/556232561987158016/781385181767401502/image0.gif": null,
-            "https://media.discordapp.net/attachments/414568012989857792/779793073202003978/image0.gif": null,
-            "https://c.tenor.com/9_WEjFOg_wYAAAAd/bunger.gif": null,
-            "https://media.discordapp.net/attachments/558816716600377355/816477587919732756/image0-25.gif": null,
-            "https://media.discordapp.net/attachments/776172429394968576/777136414763646976/twitter.com_Isx8L6w5.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/814167205066440775/image0-5.gif": null,
-            "https://c.tenor.com/Y7MHybaoIdkAAAAC/the-concept-of-death-keanu-reeves-breastfeed.gif": null,
-            "https://media.discordapp.net/attachments/556526589610033160/812548022616457236/image0.gif": null,
-            "https://media.discordapp.net/attachments/310533111505223682/797663235989569536/image0-1.gif": null,
-            "https://c.tenor.com/WR9JuIas8MwAAAAd/shrip-mantis.gif": null,
-            "https://media.discordapp.net/attachments/316978886087016449/803295216659595274/1288705115768016896.gif": null,
-            "https://media.discordapp.net/attachments/722288324328423457/809680380222898176/image0-20.gif": null,
-            "https://media.discordapp.net/attachments/447252609238302721/774500696002396201/image0.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/809259972482302032/image0.gif": null,
-            "https://c.tenor.com/eglrsU536t8AAAAC/we-do-a-little-trollin.gif": null,
-            "https://c.tenor.com/m6IWt4yUBssAAAAd/roberto-dan%C3%A7a.gif": null,
-            "https://c.tenor.com/gVY3x5DsYMMAAAAC/flowlycord-workfrank.gif": null,
-            "https://c.tenor.com/HyYZ0_FKsSMAAAAC/bars-ray-johnson.gif": null,
-            "https://media.discordapp.net/attachments/690819748929470475/807956482511208468/atheisum.gif": null,
-            "https://media.discordapp.net/attachments/474446512005578753/807953165676052510/cry_about_it.gif": null,
-            "https://c.tenor.com/XhOHD1I1acYAAAAC/yo-mama-fat.gif": null,
-            "https://media.discordapp.net/attachments/730119164198387845/800245899619991552/image0.gif": null,
-            "https://media.discordapp.net/attachments/690819748929470475/807951654108135434/bron.gif": null,
-            "https://media.discordapp.net/attachments/499373423378563083/807575636419674152/piss.gif": null,
-            "https://c.tenor.com/rAxfFZZaa3YAAAAd/epic-pog.gif": null,
-            "https://images-ext-2.discordapp.net/external/j3Bq9BSnc8441tDjnEjFh80kcZ8qXV09q3FkYIhgOxs/https/media.discordapp.net/attachments/680538515318112257/800985707111907348/image0-1-1-1.gif": null,
-            "https://images-ext-2.discordapp.net/external/BtdMoPOeJaup2k7AEebeUyJ_CiydUFFf444TyWHPPis/https/media.discordapp.net/attachments/528927344690200576/800987048323973153/caption_1.gif": null,
-            "https://images-ext-1.discordapp.net/external/CnuDz7hQ8nMupGqO4vl3f8VDfCQus4N57TLetx7twK4/https/media.discordapp.net/attachments/680538515318112257/803159538789646416/image0-18-1-1.gif": null,
-            "https://c.tenor.com/JsrjRALTMWkAAAAd/tf2.gif": null,
-            "https://media.discordapp.net/attachments/747908950904537138/804520805882658876/despite_all_my_rage.gif": null,
-            "https://media.discordapp.net/attachments/339224673680359428/803660707466838066/image0.gif": null,
-            "https://media.discordapp.net/attachments/404008850321047552/800555424138788874/image0-5.gif": null,
-            "https://media.discordapp.net/attachments/399633269022261261/803120028516876318/ezgif-5-970436b8a50d.gif": null,
-            "https://images-ext-2.discordapp.net/external/rlYmRmrLaQYVXpJYPvqfs5ldv5wp6GSK7anG_wnM0MA/https/media.discordapp.net/attachments/724976219757609030/802539965556195358/bf9a3712c1549a0288a865a817d246d38b5faaa4554a799193f7a054514af749_1.gif-1.gif": null,
-            "https://images-ext-1.discordapp.net/external/CAPid6l3z8Qgbs3RNaNawv0dPUN3_oK7VetOQjb2z0E/https/media.discordapp.net/attachments/675497549020397568/802131640360108092/image0-12-2.gif": null,
-            "https://media.discordapp.net/attachments/341283238049742858/800798098355257344/image0.gif": null,
-            "https://c.tenor.com/rcEnlCyTlAwAAAAd/forget-to-place-towers-in-bloons-td5.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/801452440670306304/image0-21-1.gif": null,
-            "https://c.tenor.com/aZdYh_UQvWUAAAAC/joe-joe-swanson.gif": null,
-            "https://media.discordapp.net/attachments/560285839226175491/800610489855770654/ezgif-3-af729837039e.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/799322300905685083/image0.gif": null,
-            "https://c.tenor.com/sQ49knqLu_MAAAAd/drip-too-hard-among-drip.gif": null,
-            "https://c.tenor.com/teZcRHgORTEAAAAd/doin-ya-mom-gex.gif": null,
-            "https://media.discordapp.net/attachments/700539120543465594/781669416189952030/image0.gif": null,
-            "https://media.discordapp.net/attachments/334106551466065921/776610991827058688/image0.gif": null,
-            "https://c.tenor.com/N4aRJJASLDMAAAAd/chicken-shoes-funny-animals.gif": null,
-            "https://media.discordapp.net/attachments/560285839226175491/775285635044081695/image2.gif": null,
-            "https://media.discordapp.net/attachments/369924551502594048/765986128788455445/image1.gif": null,
-            "https://c.tenor.com/b2cxUaQJck0AAAAC/beyblade-ironic.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/769017374065950720/image0.gif": null,
-            "https://c.tenor.com/0R9WjwI3E28AAAAd/joker-crazy-hamburger.gif": null,
-            "https://media.discordapp.net/attachments/660619913056223242/772691965174349844/image0.gif": null,
-            "https://media0.giphy.com/media/oZUw2T8EYnPrfIObvF/giphy.gif": null,
-            "https://c.tenor.com/0_U6hswaCs4AAAAd/your.gif": null,
-            "https://media.discordapp.net/attachments/692168967455768606/770620658815598592/image0.gif": null,
-            "https://c.tenor.com/KsQ8OExMkdQAAAAC/i-like-your-cut-g-pvz.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/772586541527859220/image0.gif": null,
-            "https://media.discordapp.net/attachments/763527340797722654/763986406389317642/giffff.gif": null,
-            "https://media.discordapp.net/attachments/740507885129433139/760976577760067594/image0.gif": null,
-            "https://c.tenor.com/3u4WVGVARDgAAAAd/funny-happy-meal.gif": null,
-            "https://media.discordapp.net/attachments/560609048815337473/763212428297109535/image0.gif": null,
-            "https://c.tenor.com/whp-GZ23s_AAAAAd/mgs.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/762402880924680232/image0-2-2.gif": null,
-            "https://media.discordapp.net/attachments/511546997979873282/750576701263839252/whenthe.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/760550620129919047/image0.gif": null,
-            "https://img.ifunny.co/images/4ca365651140c419434e37722d60c4bfa2fd30c6d38a3e1ebda8d7ab363ab30b_1.gif": null,
-            "https://c.tenor.com/U94pxMBSm6MAAAAC/meeting-isreal.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/757604484540268574/b0808582242e729d22b8f5f0f651698e7491e0aa5641b935ba5fb7b1a56f1963_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/749812913749098506/image0-157.gif": null,
-            "https://media.discordapp.net/attachments/616298659159736331/754012499652640868/image3.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/756785181104537620/image0-39.gif": null,
-            "https://media.discordapp.net/attachments/427458548180451339/755834950674284585/image0-51.gif": null,
-            "https://media.discordapp.net/attachments/724009203072761876/753465260215894026/20200910_000149.gif": null,
-            "https://c.tenor.com/agr6IVV-DxIAAAAC/among-us.gif": null,
-            "https://media.discordapp.net/attachments/511546997979873282/755075023449882745/image0.gif": null,
-            "https://media.discordapp.net/attachments/748342733873217607/748366418193547264/humor_is_subjective.gif": null,
-            "https://media.discordapp.net/attachments/142480770265513984/753838511152431225/image0.gif": null,
-            "https://c.tenor.com/m0fVDMs4KPwAAAAC/rat-ratzone.gif": null,
-            "https://media.discordapp.net/attachments/382846587354873858/753093149127344269/ass14.gif": null,
-            "https://media.discordapp.net/attachments/241026774962667520/721364320151404664/image0.gif": null,
-            "https://media.discordapp.net/attachments/662394498441281564/713556707791601734/8570f6920139d056715fda5e0fc30697fff126e9a188d7ed10f19da4796c8bbe_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/724695973963497536/749444141515145246/5a2e6a5.gif": null,
-            "https://media.discordapp.net/attachments/452842109733699584/740701633364885575/image0.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/748546937606635560/image0.gif": null,
-            "https://c.tenor.com/Khq5WOEzUPMAAAAd/reddit-dance.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/747265035344019567/image0.gif": null,
-            "https://c.tenor.com/IvYRFke6tqkAAAAC/not-funny-big-chungus.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/745366928113270805/anti_cementic.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/744977903980380190/image1-1.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/744977888402735185/image0-1-1.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/744386491194671104/ezgif.com-gif-maker_1.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/743085869740851220/image0.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/743080145975246979/image0-35.gif": null,
-            "https://media.discordapp.net/attachments/654453880603541534/725728828416065556/cca1201e4a47824449834ec128757cd0a5bdb4f0.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/741796217452888094/image0-9-1.gif": null,
-            "https://c.tenor.com/oe1fBkTZHasAAAAC/cat-no.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/741378843108966490/you_are_about_to_die.gif": null,
-            "https://c.tenor.com/WrowzzSdN0wAAAAd/froge-sprinkle.gif": null,
-            "https://media.discordapp.net/attachments/420401922797993984/662138229801222177/cap.gif": null,
-            "https://media.discordapp.net/attachments/638950463315771393/727135621797117962/metalheads.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/738245953492090971/image0-1-4.gif": null,
-            "https://media.discordapp.net/attachments/665011644300001280/737849243305246820/image0.gif": null,
-            "https://images-ext-1.discordapp.net/external/XlVTOhMwlg1FRVUrnnEWzyW2Hm9jAK-frqQ8vBeceOQ/https/media.discordapp.net/attachments/722583110490914936/730855474760515614/image0-2.gif": null,
-            "https://media.discordapp.net/attachments/648400331583258631/677003106474786826/b8529bae4df34e59876fad00ddc5f32868880b3cc8ca8656f04b7e4b6535e31c_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/653443436187484203/736432598758195280/moses.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/734955208668610590/line.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/732287416802738247/living_room.gif": null,
-            "https://c.tenor.com/FRHK4GGy-7IAAAAC/reddit-moment-heckin-chonker.gif": null,
-            "https://media.discordapp.net/attachments/511546997979873282/733800355862675486/image0.gif": null,
-            "https://media.discordapp.net/attachments/689978886846415039/690026584442142781/BrawlboxAnimation6-1.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/732471618823127100/image0.gif": null,
-            "https://c.tenor.com/hK4RVDCZvgcAAAAd/door-repair.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/729911327279153182/image0-39.gif": null,
-            "https://media.discordapp.net/attachments/233231551192760320/731758467379101706/image0.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/731753619224789002/image0.gif": null,
-            "https://media.discordapp.net/attachments/645705194704863281/730418964257308732/image0.gif": null,
-            "https://media.discordapp.net/attachments/474446512005578753/731386096725786624/pagan.gif": null,
-            "https://images-ext-1.discordapp.net/external/l5oFdNuHpj90AqkbWgWQgRyI2Vo_-WGeMZKuvfk4KCY/https/media.discordapp.net/attachments/714931839088852995/730979920750313602/INTENSE_MATCH.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/727555194942128190/image0.gif": null,
-            "https://media.discordapp.net/attachments/710317808222732321/726659596344754247/marcelo_die.gif": null,
-            "https://media.discordapp.net/attachments/663622392194531328/665413625003114497/image0-4-1-1.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/725031979049025646/in.gif": null,
-            "https://media.discordapp.net/attachments/690819748929470475/724588223791104000/f_000ce1.gif": null,
-            "https://media.discordapp.net/attachments/690819748929470475/724581895223902279/caption-4.gif": null,
-            "https://media.discordapp.net/attachments/719427258913128479/722625593811664966/image0-4.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/722162568436908124/image0.gif": null,
-            "https://media.discordapp.net/attachments/690819748929470475/721297668315283477/lactose.gif": null,
-            "https://media.discordapp.net/attachments/710317808222732321/720104263329513493/rats.gif": null,
-            "https://media.discordapp.net/attachments/712640346852687954/720608105418719242/f_00869e.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/704932128869318656/biden.gif": null,
-            "https://media.discordapp.net/attachments/593661199158083595/704539325173465088/image0-1-1.gif": null,
-            "https://media.discordapp.net/attachments/418476008488828930/716856768063602768/Violence.gif": null,
-            "https://media.discordapp.net/attachments/617782714296303646/719758976740229140/image0-9-1.gif": null,
-            "https://c.tenor.com/pGqjus_vjskAAAAd/big-chungus-chungus.gif": null,
-            "https://media.discordapp.net/attachments/382724135832518659/712838310770507866/image0.gif": null,
-            "https://media.discordapp.net/attachments/710317808222732321/716461610532864080/c1d31a061163938a9e08a7f5e89ff18b581a1fe461af51185d250a2501b6eccb_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/529782281531949058/713090914477932564/97945713_171151-1590084482815.gif": null,
-            "https://media.discordapp.net/attachments/507526277918621697/713657813729017866/9b5bc7b6786526338f6320ad61230255099a6487c6d5bcc689141ab0bc8075e3_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/712561755066466345/zoo.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/711956454726434816/image0.gif": null,
-            "https://media.discordapp.net/attachments/546763235051700314/696015792185016370/64ffd22fb4026236a6b979da1bb91829df8a1fc88b921e5534b2419268c7533c_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/369883233594376194/706237394403459183/avdsdfrgewreasd.gif": null,
-            "https://c.tenor.com/Gm1hICXCSkgAAAAC/the-what-smile.gif": null,
-            "https://media.discordapp.net/attachments/683757872961814548/688184674790801419/28a63a10aaa56e310bb59941b589940af8e6accf9d0314a77f2a7429718692c2_1-1.gif": null,
-            "https://c.tenor.com/ifSCkD73lVAAAAAC/this-nuts-watermelon-cat.gif": null,
-            "https://media.discordapp.net/attachments/683757872961814548/692950617806733352/image1.gif": null,
-            "https://media.discordapp.net/attachments/683757872961814548/692950545954111489/image0-1.gif": null,
-            "https://media.discordapp.net/attachments/582768969186803713/687779794905071685/73a3ef801363e9ab1bde2db19d9111d9d7e533bcf321977e169fa2c3e3282333_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/628799245482459148/684630155762597911/bb9a8d9a843ada7e4acc71ad22ec6e8f209a4fa469ddf010559a05997e1d4d7a_1.gif.gif?RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_": null,
-            "https://c.tenor.com/st7vTBmbAw4AAAAC/obama-pyramid.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/678861326373617664/b0ada52-1.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/678866648500797470/74b0382.gif": null,
-            "https://media.discordapp.net/attachments/628110652547923999/669236051763527690/image1-1.gif": null,
-            "https://media.discordapp.net/attachments/670396162515402755/676282693649956874/1579054170065.gif": null,
-            "https://media.discordapp.net/attachments/504042906839941121/656402676304707585/image0-1-1-1.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/659469841958174732/31c2d5b.gif": null,
-            "https://media.discordapp.net/attachments/648400331583258631/651406079871287297/image0-10-1-1.gif": null,
-            "https://c.tenor.com/LC65Kv_eyVMAAAAC/big-chungus.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/638255143015415809/b9c18dd.gif": null,
-            "https://media.discordapp.net/attachments/599807519891783680/600266046275846144/tumblr_oo4lr9haXC1vvs38vo1_500.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/599596561961582592/8ce813718bd2bcce49bb38f404f77954f110fc2db5002388eb1394b696c12098_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/585671003372388352/bc4566fecc975fab3ce9625248087f9008eb56a89c6bbcf05f9d4b30fe3a95f4_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/900681564776710184/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/900685019184496660/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/901724609580269569/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/901725118588399636/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/901726114249056306/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/901726183463469076/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/901784502362324992/temp.gif": null,
-            "https://c.tenor.com/r0cB5EMSG4cAAAAC/lego-wheny-little-brother.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/903196258515173436/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/903479440993034260/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/904246909139554354/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905731917788377118/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905732076001706024/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905732856138067978/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905733070613778442/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905733196799410186/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905733663671603200/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905733791211999232/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905734699996033074/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905734760259784734/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905735342886383626/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905735473404739654/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905735974405935154/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905736022028066856/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905736271551410187/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905736331341209610/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905736403533561906/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905736563370111016/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905737698428485652/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905737746931392512/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905739502297939979/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/904247035799154698/caption.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/905435429279522816/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906351350558896169/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906351984649572422/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906706311511670794/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906722973162012722/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906801640546398228/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906802785314541588/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906816241870733332/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906817232888291358/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906817251339038760/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906817441680736276/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906817445459820594/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906820612570382386/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906820700663320617/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906820755885539338/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906820848441262120/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906821114053918730/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906821319289622539/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906821676417818684/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906821679152517121/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906854473341743114/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906854796823253002/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906855594747625472/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906856374871416832/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906857110246158346/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906857464530624522/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906861764556247120/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906862327012409364/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906862727027384330/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906866079329030145/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906866237185863720/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906866330718838844/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/907177366718140427/514393245191634947_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/908161793979977739/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/910846923173429268/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/910847435700576256/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/925950023068426390/unknown.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/925950365428514836/514393245191634947_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/925950474958548992/514393245191634947_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/928480669439524934/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/928480735743053874/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/935093256700723210/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/935093365349941259/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/937627480431398912/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/947690281283776512/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/947691962549555230/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/947692066002067506/712243005519560736_470896999722516480.gif": null,
-            "https://c.tenor.com/9VpvLRHC5-IAAAAd/zyzz-zyzz-trolled.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/947706215985733713/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/947706364355051530/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/947706450841587732/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/947711665602961488/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/947711699706855474/712243005519560736_470896999722516480.gif": null,
-            "https://c.tenor.com/MmZxIILWyL4AAAAC/kitty-review-kitty.gif": null,
-            "https://c.tenor.com/2-dhm_j3BIgAAAAC/kitty-review-kitty.gif": null,
-            "https://c.tenor.com/_j23QV67yroAAAAC/kitty-review-cat.gif": null,
-            "https://c.tenor.com/fcnZ4XYicmIAAAAd/kitty.gif": null,
-            "https://c.tenor.com/ZrM6NS327DQAAAAd/kitty-review-cat-review.gif": null,
-            "https://c.tenor.com/U-zdn0WKfXAAAAAC/plus-kitty-review.gif": null,
-            "https://c.tenor.com/qoLNHHh64SgAAAAC/cat-music.gif": null,
-            "https://c.tenor.com/x_HH09EGTxwAAAAd/kitty-review-cat-review.gif": null,
-            "https://c.tenor.com/w42dhlxKq7kAAAAC/kitty-review.gif": null,
-            "https://c.tenor.com/RtHoxZDfww8AAAAC/kitty-review.gif": null,
-            "https://c.tenor.com/uNCatVzoVtQAAAAd/kitty-review-kitty.gif": null,
-            "https://c.tenor.com/RaiVsIUibZgAAAAd/kitty-review-ugly.gif": null,
-            "https://c.tenor.com/oypPy4ae_OYAAAAd/kitty-review-cat-review.gif": null,
-            "https://c.tenor.com/lfdNIF_8KSsAAAAC/kitty-review-cat.gif": null,
-            "https://c.tenor.com/CFJQEGK1aiUAAAAd/kitty-review-cat.gif": null,
-            "https://c.tenor.com/RuOBPHa4PZkAAAAd/kitty-review-bag.gif": null,
-            "https://c.tenor.com/QYGqkL-QcgcAAAAC/kitty-review-isnt-ballin.gif": null,
-            "https://c.tenor.com/oKrZintn9RsAAAAd/kitty-review-kitty.gif": null,
-            "https://c.tenor.com/ECAwQcWmgO4AAAAd/kitty-review.gif": null,
-            "https://media.discordapp.net/attachments/630563756317081630/806724451055960114/image0.gif": null,
-            "https://media.discordapp.net/attachments/659877816254464041/865679943954464828/image0.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/821714910546886667/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833317727015665664/reverse.gif": null,
-            "https://media.discordapp.net/attachments/744854780421341184/865236956086403092/image0.gif": null,
-            "https://media.discordapp.net/attachments/564544696995676177/792815301703499786/image0-1-5.gif": null,
-            "https://c.tenor.com/8uWeTZiGo5MAAAAC/esm-bot-esm-bot-try-to-function.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/826658318873395217/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/825954305441529896/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/825953182009393172/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/825953060261199872/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/825951200985088060/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/825946769006264350/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/825943952133193729/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/825937399455547432/caption.gif": null,
-            "https://media.discordapp.net/attachments/745789186237399121/825520578974187520/caption.gif": null,
-            "https://media.discordapp.net/attachments/516815557153259533/817511026978848768/image0.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/823122215896612885/caption.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/821714625044414474/caption.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/821713716139130890/caption.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/821712989316055100/caption.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/821712278474850304/caption.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/821712066342551552/caption.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/821711303537852476/caption.gif": null,
-            "https://media.discordapp.net/attachments/654768233827794960/818213943045783626/image0-30.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/821711032179359754/caption.gif": null,
-            "https://media.discordapp.net/attachments/399690081054490656/814193487427010660/image0-28.gif": null,
-            "https://media.discordapp.net/attachments/622172642832547840/814238012561031198/caption.gif": null,
-            "https://c.tenor.com/fN8DE-D3cJIAAAAd/get-fake-chinese-egg-man.gif": null,
-            "https://media.discordapp.net/attachments/798417821717102602/817828514765471767/caption.gif": null,
-            "https://media.discordapp.net/attachments/803784904164900885/806613254536298557/image0.gif": null,
-            "https://media.discordapp.net/attachments/787285636713152532/810749699157000212/caption-4.gif": null,
-            "https://media.discordapp.net/attachments/775752263981072414/806159140414029825/image0.gif": null,
-            "https://media.discordapp.net/attachments/692646329377357924/804048195080290304/caption.gif": null,
-            "https://media.discordapp.net/attachments/545732765996285967/806660849837670420/caption.gif": null,
-            "https://media.discordapp.net/attachments/754572464721494078/800977791771475978/caption-10.gif": null,
-            "https://media.discordapp.net/attachments/759192495782625292/806460891080032266/day_ruined.gif": null,
-            "https://media.discordapp.net/attachments/292144898658926592/806252217715654736/caption-4.gif": null,
-            "https://media.discordapp.net/attachments/749287801006325760/792667605592834048/image0_12.gif": null,
-            "https://c.tenor.com/cToCbgIE_v8AAAAd/snail-me.gif": null,
-            "https://media.discordapp.net/attachments/803441338208485427/803643163448836146/trumppard.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/779571911272824862/image0.gif": null,
-            "https://media.discordapp.net/attachments/754488572786114610/801649139204489226/tyler.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/801496000971145276/image0-10.gif": null,
-            "https://media.discordapp.net/attachments/790276520022769664/798095466948067359/image0-30.gif": null,
-            "https://images-ext-1.discordapp.net/external/fntMCgoJBSU8ShgHM8PsaPYdLNaWsrbx_GYW7WiyCZE/https/media.discordapp.net/attachments/775752263981072414/791504378707968030/image0.gif": null,
-            "https://media.discordapp.net/attachments/771342999560650782/779440686403289098/caption-29.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/780067953147117588/image1.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/721312967756480533/image0-2.gif": null,
-            "https://media.discordapp.net/attachments/724056437965455391/776307929561038868/image0-44.gif": null,
-            "https://media.discordapp.net/attachments/722446469063245825/767511196550168576/image0-4.gif": null,
-            "https://c.tenor.com/NXXMvotxEL4AAAAC/travis-touchdown-no-more-heroes.gif": null,
-            "https://c.tenor.com/Yfz3eq2ZLo0AAAAd/pee.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/871612654131765298/image0-57.gif": null,
-            "https://media.discordapp.net/attachments/546763235051700314/871602878823952444/image0.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/870695752345747506/speed.gif": null,
-            "https://media.discordapp.net/attachments/787379229380575272/867911774639386744/image0.gif": null,
-            "https://media.discordapp.net/attachments/560285839226175491/862187037100212235/image0.gif": null,
-            "https://media.discordapp.net/attachments/775752263981072414/826533341145858068/speed.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/841977124113219594/mmm.gif": null,
-            "https://media.discordapp.net/attachments/722288324328423457/833562680425316352/when.gif": null,
-            "https://media.discordapp.net/attachments/775752263981072414/816776900780883988/image0.gif": null,
-            "https://media.discordapp.net/attachments/240196923644968960/815792374638575676/EvVE4RKXcAU5_Wm_1.gif": null,
-            "https://media.discordapp.net/attachments/528927610630176783/813980676834721792/caption.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/830993546441654302/image0-2-3.gif": null,
-            "https://media.discordapp.net/attachments/752169779166576682/829583942255640576/caption-26.gif": null,
-            "https://media.discordapp.net/attachments/558816716600377355/826611549581213696/image0.gif": null,
-            "https://media.discordapp.net/attachments/796784028120383489/821357529027837992/caption.gif": null,
-            "https://media.discordapp.net/attachments/743684085062565908/816059666672779374/caption.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/826655141397659668/caption.gif": null,
-            "https://media.discordapp.net/attachments/542875308437798932/815270082031910962/image0-62.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/825942940185526312/caption.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/825940255488213022/caption.gif?width=488&height=473": null,
-            "https://media.discordapp.net/attachments/419309937328390148/824981958727172146/caption.gif": null,
-            "https://media.discordapp.net/attachments/618576227954982918/776840230430834698/image0-2.gif": null,
-            "https://media.discordapp.net/attachments/419309937328390148/823180766899863552/caption.gif": null,
-            "https://media.discordapp.net/attachments/719904374473883700/823157097415180348/caption.gif": null,
-            "https://media.discordapp.net/attachments/470168157148020756/810573725031465035/image0-16.gif": null,
-            "https://media.discordapp.net/attachments/546763235051700314/817607717757648896/image0.gif": null,
-            "https://media.discordapp.net/attachments/516504307902971904/818521700957290496/image0.gif": null,
-            "https://media.discordapp.net/attachments/306919445618491393/818613160377712650/speed.gif": null,
-            "https://media.discordapp.net/attachments/195225652696317975/817274832882237480/image0-4-6.gif": null,
-            "https://media.discordapp.net/attachments/781348134239338496/809149588811546754/image0-4.gif": null,
-            "https://media.discordapp.net/attachments/775752263981072414/815909052126330880/image0-7.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/814726070543712266/image0-23.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/812716495213821983/fo3.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/812195427339993098/46cda0587d68bcde7e67d91390d3ea6835ac93846f9cb0ad27fc9484952a34c4_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/376366713060720640/810964118671982672/dad.gif": null,
-            "https://media.discordapp.net/attachments/452219191580295168/808681899999756398/dog_go_voosh.gif": null,
-            "https://images-ext-2.discordapp.net/external/gQHyrNETCQdwWRvNAGftc0DfmHJpGEScSLirGVlrJVs/https/media.discordapp.net/attachments/467231287250255872/802243608215552000/image0-11-2.gif": null,
-            "https://media.discordapp.net/attachments/763261976049877022/799083787077156864/image0.gif": null,
-            "https://media.discordapp.net/attachments/433655086926004235/796776830513709086/oyrue.gif": null,
-            "https://c.tenor.com/YZ2ZXkr7bvwAAAAd/on-our-way-to-your-mom-parkour.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/771816837990056036/image0-52.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/772127629284999180/image0-21.gif": null,
-            "https://media.discordapp.net/attachments/399690081054490656/763415198911823872/image0.gif": null,
-            "https://media.discordapp.net/attachments/654857126002556944/763192979362938890/image0-95.gif": null,
-            "https://media.discordapp.net/attachments/534946402875211777/757667048028373043/image0-37-1.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/760216199584940062/pogchampion.gif": null,
-            "https://media.discordapp.net/attachments/366160654442299395/750169594525646958/image0-2.gif": null,
-            "https://media.discordapp.net/attachments/307353605608964096/749047331084566538/r.gif": null,
-            "https://images-ext-2.discordapp.net/external/KAQAnHk7GCthoQzTP-xjlqY1WJ8TEPYcE1RW8BRl49E/https/media.discordapp.net/attachments/713935664340795422/735860751931015209/caption.gif": null,
-            "https://c.tenor.com/4UkqRRjN2fwAAAAC/goopie-gifcaption.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/746392816413966376/image0.gif": null,
-            "https://media.discordapp.net/attachments/439573756248195074/739630644623048754/caption.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/738257738546806934/image0.gif": null,
-            "https://media.discordapp.net/attachments/587961939334922251/737992094228021299/image0-7.gif": null,
-            "https://media.discordapp.net/attachments/715477112437473352/724726187829493760/image0.gif": null,
-            "https://media.discordapp.net/attachments/704202033519132732/728267785171632306/image0.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/731057572970496050/image0-12.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/726335473374593085/Dab.gif": null,
-            "https://media.discordapp.net/attachments/714607970964734013/716029358023901244/1c9da2f.gif": null,
-            "https://media.discordapp.net/attachments/710317808222732321/719060429963264040/image0.gif": null,
-            "https://media.discordapp.net/attachments/285880764493725696/717811398289391616/image0-2-1_1.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/708148601427066940/image0.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/903257215652216862/temp.gif": null,
-            "https://c.tenor.com/9tYnZYEN2TUAAAAC/watch-yo-tone-tone.gif": null,
-            "https://c.tenor.com/VGWokGdwt-EAAAAC/the-voices-voices-in-my-head.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905773501552676874/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905772902580908042/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/899248394718044170/temp.gif": null,
-            "https://cdn.discordapp.com/attachments/846175975560839178/950205230774104074/846175975560839178_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/846175975560839178/950205511008149505/846175975560839178_470896999722516480.gif": null,
-            "https://c.tenor.com/maf-wjxmAKYAAAAd/sprigatito-weed.gif": null,
-            "https://c.tenor.com/BiyHjKuFjvYAAAAd/sprigatito-pokemon.gif": null,
-            "https://c.tenor.com/J3QNtQFXTrUAAAAC/owgowya-cat.gif": null,
-            "https://cdn.discordapp.com/attachments/846175975560839178/950234391311949865/846175975560839178_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/846175975560839178/950239652818845716/846175975560839178_470896999722516480.gif": null,
-            "https://c.tenor.com/9bDIZhIwuOAAAAAC/gamers-pronouns.gif": null,
-            "https://cdn.discordapp.com/attachments/712243005519560736/951254098156593152/712243005519560736_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/712243005519560736/951254331896786954/712243005519560736_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/703899761631166464/954268068891201586/703899761631166464_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/703899761631166464/954268595792281611/703899761631166464_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/703899761631166464/954269762253361172/703899761631166464_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/703899761631166464/954270143477850112/703899761631166464_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/703899761631166464/954271035384016917/703899761631166464_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/703899761631166464/954271225797025812/703899761631166464_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/703899761631166464/954271444676775996/703899761631166464_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/703899761631166464/954271509411692564/703899761631166464_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/712243005519560736/955301657523126302/712243005519560736_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/712243005519560736/955316160180682772/712243005519560736_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/712243005519560736/955316743495122955/712243005519560736_470896999722516480.gif": null
+        "day": {
+            "https://c.tenor.com/2ia9pQINPDQAAAAC/day-ruined.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/890020553270911016/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/889432100573421618/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/66rv4KLKAWcAAAAC/sonichu-thanos-rodrick-lalo-the-mask2kira-killer-queen.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/846641949590814740/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/813971285339668500/846245928130183208/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/846166935824629810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/841174282725883904/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/868896205978075156/905733307612930068/temp.gif": [
+                "868888972120702996",
+                "868896205978075156",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/868896205978075156/905733426924093480/temp.gif": [
+                "868888972120702996",
+                "868896205978075156",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/514393245191634947/821712989316055100/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/759192495782625292/806460891080032266/day_ruined.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/795238875677065228/837922193258053632/caption.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/954271689691254834/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/954272205615808522/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/954272258707296266/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ]
         },
-        "868888972120702996": {
-            "https://media.discordapp.net/attachments/868896205978075156/901005155267391488/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/903196258515173436/temp.gif": null,
-            "https://media.discordapp.net/attachments/868888972120702999/903196892979150858/temp.gif": null,
-            "https://media.discordapp.net/attachments/868888972120702999/903197080128983060/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/903479440993034260/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905732076001706024/caption.gif": null,
-            "https://media.discordapp.net/attachments/868896205978075156/905733307612930068/temp.gif": null,
-            "https://media.discordapp.net/attachments/868896205978075156/905733426924093480/temp.gif": null,
-            "https://media.discordapp.net/attachments/868896205978075156/905734120213200937/temp.gif": null,
-            "https://media.discordapp.net/attachments/868888972120702999/905789331040522240/868888972120702999_868888972120702996.gif": null,
-            "https://media.discordapp.net/attachments/868888972120702999/905789464448761876/868888972120702999_868888972120702996.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906801640546398228/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/868888972120702999/912532718133342288/868888972120702999_868888972120702996.gif": null,
-            "https://media.discordapp.net/attachments/868888972120702999/912533650921357352/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/928480735743053874/712243005519560736_470896999722516480.gif": null,
-            "https://c.tenor.com/buYvu18ruRwAAAAd/air-fryer-clearly-you-dont-own-an-air-fryer.gif": null,
-            "https://media.discordapp.net/attachments/868888972120702999/928577502841032754/868888972120702999_868888972120702996.gif": null,
-            "https://c.tenor.com/Xf1V_xSFEdcAAAAd/you-should-kill-yourself-now-kou.gif": null,
-            "https://c.tenor.com/oKrZintn9RsAAAAd/kitty-review-kitty.gif": null,
-            "https://c.tenor.com/rMMV5oYzRa4AAAAd/sprigatito-im-still-amazed-by-it.gif": null,
-            "https://c.tenor.com/VwPU4I0UefoAAAAd/weed-cat-i-love-weed.gif": null,
-            "https://c.tenor.com/iMPZD8Zg82QAAAAC/ok-and-mc-ride.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/855063181285392414/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/848196875488460830/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/848123440464789514/caption.gif": null,
-            "https://c.tenor.com/-9Rw--2ntDMAAAAC/epic-link-perm-fail.gif": null,
-            "https://c.tenor.com/RDQPH421sd4AAAAd/processing-esmbot.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/837922193258053632/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/827168255948226581/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/824109367392862219/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/823755865454280724/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/821714910546886667/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/821714552169299968/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/821713332952236072/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/821713051694006272/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/821711921735794698/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/821711138823077898/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/821710693623005194/caption.gif": null,
-            "https://c.tenor.com/DPFG1GRBDjIAAAAd/robert-de-niro-embed-fail.gif": null,
-            "https://media.discordapp.net/attachments/800349854152130570/816504884357759006/sportsbet.gif": null,
-            "https://c.tenor.com/JiMGsefwbekAAAAC/kys-kill-yourself.gif": null,
-            "https://c.tenor.com/rd_CpyUldQQAAAAC/troll-troll-face.gif": null,
-            "https://media.discordapp.net/attachments/654768233827794960/818213943045783626/image0-30.gif": null,
-            "https://c.tenor.com/Ip0683gyRNwAAAAC/stupid-love.gif": null,
-            "https://media.discordapp.net/attachments/787227153741381655/797803939130245140/LOL.gif": null,
-            "https://c.tenor.com/weB0PGdBKZgAAAAC/cope.gif": null,
-            "https://c.tenor.com/Go-E_BQRWZ8AAAAC/dylanntroll.gif": null,
-            "https://c.tenor.com/eglrsU536t8AAAAC/we-do-a-little-trollin.gif": null,
-            "https://media.discordapp.net/attachments/804524644643635264/804851793007738880/Gamestop_wallstreet.gif": null,
-            "https://c.tenor.com/p9lk5o_JGhMAAAAC/i-funny-gifcaption.gif": null,
-            "https://media.discordapp.net/attachments/381916320423215104/804456716740853851/99109e1-2.gif": null,
-            "https://media.discordapp.net/attachments/396090984242479114/804539939597451285/england.gif": null,
-            "https://media.discordapp.net/attachments/803441338208485427/803643163448836146/trumppard.gif": null,
-            "https://media.discordapp.net/attachments/751877825178370099/799996199657930772/image0_1.gif": null,
-            "https://media.discordapp.net/attachments/751877825178370099/799996170692067378/image0.gif": null,
-            "https://media.discordapp.net/attachments/439519668819066880/676413470912020500/image0-20-1.gif": null,
-            "https://media.discordapp.net/attachments/600659917459816449/692400681931505664/mha.gif": null,
-            "https://images-ext-2.discordapp.net/external/Yrss94ufxPQ8-jYkf7vDi1RFpHANH0Hsrq7uZBpFrnU/https/media.discordapp.net/attachments/439519668819066880/753374556395405460/3d580297d90a002e26dd27264026129d404192ccc3e52a29f9276e18ae8f24e0_1.gif.gif": null,
-            "https://c.tenor.com/c5hB9oTcLLsAAAAC/squidward-squid-edward.gif": null,
-            "https://c.tenor.com/ylVBbeKIl64AAAAC/cope-seethe-cope-cope.gif": null,
-            "https://c.tenor.com/RcF158WTRJ4AAAAC/cryaboutit-domino.gif": null,
-            "https://c.tenor.com/nWnUEov7yIoAAAAC/crying-cat.gif": null,
-            "https://c.tenor.com/NCsca_exmC0AAAAC/cry-about-it.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/801173972195737601/image0-9.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/801173971172851722/image0-4-1-1.gif": null,
-            "https://media.discordapp.net/attachments/775752263981072414/801150788021649428/image0-5_1.gif": null,
-            "https://media.discordapp.net/attachments/439519668819066880/799423960529633360/freeze.gif": null,
-            "https://c.tenor.com/1z3hj4JGd7QAAAAC/my-cat-when-it-once-again-lets-its-gaurd-down-pet.gif": null,
-            "https://media.discordapp.net/attachments/648400331583258631/665996766017224716/image0-10-1.gif": null,
-            "https://media.discordapp.net/attachments/666676467723272212/798944916679163934/image0.gif": null,
-            "https://c.tenor.com/RZQU1_c6suwAAAAd/bodeguys-you-can-be-racist-to-me.gif": null,
-            "https://c.tenor.com/dgc-LAOnxT0AAAAC/angry-look-angry.gif": null,
-            "https://c.tenor.com/bahRI6W2bAsAAAAC/cross-angry.gif": null,
-            "https://c.tenor.com/aYWMDPzj7JsAAAAC/cross-angry.gif": null,
-            "https://c.tenor.com/yPwxHNp9bmUAAAAC/cross-angry.gif": null,
-            "https://media.discordapp.net/attachments/719904374473883700/798532585612509224/oi_l.gif": null,
-            "https://media.discordapp.net/attachments/456230331507277824/789951717952192522/image0.gif": null,
-            "https://media.discordapp.net/attachments/498943000353964032/765694395579760670/image0.gif": null,
-            "https://c.tenor.com/x9-rb7oIGF4AAAAC/me-looking-for-funny-looking-for-the-funny.gif": null,
-            "https://c.tenor.com/8UpMdIyCN8UAAAAC/wake-the-fuck-up-crewmate-we-have-an-imposter-to-eject.gif": null,
-            "https://c.tenor.com/KoraOVopTMsAAAAd/when-the-imposter-is-sus-jerma.gif": null,
-            "https://media.discordapp.net/attachments/724975122842255471/776355795503546418/image0-1.gif": null,
-            "https://media.discordapp.net/attachments/724055819548622968/752389344991510608/image0-27.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/743936500147814451/Koko.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/748856543553781780/image04.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/753005224733573221/image0-90.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/752099906692448338/Tightlippedlikeableredpanda_0234cf_7950774.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/744977903980380190/image1-1.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/744977888402735185/image0-1-1.gif": null,
-            "https://media.discordapp.net/attachments/825782329384763412/838528290024718346/image0.gif": null,
-            "https://cdn.discordapp.com/attachments/868888972120702999/950730646366609408/868888972120702999_868888972120702996.gif": null
+        "ruined": {
+            "https://c.tenor.com/2ia9pQINPDQAAAAC/day-ruined.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/759192495782625292/806460891080032266/day_ruined.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
         },
-        "741169124817764372": {
-            "https://media.discordapp.net/attachments/712243005519560736/901724609580269569/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/901725118588399636/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/901726183463469076/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/901739986536263680/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/901740795495850015/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/901744140499427328/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/901744254605471794/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/901785601420976138/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/901785753657421844/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/901785809538134046/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/901785889913581578/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/901785975561261076/temp.gif": null,
-            "https://c.tenor.com/1yTfuVzi8GkAAAAC/jarvis-lovecraft.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/902024690653085696/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/902025004068266056/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/902025292665716816/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/902034394657718312/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/902034481509183528/temp.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/902129591429234718/temp.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/902129610194563072/temp.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/902130340070559744/temp.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/902130379308277810/temp.gif": null,
-            "https://c.tenor.com/Io5XUy25djYAAAAd/coping-harder.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/903252462343970856/temp.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/903252638215335986/temp.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/903252827072249886/temp.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/903253031133540362/temp.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905767720090468362/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905767764420091984/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905767789690781716/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905767814487482388/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/630306461330964495/816765020406022175/image0.gif": null,
-            "https://c.tenor.com/VGWokGdwt-EAAAAC/the-voices-voices-in-my-head.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905768215773339678/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905769330103439390/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905769617945935902/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905769696991797288/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905770040064868352/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905770094066561034/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905770286333460490/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905770496669388820/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905770569910329344/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905772068707110932/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905772114970312744/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905772654273896498/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905772692400140328/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905772730547339265/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905772768036003890/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905772857450192936/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905772902580908042/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905772942678450216/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905773449635569684/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905773501552676874/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905773551766880276/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906351350558896169/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906706311511670794/712243005519560736_470896999722516480.gif": null,
-            "https://c.tenor.com/tMT1R_dfec4AAAAC/yes-chad.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/906719465029378078/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/906721689637900339/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/906722167507542076/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/906722535251517470/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906802785314541588/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/909720061600755712/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/910846923173429268/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/910847279592775710/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/910847435700576256/712243005519560736_470896999722516480.gif": null,
-            "https://c.tenor.com/fDPxJ6UJG24AAAAd/wavetro-wavetro-hq.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/910850316818341888/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/912679114568265808/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/912679242008002570/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/912679336744730684/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/912679733609775134/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/912679851339702303/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/912679890459963402/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/912680185621540874/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/925950474958548992/514393245191634947_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/948435878596976671/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/948436469914173521/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/948436502793302086/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/948437181498794034/841208671169675354_741169124817764372.gif": null,
-            "https://c.tenor.com/oE3BGDgwH3UAAAAd/kitty-review.gif": null,
-            "https://media.discordapp.net/attachments/836423592345731102/949225469990014977/836423592345731102_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/836423592345731102/949225592853778452/836423592345731102_741169124817764372.gif": null,
-            "https://c.tenor.com/etRsyIAAJpAAAAAC/goodbye-chat-chat.gif": null,
-            "https://media.discordapp.net/attachments/836423592345731102/949226187446685726/836423592345731102_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/949226400928387082/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/470168157148020756/810573725031465035/image0-16.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/949226799198507058/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/836423592345731102/949226870640099378/836423592345731102_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/949236790911447110/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/949247174095552532/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/949247246363426816/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/949247548504293416/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/949247605580386384/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/949248054257659904/869864347449577512_741169124817764372.gif": null,
-            "https://c.tenor.com/oKrZintn9RsAAAAd/kitty-review-kitty.gif": null,
-            "https://c.tenor.com/ECAwQcWmgO4AAAAd/kitty-review.gif": null,
-            "https://media.discordapp.net/attachments/702322144041893918/800242058781786142/image0-8.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/857978718692966460/caption.gif": null,
-            "https://images-ext-2.discordapp.net/external/j3Bq9BSnc8441tDjnEjFh80kcZ8qXV09q3FkYIhgOxs/https/media.discordapp.net/attachments/680538515318112257/800985707111907348/image0-1-1-1.gif": null,
-            "https://c.tenor.com/j7noyQoMzdsAAAAd/esmbot-robot-dies.gif": null,
-            "https://c.tenor.com/NPH5OtylyeQAAAAd/esmbot-es.gif": null,
-            "https://c.tenor.com/Vl3mAh_WsGMAAAAd/esmbot-cr7.gif": null,
-            "https://c.tenor.com/lBAI8N_loT8AAAAC/esmbot-when.gif": null,
-            "https://c.tenor.com/tGnOEJxctyUAAAAC/esmbot.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/952499136110932008/869864347449577512_741169124817764372.gif": null,
-            "https://c.tenor.com/KUgpgKkWNMEAAAAC/esmbot.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953223460727959552/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953224461702815764/869864347449577512_741169124817764372.gif": null,
-            "https://c.tenor.com/5oztqPv562kAAAAd/esmbot-image.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953225282452619284/flip.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953255925953753138/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953256067410853918/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953256278954749972/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/953256278954749972/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953256966183075840/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953257262670037052/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953257717357760532/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953257813885468712/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/841208671169675354/953258252819394580/841208671169675354_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953258391806033920/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953258566448451654/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906854796823253002/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/801496000971145276/image0-10.gif": null,
-            "https://media.discordapp.net/attachments/704202033519132732/728267785171632306/image0.gif": null,
-            "https://media.discordapp.net/attachments/745789186237399121/825520578974187520/caption.gif": null,
-            "https://media.discordapp.net/attachments/836423592345731102/841252549444501524/mg9avb9dbht.gif": null,
-            "https://c.tenor.com/6dGnOUKfCxgAAAAC/fifi-the-doggo-doggo.gif": null,
-            "https://c.tenor.com/RtHoxZDfww8AAAAC/kitty-review.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/954266900861444096/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/954267057132810250/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/954267219641122816/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/954271689691254834/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/954272205615808522/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/954272258707296266/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/954281750543085618/869864347449577512_741169124817764372.gif": null
+        "sex": {
+            "https://media.discordapp.net/attachments/712243005519560736/899241334534209556/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/514393245191634947/896722284667080734/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/ezXkPh9ixiIAAAAd/dawko-sex2.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/642742386190974986/799860274747670580/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/oe1fBkTZHasAAAAC/cat-no.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "antoni": {
+            "https://media.discordapp.net/attachments/712243005519560736/900349123209887764/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/893832451741351986/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/870483776931782666/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/870483789078487060/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/866529312097304619/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/865144292389421086/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/857984267136794624/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/853874492116172841/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/851653004633309194/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/842697412971200512/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/833315732477181972/freeze.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/901784502362324992/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/901785753657421844/temp.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/901785975561261076/temp.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906817441680736276/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906817445459820594/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "429305856241172480"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906820612570382386/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906820700663320617/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906820755885539338/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906820848441262120/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906821114053918730/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906821319289622539/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906821676417818684/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "429305856241172480"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906821679152517121/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/909720061600755712/841208671169675354_741169124817764372.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/912679114568265808/841208671169675354_741169124817764372.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/948435878596976671/841208671169675354_741169124817764372.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/948436469914173521/841208671169675354_741169124817764372.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/948436502793302086/841208671169675354_741169124817764372.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/948437181498794034/841208671169675354_741169124817764372.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/949226799198507058/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ]
+        },
+        "way": {
+            "https://media.discordapp.net/attachments/712243005519560736/900349123209887764/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/847671426084765716/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/796176182117924864/802652138660298832/ezgif-3-fbd0e05adcbf.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/334106551466065921/776610991827058688/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/690819748929470475/721297668315283477/lactose.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/683757872961814548/692950545954111489/image0-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/901739986536263680/temp.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/912679733609775134/841208671169675354_741169124817764372.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://c.tenor.com/YZ2ZXkr7bvwAAAAd/on-our-way-to-your-mom-parkour.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/954267057132810250/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ]
+        },
+        "suck": {
+            "https://media.discordapp.net/attachments/712243005519560736/900349123209887764/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/851667157547745300/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/868888972120702999/903196892979150858/temp.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "893293074413916230"
+            ]
+        },
+        "dick": {
+            "https://media.discordapp.net/attachments/712243005519560736/900349123209887764/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/836817060331388938/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "banished": {
+            "https://media.discordapp.net/attachments/712243005519560736/900601768268951613/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ]
+        },
+        "portal": {
+            "https://media.discordapp.net/attachments/712243005519560736/900601768268951613/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ]
+        },
+        "ending": {
+            "https://media.discordapp.net/attachments/712243005519560736/900601768268951613/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ]
+        },
+        "tom": {
+            "https://media.discordapp.net/attachments/712243005519560736/899248394718044170/temp.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/869082890951077899/897455046684463144/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/890501639100842004/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/827381686568353852/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/800349854152130570/816504884357759006/sportsbet.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/868888972120702999/903197080128983060/temp.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/514393245191634947/905435429279522816/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/514393245191634947/821711032179359754/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/795238875677065228/821710693623005194/caption.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ],
+            "https://cdn.discordapp.com/attachments/703899761631166464/954268068891201586/703899761631166464_470896999722516480.gif": [
+                "470896999722516480",
+                "703899761631166464",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/703899761631166464/954268595792281611/703899761631166464_470896999722516480.gif": [
+                "470896999722516480",
+                "703899761631166464",
+                "893293074413916230"
+            ]
+        },
+        "shared": {
+            "https://media.discordapp.net/attachments/712243005519560736/899248394718044170/temp.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ]
+        },
+        "reel": {
+            "https://media.discordapp.net/attachments/712243005519560736/899248394718044170/temp.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ]
+        },
+        "jarvis": {
+            "https://media.discordapp.net/attachments/712243005519560736/893667384437669960/e79667e2-227b-11ec-855f-5cf370a080b0.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/842699267847356436/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/842698629226430464/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/841203026614419466/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/k1fTLZ2G_wgAAAAC/jarvis-vtuber.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/Yq0JQSesikkAAAAC/jarvis-discord.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/B0EuT4qUS5MAAAAC/amogus-jarvis.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/YR6JrzjWoBwAAAAC/jarvis-tony-stark.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/834081391246704650/JarvisType.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/AaeTdYoo0hkAAAAC/based.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/1yTfuVzi8GkAAAAC/jarvis-lovecraft.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/902024690653085696/temp.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/902025292665716816/temp.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/902034394657718312/temp.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/798417821717102602/817828514765471767/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/722446469063245825/767511196550168576/image0-4.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/528927610630176783/813980676834721792/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "type": {
+            "https://media.discordapp.net/attachments/712243005519560736/893667384437669960/e79667e2-227b-11ec-855f-5cf370a080b0.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/Yq0JQSesikkAAAAC/jarvis-discord.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/834081391246704650/JarvisType.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906817441680736276/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906817445459820594/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "429305856241172480"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906820612570382386/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906820700663320617/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906820755885539338/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906820848441262120/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906821114053918730/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906821319289622539/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/833317727015665664/reverse.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/528927610630176783/813980676834721792/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "tilde": {
+            "https://media.discordapp.net/attachments/712243005519560736/893667384437669960/e79667e2-227b-11ec-855f-5cf370a080b0.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/834081391246704650/JarvisType.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "period": {
+            "https://media.discordapp.net/attachments/712243005519560736/893667384437669960/e79667e2-227b-11ec-855f-5cf370a080b0.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/834081391246704650/JarvisType.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "colon": {
+            "https://media.discordapp.net/attachments/712243005519560736/893667384437669960/e79667e2-227b-11ec-855f-5cf370a080b0.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/834081391246704650/JarvisType.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "pipe": {
+            "https://media.discordapp.net/attachments/712243005519560736/893667384437669960/e79667e2-227b-11ec-855f-5cf370a080b0.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/834081391246704650/JarvisType.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/366160654442299395/750169594525646958/image0-2.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "semicolon": {
+            "https://media.discordapp.net/attachments/712243005519560736/893667384437669960/e79667e2-227b-11ec-855f-5cf370a080b0.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/875619721989459978/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/834081391246704650/JarvisType.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "enter": {
+            "https://media.discordapp.net/attachments/712243005519560736/893667384437669960/e79667e2-227b-11ec-855f-5cf370a080b0.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/846257227161010196/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/834081391246704650/JarvisType.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/528927610630176783/813980676834721792/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "wumpis": {
+            "https://media.discordapp.net/attachments/841208671169675354/899219573549694986/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ]
+        },
+        "waiting": {
+            "https://media.discordapp.net/attachments/841208671169675354/899219573549694986/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/853874492116172841/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/833285572898193458/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/831025905014931508/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/Ctz1jO-y0fcAAAAC/waiting-for-memes-memes.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/TPMYmwHdYv8AAAAC/reaction-discord.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/UeBhTeSpZlkAAAAd/doing-youre.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "handwritten": {
+            "https://media.discordapp.net/attachments/841208671169675354/899219573549694986/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ]
+        },
+        "letter": {
+            "https://media.discordapp.net/attachments/841208671169675354/899219573549694986/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ]
+        },
+        "jonas": {
+            "https://media.discordapp.net/attachments/841208671169675354/899219573549694986/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ]
+        },
+        "martensson": {
+            "https://media.discordapp.net/attachments/841208671169675354/899219573549694986/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ]
+        },
+        "ceo": {
+            "https://media.discordapp.net/attachments/841208671169675354/899219573549694986/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/795238875677065228/848196875488460830/caption.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ]
+        },
+        "mojang": {
+            "https://media.discordapp.net/attachments/841208671169675354/899219573549694986/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ]
+        },
+        "studios": {
+            "https://media.discordapp.net/attachments/841208671169675354/899219573549694986/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/843007259025735701/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "wants": {
+            "https://media.discordapp.net/attachments/841208671169675354/899219573549694986/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/885490511933239328/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/863938558708285450/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "listen": {
+            "https://media.discordapp.net/attachments/841208671169675354/899219573549694986/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/831017439546441768/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/Zppcgi1q1n4AAAAd/he-was.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "community": {
+            "https://media.discordapp.net/attachments/841208671169675354/899219573549694986/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ]
+        },
+        "need": {
+            "https://media.discordapp.net/attachments/841208671169675354/899219573549694986/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/846257227161010196/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/813971285339668500/846228583936163871/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/836423592345731102/841252549444501524/mg9avb9dbht.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "weekly": {
+            "https://media.discordapp.net/attachments/841208671169675354/899219573549694986/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ]
+        },
+        "letters": {
+            "https://media.discordapp.net/attachments/841208671169675354/899219573549694986/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/420401922797993984/662138229801222177/cap.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "caption": {
+            "https://media.discordapp.net/attachments/841208671169675354/899226714167709706/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/891605367967059998/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/Yq0JQSesikkAAAAC/jarvis-discord.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/B0EuT4qUS5MAAAAC/amogus-jarvis.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/7YNdeRzktjMAAAAC/darthy-gexxel.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/IRbgeS8CymAAAAAC/darthy-gexxel.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/334106551466065921/776610991827058688/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/901785975561261076/temp.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/868888972120702999/903197080128983060/temp.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/912679114568265808/841208671169675354_741169124817764372.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/745789186237399121/825520578974187520/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/lBAI8N_loT8AAAAC/esmbot-when.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "217233850101661697"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/953258566448451654/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/712243005519560736/955316160180682772/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/712243005519560736/955316743495122955/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ]
+        },
+        "wear": {
+            "https://media.discordapp.net/attachments/841208671169675354/899226714167709706/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ]
+        },
+        "mask": {
+            "https://media.discordapp.net/attachments/841208671169675354/899226714167709706/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/66rv4KLKAWcAAAAC/sonichu-thanos-rodrick-lalo-the-mask2kira-killer-queen.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "smile": {
+            "https://media.discordapp.net/attachments/841208671169675354/899226714167709706/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ]
+        },
+        "hours": {
+            "https://media.discordapp.net/attachments/841208671169675354/899226714167709706/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/753202701969653792/760116616448180264/7064d8a00b2a3bad425cf70a0954c2863f2a5b89b3e1b0bc53b7497c7c08e471_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/334106551466065921/776610991827058688/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/653443436187484203/736432598758195280/moses.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "time": {
+            "https://media.discordapp.net/attachments/841208671169675354/899226714167709706/caption.gif": [
+                "893315253989933096",
+                "893315253989933099",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/875776548144312441/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/875776880215752734/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/885490511933239328/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/877692508023431188/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/866529312097304619/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/865144292389421086/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/813971285339668500/846246070194667530/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/756736839502528522/840066549531803708/12840835aee48a7de30a4f4de189bae5f3b93ca55d7fda86bca2eef11007579e_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/399633269022261261/831725029598953480/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/149987585102577675/765784255770263583/image0-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/404008850321047552/800555424138788874/image0-5.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/3u4WVGVARDgAAAAd/funny-happy-meal.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/712640346852687954/720608105418719242/f_00869e.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/901724609580269569/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/901740795495850015/temp.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/715477112437473352/724726187829493760/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "number": {
+            "https://media.discordapp.net/attachments/841208671169675354/893832451741351986/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "gay": {
+            "https://media.discordapp.net/attachments/841208671169675354/893832451741351986/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/869082890951077899/897455046684463144/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/866529312097304619/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/865144292389421086/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/857984267136794624/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/593661199158083595/704539325173465088/image0-1-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/903479440993034260/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906817441680736276/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906817445459820594/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "429305856241172480"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906820612570382386/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906820700663320617/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906820755885539338/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906820848441262120/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906821114053918730/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906821319289622539/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906821676417818684/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "429305856241172480"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906821679152517121/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/909720061600755712/841208671169675354_741169124817764372.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/949226799198507058/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/703899761631166464/954271509411692564/703899761631166464_470896999722516480.gif": [
+                "470896999722516480",
+                "703899761631166464",
+                "893293074413916230"
+            ]
+        },
+        "appended": {
+            "https://media.discordapp.net/attachments/841208671169675354/893832451741351986/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "releasing": {
+            "https://media.discordapp.net/attachments/712243005519560736/898083343596396554/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "trained": {
+            "https://media.discordapp.net/attachments/712243005519560736/898083343596396554/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "fire": {
+            "https://media.discordapp.net/attachments/712243005519560736/898083343596396554/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/399690081054490656/827532032379977758/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "ants": {
+            "https://media.discordapp.net/attachments/712243005519560736/898083343596396554/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/738548949488762954/834957630203494460/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/341283238049742858/800798098355257344/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "homeless": {
+            "https://media.discordapp.net/attachments/712243005519560736/898083343596396554/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/858397792695091200/ezgif-1-af9f5165c482.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "man": {
+            "https://media.discordapp.net/attachments/712243005519560736/898083343596396554/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/654882504360067073/884137552561451068/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/IvYRFke6tqkAAAAC/not-funny-big-chungus.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/hK4RVDCZvgcAAAAd/door-repair.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/507526277918621697/713657813729017866/9b5bc7b6786526338f6320ad61230255099a6487c6d5bcc689141ab0bc8075e3_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/LC65Kv_eyVMAAAAC/big-chungus.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/905770094066561034/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ]
+        },
+        "blinking": {
+            "https://media.discordapp.net/attachments/712243005519560736/898083343596396554/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "coordinates": {
+            "https://media.discordapp.net/attachments/712243005519560736/898083343596396554/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "binary": {
+            "https://media.discordapp.net/attachments/712243005519560736/898083343596396554/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://cdn.discordapp.com/attachments/846175975560839178/950234391311949865/846175975560839178_470896999722516480.gif": [
+                "470896999722516480",
+                "846175975560839178",
+                "893293074413916230"
+            ]
+        },
+        "gangstalkers": {
+            "https://media.discordapp.net/attachments/712243005519560736/898083343596396554/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "za": {
+            "https://c.tenor.com/6fytJzsJEWIAAAAd/croatia-za-dom-spremni.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "dom": {
+            "https://c.tenor.com/6fytJzsJEWIAAAAd/croatia-za-dom-spremni.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "spremni": {
+            "https://c.tenor.com/6fytJzsJEWIAAAAd/croatia-za-dom-spremni.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "cubic": {
+            "https://media.discordapp.net/attachments/712243005519560736/898494344066109460/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "splines": {
+            "https://media.discordapp.net/attachments/712243005519560736/898494344066109460/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "valheim": {
+            "https://media.discordapp.net/attachments/419309723373010958/897997315023986728/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "fom": {
+            "https://media.discordapp.net/attachments/514393245191634947/897470188176441344/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/893350326307004426/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "staring": {
+            "https://media.discordapp.net/attachments/514393245191634947/897470188176441344/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "last": {
+            "https://media.discordapp.net/attachments/514393245191634947/897470188176441344/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/891605367967059998/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/544146545797234688/876674272947470376/image0-8.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/759468968397504512/840564756334641162/image0-6.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/722288324328423457/817472314757218384/image0-5.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "messages": {
+            "https://media.discordapp.net/attachments/514393245191634947/897470188176441344/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/841182864753688596/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/841182663209254922/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/841182561086734386/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/795238875677065228/848123440464789514/caption.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ]
+        },
+        "having": {
+            "https://media.discordapp.net/attachments/514393245191634947/897470188176441344/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/pmlN9tTyOwcAAAAd/discord-mods-discord.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/901785975561261076/temp.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/902129610194563072/temp.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/514393245191634947/905435429279522816/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "idea": {
+            "https://media.discordapp.net/attachments/514393245191634947/897470188176441344/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/857978718692966460/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/334106551466065921/776610991827058688/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/901785975561261076/temp.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ]
+        },
+        "whats": {
+            "https://media.discordapp.net/attachments/514393245191634947/897470188176441344/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/842699267847356436/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/648704600437948421/743936500147814451/Koko.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ]
+        },
+        "happening": {
+            "https://media.discordapp.net/attachments/514393245191634947/897470188176441344/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "doesnt": {
+            "https://media.discordapp.net/attachments/514393245191634947/897470188176441344/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/726995202773876857/862363985953292338/image0-89.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/845301073623384064/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/833316144865083402/freeze.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/724976219757609030/767037615999942666/image0-45.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/RIIFhLU3EAsAAAAC/magically-compression.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/197619940340006912/818748708669489162/no_loud.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://i.redd.it/51uur6ukn0m61.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/868896205978075156/905734120213200937/temp.gif": [
+                "868888972120702996",
+                "868896205978075156",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906706311511670794/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://c.tenor.com/oE3BGDgwH3UAAAAd/kitty-review.gif": [
+                "741169124817764372",
+                "836423592345731102",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/RtHoxZDfww8AAAAC/kitty-review.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/833317727015665664/reverse.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "scroll": {
+            "https://media.discordapp.net/attachments/514393245191634947/897470188176441344/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "concept": {
+            "https://media.discordapp.net/attachments/514393245191634947/897470188176441344/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "past": {
+            "https://media.discordapp.net/attachments/514393245191634947/897470188176441344/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://images-ext-1.discordapp.net/external/37iFP5z9rd4ybL0Q84Sy4XxMQpVbAfCBONrxlqwpm4o/https/media.discordapp.net/attachments/764218776706613289/765177287602601984/image0.gif?width=481&height=406": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/149987585102577675/765784255770263583/image0-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/795238875677065228/848123440464789514/caption.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ]
+        },
+        "events": {
+            "https://media.discordapp.net/attachments/514393245191634947/897470188176441344/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "dialogue": {
+            "https://media.discordapp.net/attachments/514393245191634947/897470188176441344/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "making": {
+            "https://media.discordapp.net/attachments/869082890951077899/897455046684463144/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/827381686568353852/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/857978718692966460/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/843007259025735701/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/AaeTdYoo0hkAAAAC/based.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/jclBVgW144UAAAAd/second-graders-final-stand.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/sEbTUPDMAuwAAAAd/monkey-presentable.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/660619913056223242/772691965174349844/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "conversation": {
+            "https://media.discordapp.net/attachments/869082890951077899/897455046684463144/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/514393245191634947/905435429279522816/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "loves": {
+            "https://media.discordapp.net/attachments/869082890951077899/897455046684463144/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "mathematicians": {
+            "https://media.discordapp.net/attachments/841208671169675354/897025959889346611/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "getting": {
+            "https://media.discordapp.net/attachments/841208671169675354/897025959889346611/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/dZ3RePDJvd8AAAAC/get-real-getting-real.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/66rv4KLKAWcAAAAC/sonichu-thanos-rodrick-lalo-the-mask2kira-killer-queen.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/851653004633309194/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/851031646324654080/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/768461240028627004/image0-2.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "sent": {
+            "https://media.discordapp.net/attachments/841208671169675354/897025959889346611/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/866529312097304619/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/648704600437948421/741378843108966490/you_are_about_to_die.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/710317808222732321/716461610532864080/c1d31a061163938a9e08a7f5e89ff18b581a1fe461af51185d250a2501b6eccb_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "hell": {
+            "https://media.discordapp.net/attachments/841208671169675354/897025959889346611/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/654882504360067073/884137552561451068/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/710317808222732321/716461610532864080/c1d31a061163938a9e08a7f5e89ff18b581a1fe461af51185d250a2501b6eccb_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "maths": {
+            "https://media.discordapp.net/attachments/841208671169675354/897025959889346611/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/419309723373010958/845950932390379540/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "fucking": {
+            "https://media.discordapp.net/attachments/841208671169675354/897025959889346611/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/885490511933239328/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/865240078024179732/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/857978718692966460/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/843007259025735701/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/845301073623384064/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/844431317328068659/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/775752263981072414/801150788021649428/image0-5_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/751618423238426685/769264649203875860/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/767883689311862784/767883703954702366/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/738548949488762954/834957630203494460/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/427458548180451339/755834950674284585/image0-51.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/901784502362324992/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/905770496669388820/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/912679114568265808/841208671169675354_741169124817764372.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/514393245191634947/821711032179359754/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/754488572786114610/801649139204489226/tyler.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/870695752345747506/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "stupid": {
+            "https://media.discordapp.net/attachments/841208671169675354/897025959889346611/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/865240078024179732/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/AaeTdYoo0hkAAAAC/based.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/738548949488762954/834957630203494460/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/240196923644968960/815792374638575676/EvVE4RKXcAU5_Wm_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "bruh": {
+            "https://media.discordapp.net/attachments/514393245191634947/895942839261888522/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/853875415218126858/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/912679242008002570/841208671169675354_741169124817764372.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ]
+        },
+        "cope": {
+            "https://c.tenor.com/Zv7uuLEgr4IAAAAd/walter-walter-white.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/895447083463606272/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/848924528901357588/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/Yq0JQSesikkAAAAC/jarvis-discord.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/weB0PGdBKZgAAAAC/cope.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/CHC6gl8ef60AAAAd/skill-issue-ratio.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/464249518729330688/834906206799003729/caption-2.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/516815557153259533/817511026978848768/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/ylVBbeKIl64AAAAC/cope-seethe-cope-cope.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ]
+        },
+        "creating": {
+            "https://media.discordapp.net/attachments/712243005519560736/895447083463606272/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/864419486538006528/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/851653004633309194/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "whitelazer": {
+            "https://media.discordapp.net/attachments/712243005519560736/895447083463606272/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/875619721989459978/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/902025292665716816/temp.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/902034394657718312/temp.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ]
+        },
+        "subliminal": {
+            "https://media.discordapp.net/attachments/712243005519560736/895447083463606272/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "mind": {
+            "https://media.discordapp.net/attachments/712243005519560736/895447083463606272/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "order": {
+            "https://media.discordapp.net/attachments/712243005519560736/895447083463606272/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/2Crx_8CF_-YAAAAd/ifunny-necronomicon.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/753202701969653792/760116616448180264/7064d8a00b2a3bad425cf70a0954c2863f2a5b89b3e1b0bc53b7497c7c08e471_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/347254691966615552/801095491550314526/f64709d1060bb123f8ce3bc2c7eb16cbcdc121491f6bde95a15109ba65974010_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/RaiVsIUibZgAAAAd/kitty-review-ugly.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/648400331583258631/665996766017224716/image0-10-1.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ]
+        },
+        "get": {
+            "https://c.tenor.com/pzpUPfUTNwoAAAAC/get-real-scott-the-woz.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/893349960400121856/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/890501639100842004/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/5mtsM96LdrAAAAAC/get-real-nintendo.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/847671426084765716/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/-qHZZdSEWX4AAAAd/bobux.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/b-NZGgbBMqAAAAAC/jerma-germaphobe.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/d6XZhVcT1x4AAAAC/get-real-cat.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/Jy6WtdF_gJ0AAAAd/imposter-among-us.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/675497549020397568/802131640360108092/image0-12-2.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/0LIEs1v5yXUAAAAC/getreal.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/861429532234219540/874663606317350983/get_breaded.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/278323568998350850/867225135152103504/caption-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/t0_J2zRZbrUAAAAd/get-real-guilty-gear-strive.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/9-C9qXQ_qisAAAAC/mac-macthollomew.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/482958702211497994/838469511694778368/image0-8.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/EGmbkFPw4m4AAAAC/get-real-vaporeon.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/498634123347361812/836231653587288104/get_real.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/RIIFhLU3EAsAAAAC/magically-compression.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/UOqYEPA6xVoAAAAd/get-real-meme.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/D1Lr5qmW2UMAAAAC/get-real-jungle.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/csxVZv7SrQIAAAAd/get-real-trombone.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/722288324328423457/817472314757218384/image0-5.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://images-ext-1.discordapp.net/external/CAPid6l3z8Qgbs3RNaNawv0dPUN3_oK7VetOQjb2z0E/https/media.discordapp.net/attachments/675497549020397568/802131640360108092/image0-12-2.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/296056831514509312/732287416802738247/living_room.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/hK4RVDCZvgcAAAAd/door-repair.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/727555194942128190/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/296056831514509312/712561755066466345/zoo.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/902130340070559744/temp.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/902130379308277810/temp.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/630306461330964495/816765020406022175/image0.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "141388048037314560"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/905768215773339678/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/912679733609775134/841208671169675354_741169124817764372.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://c.tenor.com/fN8DE-D3cJIAAAAd/get-fake-chinese-egg-man.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/830993546441654302/image0-2-3.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/654857126002556944/763192979362938890/image0-95.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://cdn.discordapp.com/attachments/712243005519560736/951254331896786954/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/954267219641122816/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ]
+        },
+        "real": {
+            "https://c.tenor.com/pzpUPfUTNwoAAAAC/get-real-scott-the-woz.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/5mtsM96LdrAAAAAC/get-real-nintendo.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/865144899606282280/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/wkynFFZgqLoAAAAd/bobux-0bobux.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/d6XZhVcT1x4AAAAC/get-real-cat.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/343215734035316737/804900417447919686/image0_3.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/0LIEs1v5yXUAAAAC/getreal.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/560285839226175491/872974780553371648/image0-106.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/t0_J2zRZbrUAAAAd/get-real-guilty-gear-strive.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/482958702211497994/838469511694778368/image0-8.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/EGmbkFPw4m4AAAAC/get-real-vaporeon.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/498634123347361812/836231653587288104/get_real.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/245465054416207872/831933143426269204/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/UOqYEPA6xVoAAAAd/get-real-meme.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/D1Lr5qmW2UMAAAAC/get-real-jungle.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/csxVZv7SrQIAAAAd/get-real-trombone.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/556526589610033160/812548022616457236/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/756736839502528522/760550620129919047/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "unreal": {
+            "https://c.tenor.com/dZ3RePDJvd8AAAAC/get-real-getting-real.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/U94pxMBSm6MAAAAC/meeting-isreal.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "dibble": {
+            "https://media.discordapp.net/attachments/868888972120702999/893810509361606676/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/855076585496641536/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/851656829699883068/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/848924182922133555/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/846707659032756264/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/846707788495323146/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/836825044419477504/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/868888972120702999/905789331040522240/868888972120702999_868888972120702996.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/795238875677065228/848123440464789514/caption.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ]
+        },
+        "hamilton": {
+            "https://media.discordapp.net/attachments/712243005519560736/886622045692125194/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/871392658256445470/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "performing": {
+            "https://media.discordapp.net/attachments/712243005519560736/886622045692125194/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/5lihZ3xC3AcAAAAC/what-the-dog-doing-roblox.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "perfect": {
+            "https://media.discordapp.net/attachments/712243005519560736/886622045692125194/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "parking": {
+            "https://media.discordapp.net/attachments/712243005519560736/886622045692125194/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/835870618422870057/851450751925878854/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "job": {
+            "https://media.discordapp.net/attachments/712243005519560736/886622045692125194/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/870172584468181002/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/851653004633309194/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/NPH5OtylyeQAAAAd/esmbot-es.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "217233850101661697"
+            ]
+        },
+        "top": {
+            "https://media.discordapp.net/attachments/712243005519560736/886622045692125194/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/qXmiv4L9KYkAAAAd/top.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/296056831514509312/760216199584940062/pogchampion.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/954281750543085618/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ]
+        },
+        "verstaphens": {
+            "https://media.discordapp.net/attachments/712243005519560736/886622045692125194/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "car": {
+            "https://media.discordapp.net/attachments/712243005519560736/886622045692125194/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/893006258888658964/image0_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/i0lkNaW-9jwAAAAd/bobux-big-chungus.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://images-ext-2.discordapp.net/external/F1Qsr8urvaemKmhsUMOdZgq7VFvD-0S-owru6nyvH1I/https/images-ext-2.discordapp.net/external/sYEF6oKKRbPi2hZaGYqH6FgiCFEDNTMLNIMN8prN9KQ/https/media.discordapp.net/attachments/792961507923198012/809927184831479838/image0_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "freemason": {
+            "https://media.discordapp.net/attachments/836423592345731102/893437087787937792/7d874b72-227e-11ec-885c-5cf370a080b0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://images-ext-2.discordapp.net/external/Yrss94ufxPQ8-jYkf7vDi1RFpHANH0Hsrq7uZBpFrnU/https/media.discordapp.net/attachments/439519668819066880/753374556395405460/3d580297d90a002e26dd27264026129d404192ccc3e52a29f9276e18ae8f24e0_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "tell": {
+            "https://media.discordapp.net/attachments/836423592345731102/893437087787937792/7d874b72-227e-11ec-885c-5cf370a080b0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/464249518729330688/768318469921833010/image0-18.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://images-ext-2.discordapp.net/external/Yrss94ufxPQ8-jYkf7vDi1RFpHANH0Hsrq7uZBpFrnU/https/media.discordapp.net/attachments/439519668819066880/753374556395405460/3d580297d90a002e26dd27264026129d404192ccc3e52a29f9276e18ae8f24e0_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media0.giphy.com/media/oZUw2T8EYnPrfIObvF/giphy.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "sell": {
+            "https://media.discordapp.net/attachments/836423592345731102/893437087787937792/7d874b72-227e-11ec-885c-5cf370a080b0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://images-ext-2.discordapp.net/external/Yrss94ufxPQ8-jYkf7vDi1RFpHANH0Hsrq7uZBpFrnU/https/media.discordapp.net/attachments/439519668819066880/753374556395405460/3d580297d90a002e26dd27264026129d404192ccc3e52a29f9276e18ae8f24e0_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/278323568998350850/867225135152103504/caption-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "pottery": {
+            "https://media.discordapp.net/attachments/836423592345731102/893437087787937792/7d874b72-227e-11ec-885c-5cf370a080b0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://images-ext-2.discordapp.net/external/Yrss94ufxPQ8-jYkf7vDi1RFpHANH0Hsrq7uZBpFrnU/https/media.discordapp.net/attachments/439519668819066880/753374556395405460/3d580297d90a002e26dd27264026129d404192ccc3e52a29f9276e18ae8f24e0_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "profit": {
+            "https://media.discordapp.net/attachments/836423592345731102/893437087787937792/7d874b72-227e-11ec-885c-5cf370a080b0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/845301073623384064/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://images-ext-2.discordapp.net/external/Yrss94ufxPQ8-jYkf7vDi1RFpHANH0Hsrq7uZBpFrnU/https/media.discordapp.net/attachments/439519668819066880/753374556395405460/3d580297d90a002e26dd27264026129d404192ccc3e52a29f9276e18ae8f24e0_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "driving": {
+            "https://media.discordapp.net/attachments/841208671169675354/893354278670987294/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://images-ext-1.discordapp.net/external/37iFP5z9rd4ybL0Q84Sy4XxMQpVbAfCBONrxlqwpm4o/https/media.discordapp.net/attachments/764218776706613289/765177287602601984/image0.gif?width=481&height=406": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/765639735129407518/786949976890540072/79bcede45c032962e486527fc127f2f7f9882cc6065be78fca03d5589651098f_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/722288324328423457/809680380222898176/image0-20.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "moment": {
+            "https://media.discordapp.net/attachments/869864347449577512/893350326307004426/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/625157923605315595/856441340429860864/caption-2.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/912680185621540874/841208671169675354_741169124817764372.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ]
+        },
+        "omw": {
+            "https://media.discordapp.net/attachments/869864347449577512/893349960400121856/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/kakBl4i4NAEAAAAd/omw-troll.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "bobux": {
+            "https://media.discordapp.net/attachments/869864347449577512/893349960400121856/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/Z-2S2ZvR98EAAAAC/no-bobux-0bobux.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/wkynFFZgqLoAAAAd/bobux-0bobux.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/i0lkNaW-9jwAAAAd/bobux-big-chungus.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/Rn4wWYlku-0AAAAC/p0larred-bobux.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/-qHZZdSEWX4AAAAd/bobux.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/iH-D1tmA7jgAAAAC/bobux-your-shipment-of-bobux-has-arrived.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/6DSsKCIbfjsAAAAC/bobux-delivery.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "loan": {
+            "https://media.discordapp.net/attachments/869864347449577512/893349960400121856/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/669705005208567811/804849920087293982/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/724976219757609030/780016034622996501/image0-43-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "dont": {
+            "https://media.discordapp.net/attachments/869864347449577512/893006258888658964/image0_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/831016365887586344/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://images-ext-2.discordapp.net/external/F1Qsr8urvaemKmhsUMOdZgq7VFvD-0S-owru6nyvH1I/https/images-ext-2.discordapp.net/external/sYEF6oKKRbPi2hZaGYqH6FgiCFEDNTMLNIMN8prN9KQ/https/media.discordapp.net/attachments/792961507923198012/809927184831479838/image0_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/758070747653734554/765176776745287690/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/768186012534702111/768783185853022218/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/639239867607416901/706571399912882236/image0-23.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/588825472637337631/800913408202375168/caption-2.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/745048287182061590/787496566016704572/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/CHC6gl8ef60AAAAd/skill-issue-ratio.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/QYf5TIRJtS4AAAAd/deltarune-noelle.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/278323568998350850/867225135152103504/caption-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/837565213003350016/838264876081086484/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/560285839226175491/842504311366877235/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/419309723373010958/841336063309250590/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/738245953492090971/image0-1-4.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/233231551192760320/731758467379101706/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/719427258913128479/722625593811664966/image0-4.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/912679851339702303/841208671169675354_741169124817764372.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/912679890459963402/841208671169675354_741169124817764372.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://c.tenor.com/buYvu18ruRwAAAAd/air-fryer-clearly-you-dont-own-an-air-fryer.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/maf-wjxmAKYAAAAd/sprigatito-weed.gif": [
+                "470896999722516480",
+                "846175975560839178",
+                "217233850101661697"
+            ]
+        },
+        "trying": {
+            "https://media.discordapp.net/attachments/869864347449577512/893006258888658964/image0_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/865240078024179732/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/813971285339668500/846246070194667530/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/813971285339668500/846245928130183208/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/844431317328068659/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://images-ext-2.discordapp.net/external/F1Qsr8urvaemKmhsUMOdZgq7VFvD-0S-owru6nyvH1I/https/images-ext-2.discordapp.net/external/sYEF6oKKRbPi2hZaGYqH6FgiCFEDNTMLNIMN8prN9KQ/https/media.discordapp.net/attachments/792961507923198012/809927184831479838/image0_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/602362713863094322/769106897830805524/image0-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/459845122067005440/706208664029102110/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712276670697963561/774118964296679454/9c51368.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/724976219757609030/767037614368358420/image0-12.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/369444616833073164/860515880966029353/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/832779933364650004/852319017934651401/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/yd5HU8T6AfoAAAAd/skyrim-meme.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/747265035344019567/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/638255143015415809/b9c18dd.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/754488572786114610/801649139204489226/tyler.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "escape": {
+            "https://media.discordapp.net/attachments/869864347449577512/893006258888658964/image0_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://images-ext-2.discordapp.net/external/F1Qsr8urvaemKmhsUMOdZgq7VFvD-0S-owru6nyvH1I/https/images-ext-2.discordapp.net/external/sYEF6oKKRbPi2hZaGYqH6FgiCFEDNTMLNIMN8prN9KQ/https/media.discordapp.net/attachments/792961507923198012/809927184831479838/image0_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/369444616833073164/860515880966029353/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "ive": {
+            "https://media.discordapp.net/attachments/869864347449577512/893006258888658964/image0_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://images-ext-2.discordapp.net/external/F1Qsr8urvaemKmhsUMOdZgq7VFvD-0S-owru6nyvH1I/https/images-ext-2.discordapp.net/external/sYEF6oKKRbPi2hZaGYqH6FgiCFEDNTMLNIMN8prN9KQ/https/media.discordapp.net/attachments/792961507923198012/809927184831479838/image0_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/278323568998350850/867225135152103504/caption-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/427458548180451339/755834950674284585/image0-51.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/714607970964734013/716029358023901244/1c9da2f.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "attached": {
+            "https://media.discordapp.net/attachments/869864347449577512/893006258888658964/image0_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://images-ext-2.discordapp.net/external/F1Qsr8urvaemKmhsUMOdZgq7VFvD-0S-owru6nyvH1I/https/images-ext-2.discordapp.net/external/sYEF6oKKRbPi2hZaGYqH6FgiCFEDNTMLNIMN8prN9KQ/https/media.discordapp.net/attachments/792961507923198012/809927184831479838/image0_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "battery": {
+            "https://media.discordapp.net/attachments/869864347449577512/893006258888658964/image0_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://images-ext-2.discordapp.net/external/F1Qsr8urvaemKmhsUMOdZgq7VFvD-0S-owru6nyvH1I/https/images-ext-2.discordapp.net/external/sYEF6oKKRbPi2hZaGYqH6FgiCFEDNTMLNIMN8prN9KQ/https/media.discordapp.net/attachments/792961507923198012/809927184831479838/image0_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "testicles": {
+            "https://media.discordapp.net/attachments/869864347449577512/893006258888658964/image0_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://images-ext-2.discordapp.net/external/F1Qsr8urvaemKmhsUMOdZgq7VFvD-0S-owru6nyvH1I/https/images-ext-2.discordapp.net/external/sYEF6oKKRbPi2hZaGYqH6FgiCFEDNTMLNIMN8prN9KQ/https/media.discordapp.net/attachments/792961507923198012/809927184831479838/image0_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "liam": {
+            "https://media.discordapp.net/attachments/712243005519560736/892950873947402261/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/892953437937991720/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/949247174095552532/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/949247246363426816/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/949247548504293416/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/949247605580386384/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/953255925953753138/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/953256067410853918/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/953256278954749972/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/953256278954749972/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "217233850101661697"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/953256966183075840/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/953257262670037052/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/953257717357760532/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/953258391806033920/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/954281750543085618/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ]
+        },
+        "lewis": {
+            "https://media.discordapp.net/attachments/712243005519560736/892950873947402261/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "turning": {
+            "https://media.discordapp.net/attachments/712243005519560736/892950873947402261/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/892953437937991720/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/690819748929470475/836490531629957160/ezgif-3-4a99f5674569.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "years": {
+            "https://media.discordapp.net/attachments/712243005519560736/892950873947402261/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/752329837925892106/863909557374156800/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/422403986621071370/757306096925802656/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/738548949488762954/834957630203494460/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/659996109460209700/825337531314733056/6-2ccffc20671c.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/692646329377357924/804048195080290304/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "old": {
+            "https://media.discordapp.net/attachments/712243005519560736/892950873947402261/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/869665288000516146/869689067833536572/gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/832779933364650004/852319017934651401/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/659996109460209700/825337531314733056/6-2ccffc20671c.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/414568012989857792/779793073202003978/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/795238875677065228/821710693623005194/caption.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ]
+        },
+        "writing": {
+            "https://media.discordapp.net/attachments/712243005519560736/892953437937991720/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/875619721989459978/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/835870618422870057/851450751925878854/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/904246909139554354/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/904247035799154698/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "happy": {
+            "https://media.discordapp.net/attachments/712243005519560736/892953437937991720/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "birthday": {
+            "https://media.discordapp.net/attachments/712243005519560736/892953437937991720/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "message": {
+            "https://media.discordapp.net/attachments/712243005519560736/892953437937991720/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/891605367967059998/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/866529312097304619/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/865144292389421086/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/848924182922133555/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/754488572786114610/801649139204489226/tyler.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "today": {
+            "https://media.discordapp.net/attachments/712243005519560736/892953437937991720/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/885490511933239328/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "rule": {
+            "https://c.tenor.com/IdoszhcrJOoAAAAd/rule10-jiren.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/724009203072761876/771999032918540288/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/pmlN9tTyOwcAAAAd/discord-mods-discord.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "binding": {
+            "https://c.tenor.com/IdoszhcrJOoAAAAd/rule10-jiren.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "isaac": {
+            "https://c.tenor.com/IdoszhcrJOoAAAAd/rule10-jiren.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "loining": {
+            "https://media.discordapp.net/attachments/712243005519560736/892344363026350111/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "fishingtonio": {
+            "https://media.discordapp.net/attachments/712243005519560736/892344363026350111/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "find": {
+            "https://media.discordapp.net/attachments/841208671169675354/891605367967059998/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/B0EuT4qUS5MAAAAC/amogus-jarvis.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/648704600437948421/758744282818674728/image0-122.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/70gYt82XxIwAAAAd/dbz-dbgt.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/756736839502528522/818512173956333568/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/499373423378563083/807575636419674152/piss.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/738245953492090971/image0-1-4.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/678866648500797470/74b0382.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/648704600437948421/752099906692448338/Tightlippedlikeableredpanda_0234cf_7950774.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ]
+        },
+        "prefix": {
+            "https://media.discordapp.net/attachments/841208671169675354/891605367967059998/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "generate": {
+            "https://media.discordapp.net/attachments/841208671169675354/891605367967059998/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "gif": {
+            "https://media.discordapp.net/attachments/841208671169675354/891605367967059998/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/857978718692966460/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/851031646324654080/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/Yq0JQSesikkAAAAC/jarvis-discord.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/YR6JrzjWoBwAAAAC/jarvis-tony-stark.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/833315732477181972/freeze.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/Ctz1jO-y0fcAAAAC/waiting-for-memes-memes.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/JGRK4YW7SxYAAAAC/do-not-post-rhino-shit-gif-rhino.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/570224854041886721/867331282341855242/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/447252609238302721/774500696002396201/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/710317808222732321/716461610532864080/c1d31a061163938a9e08a7f5e89ff18b581a1fe461af51185d250a2501b6eccb_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/901744140499427328/caption.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "429305856241172480"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/901785753657421844/temp.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/901785809538134046/temp.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/901785889913581578/caption.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "429305856241172480"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/901785975561261076/temp.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/902129591429234718/temp.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/902129610194563072/temp.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/902130379308277810/temp.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/912679114568265808/841208671169675354_741169124817764372.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ]
+        },
+        "posted": {
+            "https://media.discordapp.net/attachments/841208671169675354/891605367967059998/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/maf-wjxmAKYAAAAd/sprigatito-weed.gif": [
+                "470896999722516480",
+                "846175975560839178",
+                "217233850101661697"
+            ]
+        },
+        "gifimage": {
+            "https://media.discordapp.net/attachments/841208671169675354/891605367967059998/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "beers": {
+            "https://media.discordapp.net/attachments/712243005519560736/890530269738725416/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/890530250910494730/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "finding": {
+            "https://media.discordapp.net/attachments/712243005519560736/890501639100842004/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/847671426084765716/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://img.ifunny.co/images/4ca365651140c419434e37722d60c4bfa2fd30c6d38a3e1ebda8d7ab363ab30b_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/Khq5WOEzUPMAAAAd/reddit-dance.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/690819748929470475/721297668315283477/lactose.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "reason": {
+            "https://media.discordapp.net/attachments/712243005519560736/890501639100842004/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/751618423238426685/769264649203875860/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/783040026829127710/879471964023042078/image0-25.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "colorblind": {
+            "https://media.discordapp.net/attachments/712243005519560736/890501639100842004/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "glasses": {
+            "https://media.discordapp.net/attachments/712243005519560736/890501639100842004/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/338857510460981251/793772824007278592/glassesbad.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "speed": {
+            "https://media.discordapp.net/attachments/712243005519560736/890501639100842004/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/833314396075458620/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/833314161999740978/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/qcCKONKF3iMAAAAd/swag-city-discord.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/653443436187484203/736432598758195280/moses.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "red": {
+            "https://media.discordapp.net/attachments/712243005519560736/890501639100842004/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/66rv4KLKAWcAAAAC/sonichu-thanos-rodrick-lalo-the-mask2kira-killer-queen.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/B0EuT4qUS5MAAAAC/amogus-jarvis.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/511546997979873282/755075023449882745/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/653443436187484203/736432598758195280/moses.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "lights": {
+            "https://media.discordapp.net/attachments/712243005519560736/890501639100842004/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "blame": {
+            "https://media.discordapp.net/attachments/712243005519560736/890501639100842004/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "colorblindness": {
+            "https://media.discordapp.net/attachments/712243005519560736/890501639100842004/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "antiearthquake": {
+            "https://media.discordapp.net/attachments/841208671169675354/890020553270911016/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "protesters": {
+            "https://media.discordapp.net/attachments/841208671169675354/890020553270911016/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "going": {
+            "https://media.discordapp.net/attachments/841208671169675354/890020553270911016/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/836825044419477504/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/869665288000516146/869689067833536572/gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/278323568998350850/867225135152103504/caption-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/768461240028627004/image0-2.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/801452440670306304/image0-21-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media0.giphy.com/media/oZUw2T8EYnPrfIObvF/giphy.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://images-ext-1.discordapp.net/external/l5oFdNuHpj90AqkbWgWQgRyI2Vo_-WGeMZKuvfk4KCY/https/media.discordapp.net/attachments/714931839088852995/730979920750313602/INTENSE_MATCH.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/901744140499427328/caption.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "429305856241172480"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/949247548504293416/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/949247605580386384/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/692646329377357924/804048195080290304/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/285880764493725696/717811398289391616/image0-2-1_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/724976219757609030/801173972195737601/image0-9.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ],
+            "https://media.discordapp.net/attachments/724976219757609030/801173971172851722/image0-4-1-1.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ]
+        },
+        "wind": {
+            "https://media.discordapp.net/attachments/841208671169675354/890020553270911016/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "thinking": {
+            "https://media.discordapp.net/attachments/841208671169675354/890017432159256606/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "hes": {
+            "https://media.discordapp.net/attachments/841208671169675354/890017432159256606/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/870483776931782666/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/865240078024179732/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/846707659032756264/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/846707788495323146/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/800349854152130570/816504884357759006/sportsbet.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/827907514216874024/bab6e8c6d56b7b07b8eea9ce455fb16dec9f289fe2122a6df7d33513b84f88f9_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/901785753657421844/temp.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/949247246363426816/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/949247548504293416/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/949247605580386384/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/240196923644968960/815792374638575676/EvVE4RKXcAU5_Wm_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "safe": {
+            "https://media.discordapp.net/attachments/841208671169675354/890017432159256606/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/953255925953753138/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/953256067410853918/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/953256278954749972/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/953256278954749972/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "217233850101661697"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/953256966183075840/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/953257262670037052/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/953257717357760532/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/953258391806033920/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ]
+        },
+        "standing": {
+            "https://media.discordapp.net/attachments/841208671169675354/890017432159256606/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "grand": {
+            "https://media.discordapp.net/attachments/841208671169675354/890017432159256606/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/cLIYo_vGRcEAAAAC/mircord-zabloing.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "piano": {
+            "https://media.discordapp.net/attachments/841208671169675354/890017432159256606/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "during": {
+            "https://media.discordapp.net/attachments/841208671169675354/890017432159256606/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/498943000353964032/765694395579760670/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/556232561987158016/781385181767401502/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/648704600437948421/744386491194671104/ezgif.com-gif-maker_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "earthquake": {
+            "https://media.discordapp.net/attachments/841208671169675354/890017432159256606/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "max": {
+            "https://media.discordapp.net/attachments/841208671169675354/890016072999264316/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/870483789078487060/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/866529312097304619/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/865240078024179732/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/853874492116172841/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/836423592345731102/841249040489250856/caption-3.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/836423592345731102/841252549444501524/mg9avb9dbht.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/901739986536263680/temp.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/905736563370111016/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/905737698428485652/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/905737746931392512/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/419309723373010958/910847279592775710/caption.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/949226799198507058/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ]
+        },
+        "minutes": {
+            "https://media.discordapp.net/attachments/841208671169675354/890016072999264316/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/831016365887586344/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/947711665602961488/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/947711699706855474/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ]
+        },
+        "deciding": {
+            "https://media.discordapp.net/attachments/712243005519560736/889432100573421618/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/870174951674634240/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/857984267136794624/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "whether": {
+            "https://media.discordapp.net/attachments/712243005519560736/889432100573421618/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/870174951674634240/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/813971285339668500/846228583936163871/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/904246909139554354/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/904247035799154698/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "celebrate": {
+            "https://media.discordapp.net/attachments/712243005519560736/889432100573421618/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "dibbles": {
+            "https://media.discordapp.net/attachments/712243005519560736/889432100573421618/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/884665213696245821/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "go": {
+            "https://media.discordapp.net/attachments/712243005519560736/889432100573421618/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/870174951674634240/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media0.giphy.com/media/oZUw2T8EYnPrfIObvF/giphy.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/798417821717102602/817828514765471767/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/722446469063245825/767511196550168576/image0-4.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "gym": {
+            "https://media.discordapp.net/attachments/712243005519560736/889432100573421618/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/795238875677065228/837922193258053632/caption.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ]
+        },
+        "cant": {
+            "https://media.discordapp.net/attachments/712243005519560736/889432100573421618/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/871568150095888384/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/865144899606282280/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/864419486538006528/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/847671426084765716/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/690819748929470475/836490531629957160/ezgif-3-4a99f5674569.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/qXmiv4L9KYkAAAAd/top.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/278323568998350850/867225135152103504/caption-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/414568012989857792/779793073202003978/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/382846587354873858/753093149127344269/ass14.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/724695973963497536/749444141515145246/5a2e6a5.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/376366713060720640/810964118671982672/dad.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/296056831514509312/760216199584940062/pogchampion.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "skip": {
+            "https://media.discordapp.net/attachments/712243005519560736/889432100573421618/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "leg": {
+            "https://media.discordapp.net/attachments/712243005519560736/889432100573421618/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/oulv0W5JfDEAAAAC/kitty-review.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "bullies": {
+            "https://media.discordapp.net/attachments/712243005519560736/889140853921157162/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "pull": {
+            "https://media.discordapp.net/attachments/712243005519560736/889140853921157162/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "pants": {
+            "https://media.discordapp.net/attachments/712243005519560736/889140853921157162/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "line": {
+            "https://media.discordapp.net/attachments/712243005519560736/889140853921157162/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/875619721989459978/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/743085869740851220/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/683757872961814548/692950617806733352/image1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "lunch": {
+            "https://media.discordapp.net/attachments/712243005519560736/889140853921157162/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/uY8_WWOZbHIAAAAd/mom-lunch.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "see": {
+            "https://media.discordapp.net/attachments/712243005519560736/889140853921157162/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/870174951674634240/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://i.kym-cdn.com/photos/images/original/002/001/882/d0a.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/560285839226175491/872974780553371648/image0-106.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/783426400899563600/843203710627741726/rats_when.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/EEcyk91ruucAAAAC/kfc.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/mKF0sfoFE8wAAAAd/girl-gamer-when-i-see-the-gamer-girl-feet.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/175054042177863680/821054750925520906/final_604f8872205527005246b3f4_126277.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/470168157148020756/810379227315830798/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/NamOczLhpHwAAAAd/shoplifters-shoplifting.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/316978886087016449/803295216659595274/1288705115768016896.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/809259972482302032/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media0.giphy.com/media/oZUw2T8EYnPrfIObvF/giphy.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/710317808222732321/720104263329513493/rats.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/599596561961582592/8ce813718bd2bcce49bb38f404f77954f110fc2db5002388eb1394b696c12098_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/901724609580269569/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/751877825178370099/799996170692067378/image0.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ],
+            "https://media.discordapp.net/attachments/600659917459816449/692400681931505664/mha.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ],
+            "https://cdn.discordapp.com/attachments/703899761631166464/954268068891201586/703899761631166464_470896999722516480.gif": [
+                "470896999722516480",
+                "703899761631166464",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/703899761631166464/954268595792281611/703899761631166464_470896999722516480.gif": [
+                "470896999722516480",
+                "703899761631166464",
+                "893293074413916230"
+            ]
+        },
+        "diaper": {
+            "https://media.discordapp.net/attachments/712243005519560736/889140853921157162/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "ask": {
+            "https://media.discordapp.net/attachments/841208671169675354/875776548144312441/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/775752263981072414/798697233599692840/image0.gif?width=351&height=369": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/CHC6gl8ef60AAAAd/skill-issue-ratio.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/949247174095552532/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/949247246363426816/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://c.tenor.com/j7noyQoMzdsAAAAd/esmbot-robot-dies.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "217233850101661697"
+            ]
+        },
+        "people": {
+            "https://media.discordapp.net/attachments/841208671169675354/875776548144312441/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/875776880215752734/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/639239867607416901/706571399912882236/image0-23.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/588825472637337631/800913408202375168/caption-2.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/745048287182061590/787496566016704572/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/874545610798292992/image0-66.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/759468968397504512/840564756334641162/image0-6.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/747265035344019567/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/738245953492090971/image0-1-4.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/690819748929470475/721297668315283477/lactose.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/710317808222732321/716461610532864080/c1d31a061163938a9e08a7f5e89ff18b581a1fe461af51185d250a2501b6eccb_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/901785753657421844/temp.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/790276520022769664/798095466948067359/image0-30.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/871612654131765298/image0-57.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/795238875677065228/821713332952236072/caption.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ],
+            "https://media.discordapp.net/attachments/648704600437948421/743936500147814451/Koko.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ]
+        },
+        "squib": {
+            "https://media.discordapp.net/attachments/841208671169675354/875776548144312441/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/875776880215752734/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/877859428764901436/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/877070830662717450/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "later": {
+            "https://media.discordapp.net/attachments/841208671169675354/875776548144312441/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "said": {
+            "https://media.discordapp.net/attachments/841208671169675354/875776880215752734/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/851656829699883068/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/zayMIpfp110AAAAC/blacksite-zeta-blacksite.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "comes": {
+            "https://media.discordapp.net/attachments/841208671169675354/875776880215752734/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/5rCJ9g-3UdMAAAAd/solar-panel-sunlight.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/r0cB5EMSG4cAAAAC/lego-wheny-little-brother.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/749287801006325760/792667605592834048/image0_12.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://cdn.discordapp.com/attachments/712243005519560736/955301657523126302/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://cdn.discordapp.com/attachments/712243005519560736/955316160180682772/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ]
+        },
+        "try": {
+            "https://c.tenor.com/2Crx_8CF_-YAAAAd/ifunny-necronomicon.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/852421145068437524/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/3bPa0svP7l0AAAAd/esm-bot-discord.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/724976219757609030/797132683758010418/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/347254691966615552/801095491550314526/f64709d1060bb123f8ce3bc2c7eb16cbcdc121491f6bde95a15109ba65974010_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/906719465029378078/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/906721689637900339/841208671169675354_741169124817764372.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906816241870733332/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906817232888291358/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906817251339038760/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "429305856241172480"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906854473341743114/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906854796823253002/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906856374871416832/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906857110246158346/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906857464530624522/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906861764556247120/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906862327012409364/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906862727027384330/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/648400331583258631/665996766017224716/image0-10-1.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ],
+            "https://c.tenor.com/NPH5OtylyeQAAAAd/esmbot-es.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "217233850101661697"
+            ]
+        },
+        "fo": {
+            "https://c.tenor.com/2Crx_8CF_-YAAAAd/ifunny-necronomicon.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/836817060331388938/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/836423592345731102/841252549444501524/mg9avb9dbht.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/588825472637337631/800913408202375168/caption-2.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/745048287182061590/787496566016704572/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/278323568998350850/867225135152103504/caption-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906817445459820594/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "429305856241172480"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/949247174095552532/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ]
+        },
+        "papa": {
+            "https://c.tenor.com/2Crx_8CF_-YAAAAd/ifunny-necronomicon.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/347254691966615552/801095491550314526/f64709d1060bb123f8ce3bc2c7eb16cbcdc121491f6bde95a15109ba65974010_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/648400331583258631/665996766017224716/image0-10-1.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ]
+        },
+        "johns": {
+            "https://c.tenor.com/2Crx_8CF_-YAAAAd/ifunny-necronomicon.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/347254691966615552/801095491550314526/f64709d1060bb123f8ce3bc2c7eb16cbcdc121491f6bde95a15109ba65974010_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/648400331583258631/665996766017224716/image0-10-1.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ]
+        },
+        "cashier": {
+            "https://c.tenor.com/2Crx_8CF_-YAAAAd/ifunny-necronomicon.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/381916320423215104/804456716740853851/99109e1-2.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/724976219757609030/797132683758010418/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/347254691966615552/801095491550314526/f64709d1060bb123f8ce3bc2c7eb16cbcdc121491f6bde95a15109ba65974010_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/648400331583258631/665996766017224716/image0-10-1.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ]
+        },
+        "recites": {
+            "https://c.tenor.com/2Crx_8CF_-YAAAAd/ifunny-necronomicon.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/347254691966615552/801095491550314526/f64709d1060bb123f8ce3bc2c7eb16cbcdc121491f6bde95a15109ba65974010_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/648400331583258631/665996766017224716/image0-10-1.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ]
+        },
+        "death": {
+            "https://c.tenor.com/2Crx_8CF_-YAAAAd/ifunny-necronomicon.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/347254691966615552/801095491550314526/f64709d1060bb123f8ce3bc2c7eb16cbcdc121491f6bde95a15109ba65974010_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/Y7MHybaoIdkAAAAC/the-concept-of-death-keanu-reeves-breastfeed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/404008850321047552/800555424138788874/image0-5.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/3u4WVGVARDgAAAAd/funny-happy-meal.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/648400331583258631/665996766017224716/image0-10-1.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ]
+        },
+        "spell": {
+            "https://c.tenor.com/2Crx_8CF_-YAAAAd/ifunny-necronomicon.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/QYf5TIRJtS4AAAAd/deltarune-noelle.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/347254691966615552/801095491550314526/f64709d1060bb123f8ce3bc2c7eb16cbcdc121491f6bde95a15109ba65974010_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/648400331583258631/665996766017224716/image0-10-1.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ]
+        },
+        "dabestbro": {
+            "https://media.discordapp.net/attachments/712243005519560736/887959806193836072/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "playing": {
+            "https://media.discordapp.net/attachments/712243005519560736/887959806193836072/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/885490511933239328/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/847671426084765716/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/831027226869891102/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/775752263981072414/798697233599692840/image0.gif?width=351&height=369": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/278323568998350850/867225135152103504/caption-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/722288324328423457/809680380222898176/image0-20.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/825946769006264350/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/722288324328423457/833562680425316352/when.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "warframe": {
+            "https://media.discordapp.net/attachments/712243005519560736/887959806193836072/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://cdn.discordapp.com/attachments/869864347449577512/953224461702815764/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ]
+        },
+        "ip": {
+            "https://media.discordapp.net/attachments/712243005519560736/885490811192614942/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/871612654131765298/image0-57.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "https": {
+            "https://media.discordapp.net/attachments/712243005519560736/885490811192614942/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "musicyoutubecom": {
+            "https://media.discordapp.net/attachments/712243005519560736/885490811192614942/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "playlist": {
+            "https://media.discordapp.net/attachments/712243005519560736/885490811192614942/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/885490511933239328/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/901740795495850015/temp.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ]
+        },
+        "o5raqigyltymvmco6c6n": {
+            "https://media.discordapp.net/attachments/712243005519560736/885490811192614942/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "checking": {
+            "https://media.discordapp.net/attachments/712243005519560736/885490511933239328/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "discord": {
+            "https://media.discordapp.net/attachments/712243005519560736/885490511933239328/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/857978718692966460/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/851031646324654080/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/848925659266547722/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/846641949590814740/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/383898468462100481/821543729471029268/discord.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/751618423238426685/769264649203875860/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/sEbTUPDMAuwAAAAd/monkey-presentable.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/905770286333460490/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/871612654131765298/image0-57.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "notifications": {
+            "https://media.discordapp.net/attachments/712243005519560736/885490511933239328/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "hoping": {
+            "https://media.discordapp.net/attachments/712243005519560736/885490511933239328/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/278323568998350850/867225135152103504/caption-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "someone": {
+            "https://media.discordapp.net/attachments/712243005519560736/885490511933239328/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/875619721989459978/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/Ctz1jO-y0fcAAAAC/waiting-for-memes-memes.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/648704600437948421/749541839413051422/romanian.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/756736839502528522/840066549531803708/12840835aee48a7de30a4f4de189bae5f3b93ca55d7fda86bca2eef11007579e_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/175054042177863680/821054750925520906/final_604f8872205527005246b3f4_126277.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/310533111505223682/797663235989569536/image0-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "play": {
+            "https://media.discordapp.net/attachments/712243005519560736/885490511933239328/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/870483789078487060/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/864419486538006528/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/863938558708285450/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/278323568998350850/867225135152103504/caption-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/hD0iXoljUxsAAAAd/genshin-genshin-impact.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/142480770265513984/753838511152431225/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "viking": {
+            "https://media.discordapp.net/attachments/712243005519560736/885490511933239328/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "dumb": {
+            "https://media.discordapp.net/attachments/712243005519560736/885490511933239328/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/857978718692966460/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/903479440993034260/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/949226799198507058/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ]
+        },
+        "song": {
+            "https://media.discordapp.net/attachments/712243005519560736/885490511933239328/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "kanye": {
+            "https://c.tenor.com/Kvyg2uwmZYcAAAAd/kanye-north-kanye-east.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/472407010042707989/841535569602412574/18b04a1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/r0cB5EMSG4cAAAAC/lego-wheny-little-brother.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/546763235051700314/871602878823952444/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "north": {
+            "https://c.tenor.com/Kvyg2uwmZYcAAAAd/kanye-north-kanye-east.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/659469841958174732/31c2d5b.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "body": {
+            "https://media.discordapp.net/attachments/712243005519560736/884665213696245821/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/877692508023431188/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/851656829699883068/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/912679733609775134/841208671169675354_741169124817764372.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ]
+        },
+        "process": {
+            "https://media.discordapp.net/attachments/712243005519560736/884665213696245821/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/846642182681133056/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/831025905014931508/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/514393245191634947/821711032179359754/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "nicotine": {
+            "https://media.discordapp.net/attachments/712243005519560736/884665213696245821/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/836825044419477504/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "eyebrow": {
+            "https://media.discordapp.net/attachments/712243005519560736/884289415382466570/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "raising": {
+            "https://media.discordapp.net/attachments/712243005519560736/884289415382466570/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "competition": {
+            "https://media.discordapp.net/attachments/712243005519560736/884289415382466570/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "sir": {
+            "https://media.discordapp.net/attachments/544146545797234688/883839620670947359/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/464249518729330688/768318468767350814/image0-15.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/wkynFFZgqLoAAAAd/bobux-0bobux.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "pissing": {
+            "https://media.discordapp.net/attachments/544146545797234688/883839620670947359/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "tonight": {
+            "https://media.discordapp.net/attachments/544146545797234688/883839620670947359/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "postponed": {
+            "https://media.discordapp.net/attachments/712243005519560736/877859428764901436/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "due": {
+            "https://media.discordapp.net/attachments/712243005519560736/877859428764901436/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/690819748929470475/836490531629957160/ezgif-3-4a99f5674569.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/260170566529449994/847693813203599360/Texas.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "many": {
+            "https://media.discordapp.net/attachments/712243005519560736/877859428764901436/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "im": {
+            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/851031646324654080/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/846642182681133056/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/841181027464773662/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/280809737447276544/817397910307864586/image0-8.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://images-ext-1.discordapp.net/external/37iFP5z9rd4ybL0Q84Sy4XxMQpVbAfCBONrxlqwpm4o/https/media.discordapp.net/attachments/764218776706613289/765177287602601984/image0.gif?width=481&height=406": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/791148536455757834/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/278323568998350850/867225135152103504/caption-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/310533111505223682/797663235989569536/image0-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/296056831514509312/732287416802738247/living_room.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/546763235051700314/696015792185016370/64ffd22fb4026236a6b979da1bb91829df8a1fc88b921e5534b2419268c7533c_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/901784502362324992/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/836423592345731102/949226870640099378/836423592345731102_741169124817764372.gif": [
+                "741169124817764372",
+                "836423592345731102",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/516815557153259533/817511026978848768/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/296056831514509312/731057572970496050/image0-12.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/rMMV5oYzRa4AAAAd/sprigatito-im-still-amazed-by-it.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/724976219757609030/801173972195737601/image0-9.gif": [
+                "868888972120702996",
+                "868888972120702999",
+                "179894333275766784"
+            ]
+        },
+        "done": {
+            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/853874492116172841/speed.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/846166935824629810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "convo": {
+            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "like": {
+            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/368551490572517377/764571988512997466/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/639239867607416901/706571399912882236/image0-23.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/278323568998350850/867225135152103504/caption-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/6dGnOUKfCxgAAAAC/fifi-the-doggo-doggo.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/KsQ8OExMkdQAAAAC/i-like-your-cut-g-pvz.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://c.tenor.com/agr6IVV-DxIAAAAC/among-us.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/904246909139554354/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/904247035799154698/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "role": {
+            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "speaks": {
+            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "brain": {
+            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "sided": {
+            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "understand": {
+            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/875619721989459978/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/278323568998350850/867225135152103504/caption-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/841208671169675354/901785753657421844/temp.gif": [
+                "741169124817764372",
+                "841208671169675354",
+                "893293074413916230"
+            ]
+        },
+        "side": {
+            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/278323568998350850/867225135152103504/caption-1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/399690081054490656/763415198911823872/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "respect": {
+            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/827381686568353852/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "wan": {
+            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/836423592345731102/949225469990014977/836423592345731102_741169124817764372.gif": [
+                "741169124817764372",
+                "836423592345731102",
+                "893293074413916230"
+            ]
+        },
+        "na": {
+            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/836423592345731102/949225469990014977/836423592345731102_741169124817764372.gif": [
+                "741169124817764372",
+                "836423592345731102",
+                "893293074413916230"
+            ]
+        },
+        "give": {
+            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/827381686568353852/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/528927344690200576/800987048323973153/caption_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/724976219757609030/778840776561524776/3a9db51.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://images-ext-2.discordapp.net/external/BtdMoPOeJaup2k7AEebeUyJ_CiydUFFf444TyWHPPis/https/media.discordapp.net/attachments/528927344690200576/800987048323973153/caption_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/904246909139554354/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/905769617945935902/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/869864347449577512/905769696991797288/869864347449577512_741169124817764372.gif": [
+                "741169124817764372",
+                "869864347449577512",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/904247035799154698/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/RtHoxZDfww8AAAAC/kitty-review.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "mine": {
+            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "chance": {
+            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/842699267847356436/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "peace": {
+            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "anime": {
+            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/k1fTLZ2G_wgAAAAC/jarvis-vtuber.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/4o4ddvWWYpsAAAAC/no-anime.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/419309723373010958/885484853510955058/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/724976219757609030/780067953147117588/image1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "toms": {
+            "https://media.discordapp.net/attachments/712243005519560736/877692508023431188/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/903196258515173436/temp.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ]
+        },
+        "being": {
+            "https://media.discordapp.net/attachments/712243005519560736/877692508023431188/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/836423592345731102/841249040489250856/caption-3.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/GGAg9SRbFuoAAAAd/big-chungus.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/758070747653734554/765176776745287690/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/639239867607416901/706571399912882236/image0-23.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://c.tenor.com/jclBVgW144UAAAAd/second-graders-final-stand.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/648704600437948421/745366928113270805/anti_cementic.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/710317808222732321/716461610532864080/c1d31a061163938a9e08a7f5e89ff18b581a1fe461af51185d250a2501b6eccb_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/161658064682876928/638255143015415809/b9c18dd.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906821676417818684/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "429305856241172480"
+            ],
+            "https://media.discordapp.net/attachments/712243005519560736/906821679152517121/712243005519560736_470896999722516480.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "893293074413916230"
+            ],
+            "https://media.discordapp.net/attachments/715477112437473352/724726187829493760/image0.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "adjusted": {
+            "https://media.discordapp.net/attachments/712243005519560736/877692508023431188/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "brazilian": {
+            "https://media.discordapp.net/attachments/712243005519560736/877692508023431188/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ]
+        },
+        "zone": {
+            "https://media.discordapp.net/attachments/712243005519560736/877692508023431188/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/546763235051700314/696015792185016370/64ffd22fb4026236a6b979da1bb91829df8a1fc88b921e5534b2419268c7533c_1.gif.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
+        },
+        "night": {
+            "https://media.discordapp.net/attachments/712243005519560736/877070830662717450/caption.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://images-ext-2.discordapp.net/external/fQzrCqaXs_HfeDCyhqnqH_Cecud-cMCa4ZbXU2Np3Zk/%3Fwidth%3D384%26height%3D384/https/images-ext-2.discordapp.net/external/5tNkhYuTqovf8UrL77znYWmefPK7JQBzEZdZN5oPeuQ/https/images-ext-1.discordapp.net/external/udEVaBydfzjHsi0R2kraD8MSCrYh0R17q9QlLw6_4Js/https/i.redd.it/hnoxf201kkc61.gif?width=307&height=307": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/765639735129407518/786949976890540072/79bcede45c032962e486527fc127f2f7f9882cc6065be78fca03d5589651098f_1.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "217233850101661697"
+            ],
+            "https://media.discordapp.net/attachments/759468968397504512/840564756334641162/image0-6.gif": [
+                "470896999722516480",
+                "712243005519560736",
+                "158878635766317056"
+            ]
         }
-    },
-    "user": {
-        "217233850101661697": {
-            "https://c.tenor.com/2ia9pQINPDQAAAAC/day-ruined.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/899241334534209556/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/900349123209887764/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/899248394718044170/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/893667384437669960/e79667e2-227b-11ec-855f-5cf370a080b0.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/899219573549694986/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/899226714167709706/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/893832451741351986/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/898083343596396554/temp.gif": null,
-            "https://c.tenor.com/6fytJzsJEWIAAAAd/croatia-za-dom-spremni.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/898494344066109460/temp.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/897997315023986728/caption.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/897470188176441344/temp.gif": null,
-            "https://media.discordapp.net/attachments/869082890951077899/897455046684463144/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/897025959889346611/temp.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/896722284667080734/temp.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/895942839261888522/caption.gif": null,
-            "https://c.tenor.com/t92wUp_0JWEAAAAd/cope.gif": null,
-            "https://c.tenor.com/Zv7uuLEgr4IAAAAd/walter-walter-white.gif": null,
-            "https://c.tenor.com/PIO1nVffhLcAAAAC/cat-kitty.gif": null,
-            "https://c.tenor.com/xzJ0ElD2xCEAAAAd/cope-dont-care.gif": null,
-            "https://c.tenor.com/QVG2cI007l4AAAAd/cope.gif": null,
-            "https://c.tenor.com/fxHLvf8YMeMAAAAd/rotationplasty-cope.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/895447083463606272/temp.gif": null,
-            "https://c.tenor.com/pzpUPfUTNwoAAAAC/get-real-scott-the-woz.gif": null,
-            "https://c.tenor.com/dZ3RePDJvd8AAAAC/get-real-getting-real.gif": null,
-            "https://media.discordapp.net/attachments/868888972120702999/893810509361606676/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/886622045692125194/caption.gif": null,
-            "https://media.discordapp.net/attachments/836423592345731102/893437087787937792/7d874b72-227e-11ec-885c-5cf370a080b0.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/893354278670987294/caption.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/893350326307004426/caption.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/893349960400121856/caption.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/893006258888658964/image0_1.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/892950873947402261/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/892953437937991720/caption.gif": null,
-            "https://c.tenor.com/IdoszhcrJOoAAAAd/rule10-jiren.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/892344363026350111/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/891605367967059998/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/890530269738725416/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/890530250910494730/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/890501639100842004/caption.gif": null,
-            "https://media.discordapp.net/attachments/846175975560839178/890474168460664872/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/890020553270911016/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/890017432159256606/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/890016072999264316/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/889432100573421618/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/889140853921157162/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/875776548144312441/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/875776880215752734/caption.gif": null,
-            "https://c.tenor.com/2Crx_8CF_-YAAAAd/ifunny-necronomicon.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/887959806193836072/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/885490811192614942/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/885490511933239328/caption.gif": null,
-            "https://c.tenor.com/Kvyg2uwmZYcAAAAd/kanye-north-kanye-east.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/884665213696245821/caption.gif": null,
-            "https://c.tenor.com/I439W-Kh7toAAAAC/hate-workfrank.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/884289415382466570/caption.gif": null,
-            "https://c.tenor.com/h6IN7RC1rfUAAAAC/dumb-ding.gif": null,
-            "https://c.tenor.com/oQeGWQJfn_sAAAAC/youre-mom-bingus.gif": null,
-            "https://c.tenor.com/5mtsM96LdrAAAAAC/get-real-nintendo.gif": null,
-            "https://media.discordapp.net/attachments/544146545797234688/883839620670947359/image0.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/877859428764901436/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/877810231063756810/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/877692508023431188/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/877070830662717450/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/876648850067165236/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/875623622251778108/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/875623386808717312/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/875619721989459978/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/874540209725923388/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/873848326380990475/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/872064533215215676/caption.gif": null,
-            "https://media.discordapp.net/attachments/551797187734929418/774652810813243422/image0.gif": null,
-            "https://media.discordapp.net/attachments/726995202773876857/862363985953292338/image0-89.gif": null,
-            "https://media.discordapp.net/attachments/835870618422870057/851450751925878854/image0.gif": null,
-            "https://c.tenor.com/0EuXTArbTfUAAAAd/space-legs-odyssey.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/871568150095888384/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/871392658256445470/caption.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/870483776931782666/image0.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/870483789078487060/image0.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/870188807465631814/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/870175749158633492/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/870175508472684594/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/870174951674634240/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/870172584468181002/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/827168255948226581/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/836817060331388938/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833317493565030440/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/827381686568353852/caption.gif": null,
-            "https://c.tenor.com/ezXkPh9ixiIAAAAd/dawko-sex2.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/809259973053251594/image1.gif": null,
-            "https://c.tenor.com/66rv4KLKAWcAAAAC/sonichu-thanos-rodrick-lalo-the-mask2kira-killer-queen.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/869463292517683231/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/866529312097304619/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/865240078024179732/caption.gif": null,
-            "https://c.tenor.com/UhQkFlPcQKIAAAAd/terry-crews.gif": null,
-            "https://c.tenor.com/ZwUQDEZJS40AAAAC/epic-embed-fail-embed-win.gif": null,
-            "https://c.tenor.com/3VjIQLJKM40AAAAd/rage-cat.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/857978718692966460/caption.gif": null,
-            "https://media.discordapp.net/attachments/806714809462161478/865228852157218876/1626281100295.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/865144899606282280/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/865144292389421086/caption.gif": null,
-            "https://media.discordapp.net/attachments/782447104785252363/864703677427089418/67f.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/864419870115233812/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/864419486538006528/speed.gif": null,
-            "https://media.discordapp.net/attachments/625157923605315595/856441340429860864/caption-2.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/864026306571141120/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/863938558708285450/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/861878409269739530/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/857984267136794624/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/856087806441816074/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/855076585496641536/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/855075732899627028/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/855074802057871380/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/853875415218126858/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/853874492116172841/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/853593766865535027/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/852421145068437524/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/851713956019699762/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/851667157547745300/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/851657761812643850/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/851656829699883068/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/851653004633309194/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/851031646324654080/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/848925659266547722/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/848924528901357588/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/848924182922133555/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/847671426084765716/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/847648325179408485/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846924758259597362/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846707659032756264/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846707788495323146/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846678191107604500/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/843007259025735701/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846641949590814740/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846642182681133056/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846641738637901844/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846641135749562388/caption.gif": null,
-            "https://media.discordapp.net/attachments/744854780421341184/846307044550115348/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846257227161010196/caption.gif": null,
-            "https://media.discordapp.net/attachments/813971285339668500/846246070194667530/speed.gif": null,
-            "https://media.discordapp.net/attachments/813971285339668500/846245928130183208/caption.gif": null,
-            "https://media.discordapp.net/attachments/813971285339668500/846236146073206824/caption.gif": null,
-            "https://media.discordapp.net/attachments/813971285339668500/846228583936163871/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846166935824629810/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846166353940316170/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/846166176660848700/caption.gif": null,
-            "https://media.discordapp.net/attachments/745789186237399121/845303564536512553/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/845301073623384064/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/845300613372837948/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/845123026169495552/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/845122720026066984/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/844851286645538836/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/844431317328068659/caption.gif": null,
-            "https://media.discordapp.net/attachments/744854780421341184/844850087146160128/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/842699267847356436/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/842698629226430464/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/842697412971200512/caption.gif": null,
-            "https://media.discordapp.net/attachments/836423592345731102/841249040489250856/caption-3.gif": null,
-            "https://media.discordapp.net/attachments/836423592345731102/841252549444501524/mg9avb9dbht.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841203026614419466/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841182864753688596/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841182663209254922/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841182561086734386/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841181027464773662/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841174282725883904/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841173461179301918/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841173037830242314/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841168092789080074/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841165258630496257/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841163696503652372/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/841162729385361408/caption.gif": null,
-            "https://c.tenor.com/P4SVi-Ws6-AAAAAC/embed-fix-basketball.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/836826937283837982/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/836826716583493632/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/836825044419477504/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/836816567559258132/caption.gif": null,
-            "https://media.discordapp.net/attachments/690819748929470475/836490531629957160/ezgif-3-4a99f5674569.gif": null,
-            "https://c.tenor.com/QPTDPSQSeVoAAAAC/gmod-funny.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/836063617438449755/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/836062183992590336/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/836062252523585546/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/836058759402487868/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/836054514800525362/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/835122662849773568/caption.gif": null,
-            "https://c.tenor.com/oWBPj1Kfmc8AAAAC/abd-aba.gif": null,
-            "https://c.tenor.com/k1fTLZ2G_wgAAAAC/jarvis-vtuber.gif": null,
-            "https://c.tenor.com/Yq0JQSesikkAAAAC/jarvis-discord.gif": null,
-            "https://c.tenor.com/B0EuT4qUS5MAAAAC/amogus-jarvis.gif": null,
-            "https://c.tenor.com/YR6JrzjWoBwAAAAC/jarvis-tony-stark.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/834081391246704650/JarvisType.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/834290040560943145/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833554330241597490/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833316144865083402/freeze.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833315732477181972/freeze.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833314881843363870/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833314806915924038/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833314396075458620/speed.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833314161999740978/speed.gif": null,
-            "https://c.tenor.com/qcCKONKF3iMAAAAd/swag-city-discord.gif": null,
-            "https://c.tenor.com/5-HvXe4Epu8AAAAd/esmbot-tyler1.gif": null,
-            "https://c.tenor.com/3bPa0svP7l0AAAAd/esm-bot-discord.gif": null,
-            "https://c.tenor.com/4TQRnMP614wAAAAd/esmbot-discord.gif": null,
-            "https://c.tenor.com/TvsVH4A5mvwAAAAC/esmbot-esmbot-try-to-function.gif": null,
-            "https://c.tenor.com/TIBYzVj46KYAAAAC/cry-about.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833285572898193458/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833261933880147998/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833261632813531146/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/831045175941005322/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/831027226869891102/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/831025905014931508/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/831025813083390002/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/831017439546441768/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/831016365887586344/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/830959000064753674/5dy5j3ci58f.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/830704208306110514/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/827392030111825980/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/827391342111752232/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/827167824534568980/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/825952303022473216/caption.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/825944507824209940/caption.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/825944551142457414/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/825939387346321428/caption.gif": null,
-            "https://c.tenor.com/HubfXlK2w50AAAAd/mutual-servers-trollface.gif": null,
-            "https://c.tenor.com/7YNdeRzktjMAAAAC/darthy-gexxel.gif": null,
-            "https://c.tenor.com/IRbgeS8CymAAAAAC/darthy-gexxel.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/824114609966678066/caption.gif": null,
-            "https://media.discordapp.net/attachments/359589001688252446/819116931067019284/image0-7.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/823848783099592714/caption.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/823376181104476170/caption.gif": null,
-            "https://c.tenor.com/7NL8QR6JdZMAAAAC/epic-embed-fail-ryan-gosling.gif": null,
-            "https://media.discordapp.net/attachments/383898468462100481/821543729471029268/discord.gif": null,
-            "https://c.tenor.com/b2fJSphrhWUAAAAC/jerma985-jeremy.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/722176879909666826/caption.gif": null,
-            "https://c.tenor.com/THI53orYKhMAAAAd/jerma-jerma985.gif": null,
-            "https://c.tenor.com/GGAg9SRbFuoAAAAd/big-chungus.gif": null,
-            "https://c.tenor.com/rd_CpyUldQQAAAAC/troll-troll-face.gif": null,
-            "https://media.discordapp.net/attachments/710317808222732321/719414769907400774/image1_1.gif": null,
-            "https://media.discordapp.net/attachments/710317808222732321/719414747782709319/image0-7-1.gif": null,
-            "https://media.discordapp.net/attachments/280809737447276544/817397910307864586/image0-8.gif": null,
-            "https://media.discordapp.net/attachments/604407073156890637/817851784377925702/image0-54-1.gif": null,
-            "https://media.discordapp.net/attachments/464249518729330688/768318469921833010/image0-18.gif": null,
-            "https://media.discordapp.net/attachments/464249518729330688/768318468767350814/image0-15.gif": null,
-            "https://c.tenor.com/wphIipSQJIYAAAAd/jesus-ballin-mars-bars.gif": null,
-            "https://c.tenor.com/AaeTdYoo0hkAAAAC/based.gif": null,
-            "https://media.discordapp.net/attachments/800349854152130570/816504884357759006/sportsbet.gif": null,
-            "https://c.tenor.com/fNHkmcKFZ9UAAAAC/speed-dead-chat.gif": null,
-            "https://media.discordapp.net/attachments/719672251951218720/809452304171925524/image0.gif": null,
-            "https://c.tenor.com/oFUpD7aEGEUAAAAd/canadian-riot-push-trash-can.gif": null,
-            "https://c.tenor.com/Z-2S2ZvR98EAAAAC/no-bobux-0bobux.gif": null,
-            "https://c.tenor.com/wkynFFZgqLoAAAAd/bobux-0bobux.gif": null,
-            "https://c.tenor.com/i0lkNaW-9jwAAAAd/bobux-big-chungus.gif": null,
-            "https://c.tenor.com/Rn4wWYlku-0AAAAC/p0larred-bobux.gif": null,
-            "https://c.tenor.com/-qHZZdSEWX4AAAAd/bobux.gif": null,
-            "https://c.tenor.com/iH-D1tmA7jgAAAAC/bobux-your-shipment-of-bobux-has-arrived.gif": null,
-            "https://c.tenor.com/6DSsKCIbfjsAAAAC/bobux-delivery.gif": null,
-            "https://images-ext-2.discordapp.net/external/F1Qsr8urvaemKmhsUMOdZgq7VFvD-0S-owru6nyvH1I/https/images-ext-2.discordapp.net/external/sYEF6oKKRbPi2hZaGYqH6FgiCFEDNTMLNIMN8prN9KQ/https/media.discordapp.net/attachments/792961507923198012/809927184831479838/image0_1.gif": null,
-            "https://c.tenor.com/b-NZGgbBMqAAAAAC/jerma-germaphobe.gif": null,
-            "https://media.discordapp.net/attachments/642742386190974986/799860274747670580/image0.gif": null,
-            "https://c.tenor.com/CXt_4UtOgv8AAAAd/the-garf.gif": null,
-            "https://c.tenor.com/xT6IyvR09qAAAAAC/the-garf-scary-the.gif": null,
-            "https://c.tenor.com/UEcooGmob7YAAAAC/the-garf-scary-the.gif": null,
-            "https://c.tenor.com/Es_CQTAoQxEAAAAC/troll-get-trolled.gif": null,
-            "https://c.tenor.com/4o4ddvWWYpsAAAAC/no-anime.gif": null,
-            "https://c.tenor.com/uXQcNNZEfPsAAAAC/server-cat.gif": null,
-            "https://media.discordapp.net/attachments/758070747653734554/765176776745287690/image0.gif": null,
-            "https://c.tenor.com/weB0PGdBKZgAAAAC/cope.gif": null,
-            "https://c.tenor.com/Ctz1jO-y0fcAAAAC/waiting-for-memes-memes.gif": null,
-            "https://c.tenor.com/1TX9Z0FIvE8AAAAd/ice-eating.gif": null,
-            "https://media.discordapp.net/attachments/673711276395986975/800977403325186068/image0-16.gif": null,
-            "https://media.discordapp.net/attachments/493336712429174784/782283030261661697/3fvqdw22hu161.gif": null,
-            "https://c.tenor.com/d6XZhVcT1x4AAAAC/get-real-cat.gif": null,
-            "https://media.discordapp.net/attachments/602362713863094322/769106897830805524/image0-1.gif": null,
-            "https://media.discordapp.net/attachments/579729473797357580/809117158058623016/image0.gif": null,
-            "https://media.discordapp.net/attachments/743105041770086412/766396962417016903/savetweetvid_EkJ0FZfVcAAqJcD.gif": null,
-            "https://media.discordapp.net/attachments/775752263981072414/808395513379684382/image0.gif": null,
-            "https://media.discordapp.net/attachments/768186012534702111/768783185853022218/image0.gif": null,
-            "https://media.discordapp.net/attachments/614649229008437250/805951384712642560/image0.gif": null,
-            "https://c.tenor.com/cLIYo_vGRcEAAAAC/mircord-zabloing.gif": null,
-            "https://c.tenor.com/JGRK4YW7SxYAAAAC/do-not-post-rhino-shit-gif-rhino.gif": null,
-            "https://c.tenor.com/QFB9uDn4pSQAAAAC/yo-mama-stairway-to-heaven.gif": null,
-            "https://c.tenor.com/Tr0DC7maFcoAAAAC/the-toast-toast.gif": null,
-            "https://media.discordapp.net/attachments/338857510460981251/793772824007278592/glassesbad.gif": null,
-            "https://media.discordapp.net/attachments/343215734035316737/804900417447919686/image0_3.gif": null,
-            "https://c.tenor.com/CqJmSfEsuwwAAAAd/cbt-fire-cbt.gif": null,
-            "https://media.discordapp.net/attachments/396090984242479114/804539939597451285/england.gif": null,
-            "https://media.discordapp.net/attachments/368551490572517377/764571988512997466/image0.gif": null,
-            "https://media.discordapp.net/attachments/639239867607416901/706571399912882236/image0-23.gif": null,
-            "https://media.discordapp.net/attachments/381916320423215104/804456716740853851/99109e1-2.gif": null,
-            "https://c.tenor.com/qXmiv4L9KYkAAAAd/top.gif": null,
-            "https://media.discordapp.net/attachments/669705005208567811/804849920087293982/image0.gif": null,
-            "https://media.discordapp.net/attachments/804524644643635264/804851793007738880/Gamestop_wallstreet.gif": null,
-            "https://media.discordapp.net/attachments/505215538591432704/803476146292391936/venezuela.gif": null,
-            "https://media.discordapp.net/attachments/564544696995676177/687093145447825418/bc04416f2d5a911b25e34b89cbaca0f2564c3552d3875c65013e04071cf09ce8_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/804419934003527750/image0_8.gif": null,
-            "https://i.kym-cdn.com/photos/images/original/002/001/882/d0a.gif": null,
-            "https://media.discordapp.net/attachments/439519668819066880/676413470912020500/image0-20-1.gif": null,
-            "https://c.tenor.com/F1wugXTBO2gAAAAd/monkey-d-luffy-harambe.gif": null,
-            "https://c.tenor.com/-aOjanfFLawAAAAC/keller-4chan-keller.gif": null,
-            "https://media.discordapp.net/attachments/528927344690200576/800987048323973153/caption_1.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/803418611891830845/image0.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/803424778987110440/image0-4.gif": null,
-            "https://images-ext-2.discordapp.net/external/Yrss94ufxPQ8-jYkf7vDi1RFpHANH0Hsrq7uZBpFrnU/https/media.discordapp.net/attachments/439519668819066880/753374556395405460/3d580297d90a002e26dd27264026129d404192ccc3e52a29f9276e18ae8f24e0_1.gif.gif": null,
-            "https://c.tenor.com/NCsca_exmC0AAAAC/cry-about-it.gif": null,
-            "https://c.tenor.com/Jy6WtdF_gJ0AAAAd/imposter-among-us.gif": null,
-            "https://c.tenor.com/KoraOVopTMsAAAAd/when-the-imposter-is-sus-jerma.gif": null,
-            "https://media.discordapp.net/attachments/796176182117924864/802652138660298832/ezgif-3-fbd0e05adcbf.gif": null,
-            "https://media.discordapp.net/attachments/675497549020397568/802131640360108092/image0-12-2.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/802539965556195358/bf9a3712c1549a0288a865a817d246d38b5faaa4554a799193f7a054514af749_1.gif-1.gif": null,
-            "https://images-ext-2.discordapp.net/external/fQzrCqaXs_HfeDCyhqnqH_Cecud-cMCa4ZbXU2Np3Zk/%3Fwidth%3D384%26height%3D384/https/images-ext-2.discordapp.net/external/5tNkhYuTqovf8UrL77znYWmefPK7JQBzEZdZN5oPeuQ/https/images-ext-1.discordapp.net/external/udEVaBydfzjHsi0R2kraD8MSCrYh0R17q9QlLw6_4Js/https/i.redd.it/hnoxf201kkc61.gif?width=307&height=307": null,
-            "https://c.tenor.com/zq_B4nOWvyIAAAAC/mute-discord.gif": null,
-            "https://c.tenor.com/n5mBi8UJnsUAAAAC/traps-abs.gif": null,
-            "https://c.tenor.com/62TZCIlufVYAAAAd/tasty-burgers-pov.gif": null,
-            "https://c.tenor.com/RZQU1_c6suwAAAAd/bodeguys-you-can-be-racist-to-me.gif": null,
-            "https://images-ext-1.discordapp.net/external/6uXxHr_AqrCYBt-B2TjHUJYpwWYlZFPG4BSL6Dz1tJg/https/media.discordapp.net/attachments/647238259105333268/751198854019547136/image1.gif": null,
-            "https://media.discordapp.net/attachments/666676467723272212/798944916679163934/image0.gif": null,
-            "https://media.discordapp.net/attachments/775752263981072414/801150788021649428/image0-5_1.gif": null,
-            "https://media.discordapp.net/attachments/459845122067005440/706208664029102110/image0.gif": null,
-            "https://media.discordapp.net/attachments/588825472637337631/800913408202375168/caption-2.gif": null,
-            "https://media.discordapp.net/attachments/745048287182061590/787496566016704572/image0.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/800476880376692736/image0.gif": null,
-            "https://media.discordapp.net/attachments/724009203072761876/772232443092533268/image0-118.gif": null,
-            "https://media.discordapp.net/attachments/775752263981072414/798697233599692840/image0.gif?width=351&height=369": null,
-            "https://media.discordapp.net/attachments/712276670697963561/774118964296679454/9c51368.gif": null,
-            "https://images-ext-1.discordapp.net/external/37iFP5z9rd4ybL0Q84Sy4XxMQpVbAfCBONrxlqwpm4o/https/media.discordapp.net/attachments/764218776706613289/765177287602601984/image0.gif?width=481&height=406": null,
-            "https://media.discordapp.net/attachments/765639735129407518/786949976890540072/79bcede45c032962e486527fc127f2f7f9882cc6065be78fca03d5589651098f_1.gif": null,
-            "https://media.discordapp.net/attachments/724009203072761876/771999032918540288/image0.gif": null,
-            "https://media.discordapp.net/attachments/751618423238426685/769264649203875860/image0.gif": null,
-            "https://c.tenor.com/aF3mrjRFNDEAAAAC/damon-albarn-sleeper-agent.gif": null,
-            "https://media.discordapp.net/attachments/719904374473883700/798532585612509224/oi_l.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/791148536455757834/image0.gif": null,
-            "https://media.discordapp.net/attachments/624650750748000285/785884274858655744/5ba84ce533a0dfe46a5f160461ca06603dd1bcdd0abfb3d5f62c96866bedd3d2_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/498943000353964032/765694395579760670/image0.gif": null,
-            "https://media.discordapp.net/attachments/456230331507277824/789951717952192522/image0.gif": null,
-            "https://c.tenor.com/x9-rb7oIGF4AAAAC/me-looking-for-funny-looking-for-the-funny.gif": null,
-            "https://media.discordapp.net/attachments/488036672697663499/798323067079884850/image0.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/797132683758010418/image0.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/787550618994475018/image0.gif": null,
-            "https://c.tenor.com/JY0_XO6eF-EAAAAd/glowcord-discord.gif": null,
-            "https://c.tenor.com/ig0ptbc-TUAAAAAd/nigga-cat-big-chungus.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/785344698361315328/image0.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/782639914922934313/image0.gif": null,
-            "https://c.tenor.com/OhwZT_4pq08AAAAd/bladerunner2049.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/780016034622996501/image0-43-1.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/779005755687960657/black_lel.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/778840776561524776/3a9db51.gif": null,
-            "https://media.discordapp.net/attachments/724975122842255471/776355795503546418/image0-1.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/774845988761370634/a1d4de9.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/773593473991311370/b5ce6dcb5221fa341163f4954458a40006431df932b35ce65d02310df7ed7f42_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/767883689311862784/767883703954702366/image0.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/767037615999942666/image0-45.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/767037614846378004/image0.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/767037614368358420/image0-12.gif": null,
-            "https://c.tenor.com/mr_JoOGaIkMAAAAC/chicken-twerking.gif": null,
-            "https://c.tenor.com/jclBVgW144UAAAAd/second-graders-final-stand.gif": null,
-            "https://c.tenor.com/pmlN9tTyOwcAAAAd/discord-mods-discord.gif": null,
-            "https://images-ext-2.discordapp.net/external/OJiL4IGnW7eQCAn7Qqp7fn3Q9Y9Sro8RbRkzprrc8Lw/https/media.discordapp.net/attachments/389730082899623947/690615544713445406/2b03e9bb1ed566f0d41ce769bd2956aa6a11ccf570ca74130f6929c62f1b9ffc_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/753202701969653792/760116616448180264/7064d8a00b2a3bad425cf70a0954c2863f2a5b89b3e1b0bc53b7497c7c08e471_1.gif.gif": null,
-            "https://c.tenor.com/CsnEoKNTHx0AAAAd/funny-cow.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/759801496145100800/image0-20.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/759919132845539359/image0-1-2-1.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/758744282818674728/image0-122.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/749541839413051422/romanian.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/757721230965997578/image1.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/757721230014152754/image0.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/901724609580269569/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/901725118588399636/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/901726183463469076/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/901744254605471794/temp.gif": null,
-            "https://c.tenor.com/1yTfuVzi8GkAAAAC/jarvis-lovecraft.gif": null,
-            "https://c.tenor.com/r0cB5EMSG4cAAAAC/lego-wheny-little-brother.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/903196258515173436/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/903479440993034260/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905732076001706024/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/904247035799154698/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/904246909139554354/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/901785975561261076/temp.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/905435429279522816/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906351350558896169/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906351984649572422/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906706311511670794/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906801640546398228/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906802785314541588/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906817445459820594/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906861764556247120/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906821114053918730/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906862727027384330/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906821676417818684/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/910846923173429268/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/910847435700576256/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/925950023068426390/unknown.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/925950474958548992/514393245191634947_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/928480735743053874/712243005519560736_470896999722516480.gif": null,
-            "https://c.tenor.com/buYvu18ruRwAAAAd/air-fryer-clearly-you-dont-own-an-air-fryer.gif": null,
-            "https://media.discordapp.net/attachments/868888972120702999/928577502841032754/868888972120702999_868888972120702996.gif": null,
-            "https://c.tenor.com/9VpvLRHC5-IAAAAd/zyzz-zyzz-trolled.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/947706215985733713/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/947711699706855474/712243005519560736_470896999722516480.gif": null,
-            "https://c.tenor.com/oE3BGDgwH3UAAAAd/kitty-review.gif": null,
-            "https://c.tenor.com/etRsyIAAJpAAAAAC/goodbye-chat-chat.gif": null,
-            "https://c.tenor.com/MmZxIILWyL4AAAAC/kitty-review-kitty.gif": null,
-            "https://c.tenor.com/2-dhm_j3BIgAAAAC/kitty-review-kitty.gif": null,
-            "https://c.tenor.com/_j23QV67yroAAAAC/kitty-review-cat.gif": null,
-            "https://c.tenor.com/fcnZ4XYicmIAAAAd/kitty.gif": null,
-            "https://c.tenor.com/ZrM6NS327DQAAAAd/kitty-review-cat-review.gif": null,
-            "https://c.tenor.com/U-zdn0WKfXAAAAAC/plus-kitty-review.gif": null,
-            "https://c.tenor.com/qoLNHHh64SgAAAAC/cat-music.gif": null,
-            "https://c.tenor.com/x_HH09EGTxwAAAAd/kitty-review-cat-review.gif": null,
-            "https://c.tenor.com/w42dhlxKq7kAAAAC/kitty-review.gif": null,
-            "https://c.tenor.com/RtHoxZDfww8AAAAC/kitty-review.gif": null,
-            "https://c.tenor.com/uNCatVzoVtQAAAAd/kitty-review-kitty.gif": null,
-            "https://c.tenor.com/RaiVsIUibZgAAAAd/kitty-review-ugly.gif": null,
-            "https://c.tenor.com/oypPy4ae_OYAAAAd/kitty-review-cat-review.gif": null,
-            "https://c.tenor.com/lfdNIF_8KSsAAAAC/kitty-review-cat.gif": null,
-            "https://c.tenor.com/CFJQEGK1aiUAAAAd/kitty-review-cat.gif": null,
-            "https://c.tenor.com/RuOBPHa4PZkAAAAd/kitty-review-bag.gif": null,
-            "https://c.tenor.com/QYGqkL-QcgcAAAAC/kitty-review-isnt-ballin.gif": null,
-            "https://c.tenor.com/oKrZintn9RsAAAAd/kitty-review-kitty.gif": null,
-            "https://c.tenor.com/ECAwQcWmgO4AAAAd/kitty-review.gif": null,
-            "https://c.tenor.com/oulv0W5JfDEAAAAC/kitty-review.gif": null,
-            "https://media.discordapp.net/attachments/630563756317081630/806724451055960114/image0.gif": null,
-            "https://media.discordapp.net/attachments/659877816254464041/865679943954464828/image0.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/821714910546886667/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/833317727015665664/reverse.gif": null,
-            "https://media.discordapp.net/attachments/744854780421341184/865236956086403092/image0.gif": null,
-            "https://media.discordapp.net/attachments/564544696995676177/792815301703499786/image0-1-5.gif": null,
-            "https://c.tenor.com/8uWeTZiGo5MAAAAC/esm-bot-esm-bot-try-to-function.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/826658318873395217/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/825954305441529896/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/825953182009393172/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/825953060261199872/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/825951200985088060/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/825946769006264350/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/825943952133193729/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/825937399455547432/caption.gif": null,
-            "https://media.discordapp.net/attachments/745789186237399121/825520578974187520/caption.gif": null,
-            "https://media.discordapp.net/attachments/516815557153259533/817511026978848768/image0.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/823122215896612885/caption.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/821714625044414474/caption.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/821713716139130890/caption.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/821712989316055100/caption.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/821712278474850304/caption.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/821712066342551552/caption.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/821711303537852476/caption.gif": null,
-            "https://media.discordapp.net/attachments/654768233827794960/818213943045783626/image0-30.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/821711032179359754/caption.gif": null,
-            "https://media.discordapp.net/attachments/399690081054490656/814193487427010660/image0-28.gif": null,
-            "https://media.discordapp.net/attachments/622172642832547840/814238012561031198/caption.gif": null,
-            "https://c.tenor.com/fN8DE-D3cJIAAAAd/get-fake-chinese-egg-man.gif": null,
-            "https://media.discordapp.net/attachments/798417821717102602/817828514765471767/caption.gif": null,
-            "https://media.discordapp.net/attachments/803784904164900885/806613254536298557/image0.gif": null,
-            "https://media.discordapp.net/attachments/787285636713152532/810749699157000212/caption-4.gif": null,
-            "https://media.discordapp.net/attachments/775752263981072414/806159140414029825/image0.gif": null,
-            "https://media.discordapp.net/attachments/692646329377357924/804048195080290304/caption.gif": null,
-            "https://media.discordapp.net/attachments/545732765996285967/806660849837670420/caption.gif": null,
-            "https://media.discordapp.net/attachments/754572464721494078/800977791771475978/caption-10.gif": null,
-            "https://media.discordapp.net/attachments/759192495782625292/806460891080032266/day_ruined.gif": null,
-            "https://media.discordapp.net/attachments/292144898658926592/806252217715654736/caption-4.gif": null,
-            "https://media.discordapp.net/attachments/749287801006325760/792667605592834048/image0_12.gif": null,
-            "https://c.tenor.com/cToCbgIE_v8AAAAd/snail-me.gif": null,
-            "https://media.discordapp.net/attachments/803441338208485427/803643163448836146/trumppard.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/779571911272824862/image0.gif": null,
-            "https://media.discordapp.net/attachments/754488572786114610/801649139204489226/tyler.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/801496000971145276/image0-10.gif": null,
-            "https://media.discordapp.net/attachments/790276520022769664/798095466948067359/image0-30.gif": null,
-            "https://images-ext-1.discordapp.net/external/fntMCgoJBSU8ShgHM8PsaPYdLNaWsrbx_GYW7WiyCZE/https/media.discordapp.net/attachments/775752263981072414/791504378707968030/image0.gif": null,
-            "https://media.discordapp.net/attachments/771342999560650782/779440686403289098/caption-29.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/780067953147117588/image1.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/721312967756480533/image0-2.gif": null,
-            "https://media.discordapp.net/attachments/724056437965455391/776307929561038868/image0-44.gif": null,
-            "https://media.discordapp.net/attachments/722446469063245825/767511196550168576/image0-4.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/732471618823127100/image0.gif": null,
-            "https://c.tenor.com/9tYnZYEN2TUAAAAC/watch-yo-tone-tone.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/947692066002067506/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/947691962549555230/712243005519560736_470896999722516480.gif": null,
-            "https://c.tenor.com/rMMV5oYzRa4AAAAd/sprigatito-im-still-amazed-by-it.gif": null,
-            "https://c.tenor.com/VwPU4I0UefoAAAAd/weed-cat-i-love-weed.gif": null,
-            "https://c.tenor.com/maf-wjxmAKYAAAAd/sprigatito-weed.gif": null,
-            "https://c.tenor.com/BiyHjKuFjvYAAAAd/sprigatito-pokemon.gif": null,
-            "https://c.tenor.com/J3QNtQFXTrUAAAAC/owgowya-cat.gif": null,
-            "https://cdn.discordapp.com/attachments/846175975560839178/950239652818845716/846175975560839178_470896999722516480.gif": null,
-            "https://images-ext-2.discordapp.net/external/j3Bq9BSnc8441tDjnEjFh80kcZ8qXV09q3FkYIhgOxs/https/media.discordapp.net/attachments/680538515318112257/800985707111907348/image0-1-1-1.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/871612654131765298/image0-57.gif": null,
-            "https://c.tenor.com/9bDIZhIwuOAAAAAC/gamers-pronouns.gif": null,
-            "https://c.tenor.com/j7noyQoMzdsAAAAd/esmbot-robot-dies.gif": null,
-            "https://c.tenor.com/NPH5OtylyeQAAAAd/esmbot-es.gif": null,
-            "https://c.tenor.com/Vl3mAh_WsGMAAAAd/esmbot-cr7.gif": null,
-            "https://c.tenor.com/lBAI8N_loT8AAAAC/esmbot-when.gif": null,
-            "https://c.tenor.com/5oztqPv562kAAAAd/esmbot-image.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/953256278954749972/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/704202033519132732/728267785171632306/image0.gif": null
-        },
-        "893293074413916230": {
-            "https://media.discordapp.net/attachments/712243005519560736/900601768268951613/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/900681564776710184/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/900685019184496660/temp.gif": null,
-            "https://media.discordapp.net/attachments/868896205978075156/901005155267391488/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/901724609580269569/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/901725118588399636/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/901726114249056306/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/901726183463469076/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/901739986536263680/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/901740795495850015/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/901744254605471794/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/901784502362324992/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/901785753657421844/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/901785809538134046/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/901785975561261076/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/902024690653085696/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/902025004068266056/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/902025292665716816/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/902034394657718312/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/902034481509183528/temp.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/902129591429234718/temp.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/902129610194563072/temp.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/902130340070559744/temp.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/902130379308277810/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/903196258515173436/temp.gif": null,
-            "https://media.discordapp.net/attachments/868888972120702999/903196892979150858/temp.gif": null,
-            "https://media.discordapp.net/attachments/868888972120702999/903197080128983060/temp.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/903252462343970856/temp.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/903252638215335986/temp.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/903252827072249886/temp.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/903253031133540362/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/903479440993034260/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/904246909139554354/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905731917788377118/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905732856138067978/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905733070613778442/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905733196799410186/temp.gif": null,
-            "https://media.discordapp.net/attachments/868896205978075156/905733307612930068/temp.gif": null,
-            "https://media.discordapp.net/attachments/868896205978075156/905733426924093480/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905733663671603200/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905733791211999232/temp.gif": null,
-            "https://media.discordapp.net/attachments/868896205978075156/905734120213200937/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905734699996033074/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905734760259784734/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905735342886383626/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905735473404739654/temp.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905735974405935154/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905736022028066856/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905736271551410187/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905736331341209610/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905736403533561906/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905736563370111016/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905737698428485652/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905737746931392512/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905739502297939979/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905767720090468362/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905767764420091984/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905767789690781716/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905767814487482388/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905768215773339678/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905769330103439390/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905769617945935902/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905769696991797288/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905770040064868352/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905770094066561034/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905770286333460490/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905770496669388820/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905770569910329344/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905772068707110932/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905772114970312744/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905772654273896498/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905772692400140328/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905772730547339265/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905772768036003890/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905772857450192936/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905772902580908042/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905772942678450216/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905773449635569684/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905773501552676874/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/905773551766880276/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/868888972120702999/905789331040522240/868888972120702999_868888972120702996.gif": null,
-            "https://media.discordapp.net/attachments/868888972120702999/905789464448761876/868888972120702999_868888972120702996.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906351350558896169/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906351984649572422/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906706311511670794/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/906719465029378078/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/906721689637900339/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/906722167507542076/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/906722535251517470/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906722973162012722/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906801640546398228/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906802785314541588/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906816241870733332/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906817232888291358/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906817441680736276/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906820612570382386/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906820700663320617/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906820755885539338/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906820848441262120/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906821114053918730/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906821319289622539/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906821679152517121/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906854473341743114/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906854796823253002/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906855594747625472/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906856374871416832/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906857110246158346/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906857464530624522/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906861764556247120/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906862327012409364/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906862727027384330/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906866079329030145/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906866330718838844/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/907177366718140427/514393245191634947_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/908161793979977739/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/909720061600755712/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/910846923173429268/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/910847435700576256/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/868888972120702999/912532718133342288/868888972120702999_868888972120702996.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/912679114568265808/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/912679242008002570/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/912679336744730684/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/912679733609775134/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/912679851339702303/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/912679890459963402/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/912680185621540874/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/925950365428514836/514393245191634947_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/514393245191634947/925950474958548992/514393245191634947_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/928480669439524934/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/928480735743053874/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/868888972120702999/928577502841032754/868888972120702999_868888972120702996.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/935093256700723210/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/937627480431398912/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/947690281283776512/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/947691962549555230/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/947692066002067506/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/947706215985733713/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/947706364355051530/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/947706450841587732/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/947711665602961488/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/947711699706855474/712243005519560736_470896999722516480.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/948435878596976671/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/948436469914173521/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/948436502793302086/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/948437181498794034/841208671169675354_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/836423592345731102/949225469990014977/836423592345731102_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/836423592345731102/949225592853778452/836423592345731102_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/836423592345731102/949226187446685726/836423592345731102_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/949226400928387082/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/470168157148020756/810573725031465035/image0-16.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/949226799198507058/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/836423592345731102/949226870640099378/836423592345731102_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/949236790911447110/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/949247174095552532/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/949247246363426816/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/949247548504293416/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/949247605580386384/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/949248054257659904/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/903257215652216862/temp.gif": null,
-            "https://c.tenor.com/4UkqRRjN2fwAAAAC/goopie-gifcaption.gif": null,
-            "https://media.discordapp.net/attachments/813971285339668500/846245928130183208/caption.gif": null,
-            "https://c.tenor.com/VGWokGdwt-EAAAAC/the-voices-voices-in-my-head.gif": null,
-            "https://media.discordapp.net/attachments/735570260609990726/834053255327776828/image0.gif": null,
-            "https://c.tenor.com/aF3mrjRFNDEAAAAC/damon-albarn-sleeper-agent.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/834290040560943145/caption.gif": null,
-            "https://c.tenor.com/weB0PGdBKZgAAAAC/cope.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/899248394718044170/temp.gif": null,
-            "https://media.discordapp.net/attachments/744854780421341184/846307044550115348/caption.gif": null,
-            "https://c.tenor.com/CHC6gl8ef60AAAAd/skill-issue-ratio.gif": null,
-            "https://media.discordapp.net/attachments/683757872961814548/692950617806733352/image1.gif": null,
-            "https://cdn.discordapp.com/attachments/846175975560839178/950205230774104074/846175975560839178_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/846175975560839178/950205511008149505/846175975560839178_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/846175975560839178/950234391311949865/846175975560839178_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/846175975560839178/950239652818845716/846175975560839178_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/712243005519560736/951254098156593152/712243005519560736_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/712243005519560736/951254331896786954/712243005519560736_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/952499136110932008/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953223460727959552/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953224461702815764/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953255925953753138/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953256067410853918/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953256278954749972/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953256966183075840/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953257262670037052/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953257717357760532/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953257813885468712/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/841208671169675354/953258252819394580/841208671169675354_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953258391806033920/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953258566448451654/869864347449577512_741169124817764372.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/801496000971145276/image0-10.gif": null,
-            "https://media.discordapp.net/attachments/704202033519132732/728267785171632306/image0.gif": null,
-            "https://media.discordapp.net/attachments/745789186237399121/825520578974187520/caption.gif": null,
-            "https://media.discordapp.net/attachments/836423592345731102/841252549444501524/mg9avb9dbht.gif": null,
-            "https://c.tenor.com/6dGnOUKfCxgAAAAC/fifi-the-doggo-doggo.gif": null,
-            "https://c.tenor.com/RtHoxZDfww8AAAAC/kitty-review.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/954266900861444096/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/954267057132810250/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/954267219641122816/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/703899761631166464/954268068891201586/703899761631166464_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/703899761631166464/954268595792281611/703899761631166464_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/703899761631166464/954269762253361172/703899761631166464_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/703899761631166464/954270143477850112/703899761631166464_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/703899761631166464/954271035384016917/703899761631166464_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/703899761631166464/954271225797025812/703899761631166464_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/703899761631166464/954271444676775996/703899761631166464_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/703899761631166464/954271509411692564/703899761631166464_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/954271689691254834/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/954272205615808522/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/954272258707296266/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/954281750543085618/869864347449577512_741169124817764372.gif": null,
-            "https://cdn.discordapp.com/attachments/712243005519560736/955301657523126302/712243005519560736_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/712243005519560736/955316160180682772/712243005519560736_470896999722516480.gif": null,
-            "https://cdn.discordapp.com/attachments/712243005519560736/955316743495122955/712243005519560736_470896999722516480.gif": null
-        },
-        "158878635766317056": {
-            "https://c.tenor.com/CHC6gl8ef60AAAAd/skill-issue-ratio.gif": null,
-            "https://c.tenor.com/QYf5TIRJtS4AAAAd/deltarune-noelle.gif": null,
-            "https://media.discordapp.net/attachments/730160817953308716/890857076513964072/image0.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/890948323459104909/caption.gif": null,
-            "https://media.discordapp.net/attachments/615065654508257310/890555315093901312/image0-2-1.gif": null,
-            "https://c.tenor.com/PVEGJ_XKawAAAAAd/michigan-chungus-michigan.gif": null,
-            "https://c.tenor.com/PyisCt1hN40AAAAd/me-when-the-when-the.gif": null,
-            "https://media.discordapp.net/attachments/783040026829127710/879471964023042078/image0-25.gif": null,
-            "https://c.tenor.com/ZYPXJctKRwoAAAAC/soy-soyboy.gif": null,
-            "https://c.tenor.com/VtQoxocQSoMAAAAd/its-uncanny-how-easy-it-is-its-uncanny-how-hard-it-is.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/885484853510955058/caption.gif": null,
-            "https://c.tenor.com/hGpIkDBtGJ8AAAAd/twitter-twitter-users.gif": null,
-            "https://c.tenor.com/ReVdsc4W0nwAAAAd/embed-fail.gif": null,
-            "https://media.discordapp.net/attachments/654882504360067073/884137552561451068/caption.gif": null,
-            "https://c.tenor.com/U6iV5ca7q_cAAAAd/epic-embed-fail-embed-fail.gif": null,
-            "https://c.tenor.com/0LIEs1v5yXUAAAAC/getreal.gif": null,
-            "https://c.tenor.com/_81VDAqa54kAAAAd/locked-away-for-eternity-nonlooping-locked.gif": null,
-            "https://media.discordapp.net/attachments/616859985665589261/883599792117276722/392.gif": null,
-            "https://media.discordapp.net/attachments/861429532234219540/882469036296925184/image0.gif": null,
-            "https://c.tenor.com/Zlm7xazS-I4AAAAd/hello-chat-cat.gif": null,
-            "https://c.tenor.com/T5fTPzX-mLoAAAAC/roingus-jerboa.gif": null,
-            "https://c.tenor.com/nood1PLXipkAAAAC/fnaf-cat.gif": null,
-            "https://c.tenor.com/rK3diIf7RZ4AAAAd/bobs-burgers-bob-ross.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/880501653223145502/image0-1-1-2.gif": null,
-            "https://c.tenor.com/f5x7wP1_3Q4AAAAC/no-yoinky-sploinky-that-yoinky-sploinky.gif": null,
-            "https://c.tenor.com/uJNs4UuxsAsAAAAC/obtain-realism.gif": null,
-            "https://media.discordapp.net/attachments/869665288000516146/869689067833536572/gif.gif": null,
-            "https://media.discordapp.net/attachments/544146545797234688/876674272947470376/image0-8.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/876360609216737330/caption-1-1-1.gif": null,
-            "https://i.kym-cdn.com/photos/images/original/002/171/239/eb9.gif": null,
-            "https://c.tenor.com/eTy7XFQ1NxAAAAAd/peugeot-jumpscare.gif": null,
-            "https://media.discordapp.net/attachments/861429532234219540/874663606317350983/get_breaded.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/874545610798292992/image0-66.gif": null,
-            "https://c.tenor.com/DpTQnLZ4RQsAAAAC/quaint-isaac.gif": null,
-            "https://media.discordapp.net/attachments/560285839226175491/872974781035737128/image0-165.gif": null,
-            "https://media.discordapp.net/attachments/560285839226175491/872974780553371648/image0-106.gif": null,
-            "https://c.tenor.com/efh1eoH96i8AAAAC/cry-about-it.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/872755363106148382/image0.gif": null,
-            "https://media.discordapp.net/attachments/861429532234219540/871045464114491432/321.gif": null,
-            "https://c.tenor.com/8s0tdOS99SsAAAAC/what-the.gif": null,
-            "https://c.tenor.com/vryf32uQU68AAAAd/cry-about-it.gif": null,
-            "https://media.discordapp.net/attachments/864878407993131058/870865148091465769/1627309127180.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/838978412042256404/caption.gif": null,
-            "https://c.tenor.com/GCDpMwDb6CsAAAAC/drill-awesome.gif": null,
-            "https://c.tenor.com/tDplRm0HDyYAAAAC/sussy-among-us.gif": null,
-            "https://c.tenor.com/v8P2kGhgv1gAAAAC/hylics-die.gif": null,
-            "https://c.tenor.com/IMpBQ3NgIdEAAAAC/cat-clock.gif": null,
-            "https://c.tenor.com/Ewf7ouYJ7JkAAAAC/capybara-cbt.gif": null,
-            "https://c.tenor.com/GNFS55aOQEkAAAAd/potemkin-guilty-gear.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/868506999397187675/caption.gif": null,
-            "https://c.tenor.com/70gYt82XxIwAAAAd/dbz-dbgt.gif": null,
-            "https://c.tenor.com/1hdsn62I4tkAAAAC/turtle-cute.gif": null,
-            "https://media.discordapp.net/attachments/418415615577948170/867461941155725352/ezgif.com-gif-maker6.gif": null,
-            "https://media.discordapp.net/attachments/278323568998350850/867225135152103504/caption-1.gif": null,
-            "https://c.tenor.com/HJ5rw5ASIcgAAAAC/among-us-sus.gif": null,
-            "https://media.discordapp.net/attachments/570224854041886721/867331282341855242/caption.gif": null,
-            "https://media.discordapp.net/attachments/752329837925892106/863909557374156800/image0.gif": null,
-            "https://c.tenor.com/xx_HaPQXOgYAAAAC/pee-shop.gif": null,
-            "https://c.tenor.com/t0_J2zRZbrUAAAAd/get-real-guilty-gear-strive.gif": null,
-            "https://c.tenor.com/kNRNoSWSASMAAAAd/beast-beast-mode.gif": null,
-            "https://c.tenor.com/XMRnHdhvVvcAAAAC/cry-about-it-cry.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/865034752792854558/caption-1.gif": null,
-            "https://c.tenor.com/JZxtpY7RZhoAAAAd/when-the-drip-is-respectful-when-the-camel.gif": null,
-            "https://c.tenor.com/ZtsG3KlHKyYAAAAd/trolling.gif": null,
-            "https://media.discordapp.net/attachments/260170566529449994/847693813203599360/Texas.gif": null,
-            "https://c.tenor.com/9-C9qXQ_qisAAAAC/mac-macthollomew.gif": null,
-            "https://c.tenor.com/CDdKaEGM-eUAAAAC/lemon-demon-neil-cicierega.gif": null,
-            "https://media.discordapp.net/attachments/620296455424442395/860563606302490624/hussein.gif": null,
-            "https://c.tenor.com/zs_mdgJZqVUAAAAC/ignore-the.gif": null,
-            "https://media.discordapp.net/attachments/757434098456461338/860511210175725598/caption.gif": null,
-            "https://c.tenor.com/MmjgJjOHEhEAAAAd/die-hbox.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/860493160887091220/caption-3-2.gif": null,
-            "https://media.discordapp.net/attachments/369444616833073164/860515880966029353/speed.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/859467587372580884/image0-23-1.gif": null,
-            "https://media.discordapp.net/attachments/830842566727303208/851144387428614184/image0.gif": null,
-            "https://64.media.tumblr.com/595a499cfc332aa17f131c64cc975ae3/76ac0eaeade44824-ab/s400x600/3ab722f1157d6befbcbf6b4a43a42e96d4f8f9bb.gif": null,
-            "https://c.tenor.com/M2_iWUrxltwAAAAC/steam-valve.gif": null,
-            "https://c.tenor.com/SkDCpfivU-gAAAAd/darth-vader-soda.gif": null,
-            "https://media.discordapp.net/attachments/523282321303142400/841069380267671573/d2877d1.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/858397792695091200/ezgif-1-af9f5165c482.gif": null,
-            "https://c.tenor.com/5lihZ3xC3AcAAAAC/what-the-dog-doing-roblox.gif": null,
-            "https://c.tenor.com/OQx7MMLlAAYAAAAd/sick-tricks-kiryu-kiryu.gif": null,
-            "https://c.tenor.com/zRSFsFP9CdYAAAAd/monkey-coin-joeseppi.gif": null,
-            "https://media.discordapp.net/attachments/832779933364650004/852319017934651401/image0.gif": null,
-            "https://media.discordapp.net/attachments/560285839226175491/854602980124524554/RDT_20210615_1902351661112122636315042.gif": null,
-            "https://c.tenor.com/RcVvYcyTjxQAAAAC/epic-embed.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/847295965022257162/caption.gif?width=308&height=406": null,
-            "https://c.tenor.com/gzAk__5GmY4AAAAC/this-cat-water.gif": null,
-            "https://c.tenor.com/TQUXJQ5QDPAAAAAC/what-the-dog-doin-what.gif": null,
-            "https://media.discordapp.net/attachments/611720099287662592/833149742330019861/image0.gif": null,
-            "https://media.discordapp.net/attachments/545435908506124320/843991026544934912/freggy.gif": null,
-            "https://c.tenor.com/oulv0W5JfDEAAAAC/kitty-review.gif": null,
-            "https://media.discordapp.net/attachments/837565213003350016/838264876081086484/image0.gif": null,
-            "https://media.discordapp.net/attachments/399633269022261261/850550883287957514/image0.gif": null,
-            "https://c.tenor.com/yQ-EWroC114AAAAd/hello-chat-hello.gif": null,
-            "https://c.tenor.com/Nw3AdeOJhY0AAAAC/hello-chat.gif": null,
-            "https://c.tenor.com/3SYjAXlGV54AAAAd/devil-may-cry-dante.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/845950932390379540/caption.gif": null,
-            "https://c.tenor.com/nrm8eUGu4uoAAAAC/kitty-review.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/843897941986246716/image0-198.gif": null,
-            "https://c.tenor.com/ctEhZczu-iMAAAAd/no-more-monkeys-1984.gif": null,
-            "https://c.tenor.com/A6iWuIvhjT4AAAAC/thanos-dies-of-cringe.gif": null,
-            "https://media.discordapp.net/attachments/783426400899563600/843203710627741726/rats_when.gif": null,
-            "https://c.tenor.com/8aGF4_EaNRoAAAAd/gator-sheesh.gif": null,
-            "https://media.discordapp.net/attachments/693670629550850088/838184846908063794/1a9d3d5fd3d3743ed6d60acd2d430766cf149c1f4eac68f26553230841f64837_1.gif.gif": null,
-            "https://c.tenor.com/EEcyk91ruucAAAAC/kfc.gif": null,
-            "https://media.discordapp.net/attachments/560285839226175491/842504311366877235/caption.gif": null,
-            "https://media.discordapp.net/attachments/472407010042707989/841535569602412574/18b04a1.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/841336063309250590/caption.gif": null,
-            "https://c.tenor.com/SCUoBE6iAGcAAAAd/joe-mama.gif": null,
-            "https://media.discordapp.net/attachments/680928395399266314/840014314538795108/image0.gif": null,
-            "https://media.discordapp.net/attachments/759468968397504512/840564756334641162/image0-6.gif": null,
-            "https://media.discordapp.net/attachments/482958702211497994/838469511694778368/image0-8.gif": null,
-            "https://media.discordapp.net/attachments/822850855556087855/840698781737680926/strolling.gif": null,
-            "https://c.tenor.com/Af51qrAYP_sAAAAC/russian-true.gif": null,
-            "https://media.discordapp.net/attachments/821009355234082836/836233956113383424/antichrist.gif": null,
-            "https://media.discordapp.net/attachments/459046467743776779/840665421236797450/image0.gif": null,
-            "https://c.tenor.com/EGmbkFPw4m4AAAAC/get-real-vaporeon.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/840066549531803708/12840835aee48a7de30a4f4de189bae5f3b93ca55d7fda86bca2eef11007579e_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/705216707412885585/829377227552587836/1615988488315.gif": null,
-            "https://media.discordapp.net/attachments/825782329384763412/838528290024718346/image0.gif": null,
-            "https://c.tenor.com/5rCJ9g-3UdMAAAAd/solar-panel-sunlight.gif": null,
-            "https://c.tenor.com/d4ASwH5bPW0AAAAd/yakuza-like-a-dragon.gif": null,
-            "https://c.tenor.com/tj5BoI6kPoMAAAAd/enjoyer-enjoy.gif": null,
-            "https://media.discordapp.net/attachments/627085797086068737/823542352202432512/breadchat.gif": null,
-            "https://media.discordapp.net/attachments/422403986621071370/757306096925802656/image0.gif": null,
-            "https://c.tenor.com/f4_xU85jgj4AAAAC/epic-embed-fail-tv.gif": null,
-            "https://media.discordapp.net/attachments/738548949488762954/834957630203494460/image0.gif": null,
-            "https://media.discordapp.net/attachments/671819620369432607/837492484929880154/image0.gif": null,
-            "https://c.tenor.com/TPMYmwHdYv8AAAAC/reaction-discord.gif": null,
-            "https://c.tenor.com/7oLs8T8si9AAAAAd/persona-fans-persona.gif": null,
-            "https://c.tenor.com/YrtHatxSnAkAAAAC/sussy-sus.gif": null,
-            "https://c.tenor.com/IF7Yx9BLpfgAAAAC/epic-embed-fail-avgn.gif": null,
-            "https://media.discordapp.net/attachments/498634123347361812/836231653587288104/get_real.gif": null,
-            "https://media.discordapp.net/attachments/399633269022261261/831725029598953480/image0.gif": null,
-            "https://c.tenor.com/yoRmoGSy9jQAAAAC/drywall-garfield.gif": null,
-            "https://c.tenor.com/m7Ha2jXSnYwAAAAC/me-when-u-have-no-swag-swag.gif": null,
-            "https://c.tenor.com/RIIFhLU3EAsAAAAC/magically-compression.gif": null,
-            "https://media.discordapp.net/attachments/767703189319057438/835624874768334868/caption.gif": null,
-            "https://media.discordapp.net/attachments/735570260609990726/834053255327776828/image0.gif": null,
-            "https://media.discordapp.net/attachments/695501612621496336/828010284588204062/f72r27t3goq61.gif": null,
-            "https://c.tenor.com/zayMIpfp110AAAAC/blacksite-zeta-blacksite.gif": null,
-            "https://media.discordapp.net/attachments/326106290973704195/834095220005404712/image0.gif": null,
-            "https://media.discordapp.net/attachments/464249518729330688/834906206799003729/caption-2.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/835299992876875816/image0.gif": null,
-            "https://media.discordapp.net/attachments/452219191580295168/831193206078046208/image0.gif": null,
-            "https://c.tenor.com/crpwdkDhBK0AAAAC/roblox-stolen-gif.gif": null,
-            "https://c.tenor.com/RgAG9-gQJjMAAAAC/kitty-review.gif": null,
-            "https://c.tenor.com/UeBhTeSpZlkAAAAd/doing-youre.gif": null,
-            "https://c.tenor.com/PNQ0s0TQAaIAAAAd/black-mesa-military.gif": null,
-            "https://c.tenor.com/DkVt9B84ZtIAAAAC/my-beloved-heart-locket.gif": null,
-            "https://c.tenor.com/ccawi_aFrMwAAAAC/epic-embed-fail-epic-embed-win.gif": null,
-            "https://c.tenor.com/E2X9X-ckhYYAAAAd/embed-epic-embed.gif": null,
-            "https://c.tenor.com/Gm0mSTUaVFgAAAAd/cry-about-it-amogus.gif": null,
-            "https://media.discordapp.net/attachments/324176411772321792/828831515151564830/image0.gif": null,
-            "https://media.discordapp.net/attachments/648400331583258631/675742481362452491/f3a6834147a534677fba6365b275d781b4c024e2d569bf0fbf345d9cd84b139c_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/833476059856502813/unknown.gif": null,
-            "https://c.tenor.com/YD9kY4Xb7wsAAAAC/detroit-when-the.gif": null,
-            "https://c.tenor.com/hTdXqYwOnscAAAAC/cryaboutit-bowling.gif": null,
-            "https://media.discordapp.net/attachments/245465054416207872/831933143426269204/image0.gif": null,
-            "https://c.tenor.com/mKF0sfoFE8wAAAAd/girl-gamer-when-i-see-the-gamer-girl-feet.gif": null,
-            "https://c.tenor.com/FfRTvCPghAoAAAAd/dragon-ball-fans.gif": null,
-            "https://media.discordapp.net/attachments/564544696995676177/754894238050680872/image0_10.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/827994208819216394/unknown.gif": null,
-            "https://c.tenor.com/Zppcgi1q1n4AAAAd/he-was.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/827907514216874024/bab6e8c6d56b7b07b8eea9ce455fb16dec9f289fe2122a6df7d33513b84f88f9_1.gif": null,
-            "https://media.discordapp.net/attachments/399690081054490656/827532032379977758/image0.gif": null,
-            "https://c.tenor.com/7OZvk7ivrRkAAAAd/epic-embed-fail-gypsy-crusader.gif": null,
-            "https://c.tenor.com/UOqYEPA6xVoAAAAd/get-real-meme.gif": null,
-            "https://c.tenor.com/D1Lr5qmW2UMAAAAC/get-real-jungle.gif": null,
-            "https://media.discordapp.net/attachments/719170891451465749/809730885858623538/HECANTSWIM.gif": null,
-            "https://c.tenor.com/WgjUlE9JkrYAAAAd/cat-review.gif": null,
-            "https://c.tenor.com/BwqC75gBI0gAAAAd/steam.gif": null,
-            "https://c.tenor.com/kakBl4i4NAEAAAAd/omw-troll.gif": null,
-            "https://media.discordapp.net/attachments/659996109460209700/825337531314733056/6-2ccffc20671c.gif": null,
-            "https://media.discordapp.net/attachments/149987585102577675/765784255770263583/image0-1.gif": null,
-            "https://media.discordapp.net/attachments/783760671015698473/823344637204103178/speed.gif": null,
-            "https://c.tenor.com/csxVZv7SrQIAAAAd/get-real-trombone.gif": null,
-            "https://c.tenor.com/0x3Iz5kIqTgAAAAC/waynecord-clairecord.gif": null,
-            "https://c.tenor.com/jlvbpvErcDoAAAAd/eat-shut.gif": null,
-            "https://c.tenor.com/9tW8QqdpihgAAAAd/joker-persona5.gif": null,
-            "https://media.discordapp.net/attachments/791728663246536758/821014275198812170/caption.gif": null,
-            "https://c.tenor.com/uY8_WWOZbHIAAAAd/mom-lunch.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/768461240028627004/image0-2.gif": null,
-            "https://media.discordapp.net/attachments/149087807426658304/764996747604393984/tumblr_ox2gp53A8f1ryfacfo1_540.gif": null,
-            "https://c.tenor.com/XRkrcKpgbUwAAAAC/mad-anger.gif": null,
-            "https://c.tenor.com/DNNUGATQFUEAAAAC/fnaf-meme.gif": null,
-            "https://media.discordapp.net/attachments/739764785054482432/821898324738441227/image0.gif": null,
-            "https://c.tenor.com/AB7-WGu8vrgAAAAC/choppcord-choppingboss.gif": null,
-            "https://media.discordapp.net/attachments/354838893754843137/821196114924798002/image0-67.gif": null,
-            "https://media.discordapp.net/attachments/175054042177863680/821054750925520906/final_604f8872205527005246b3f4_126277.gif": null,
-            "https://media.discordapp.net/attachments/470168157148020756/810379227315830798/image0.gif": null,
-            "https://c.tenor.com/mle8651hqQ8AAAAd/charmx-mfw.gif": null,
-            "https://c.tenor.com/NamOczLhpHwAAAAd/shoplifters-shoplifting.gif": null,
-            "https://media.discordapp.net/attachments/655105479684653072/819934624523223040/image0.gif": null,
-            "https://c.tenor.com/yd5HU8T6AfoAAAAd/skyrim-meme.gif": null,
-            "https://c.tenor.com/sEbTUPDMAuwAAAAd/monkey-presentable.gif": null,
-            "https://media.discordapp.net/attachments/772417751540170792/815875030311108629/image0-60.gif": null,
-            "https://c.tenor.com/ouwGxYUVf0MAAAAC/reddit-gold-harambe.gif": null,
-            "https://c.tenor.com/9yLvJjv3JoAAAAAC/oh-yeah-my-man.gif": null,
-            "https://c.tenor.com/9SEvoT4CdWwAAAAd/meme-among-us.gif": null,
-            "https://c.tenor.com/oXP04XKFeyoAAAAC/cat-meme.gif": null,
-            "https://c.tenor.com/AaZ2nm_m48oAAAAd/i-have-your-ip-address-garfield.gif": null,
-            "https://c.tenor.com/6dGnOUKfCxgAAAAC/fifi-the-doggo-doggo.gif": null,
-            "https://c.tenor.com/olXd1lfDUH8AAAAd/mario-clan-chungus-clan.gif": null,
-            "https://c.tenor.com/jLNA4Nv0mOIAAAAC/spies-in-disguise-reddit.gif": null,
-            "https://media.discordapp.net/attachments/722288324328423457/817472314757218384/image0-5.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/820058971653799996/3ab2cc2e10e374f55a4982b5ba390b381058317e08dde45faed99ac0cf83a668_1.gif.gif": null,
-            "https://c.tenor.com/hD0iXoljUxsAAAAd/genshin-genshin-impact.gif": null,
-            "https://media.discordapp.net/attachments/197619940340006912/818748708669489162/no_loud.gif": null,
-            "https://i.redd.it/51uur6ukn0m61.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/818512173956333568/image0.gif": null,
-            "https://media.discordapp.net/attachments/776667565425557506/810777448919597086/image0.gif": null,
-            "https://media.discordapp.net/attachments/624014259751485441/818323760633217075/Reality.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/817466940129017926/fs2.gif": null,
-            "https://c.tenor.com/IWWdK0XEI4QAAAAC/death-book.gif": null,
-            "https://c.tenor.com/iijUMzzYuXAAAAAC/morshu.gif": null,
-            "https://media.discordapp.net/attachments/347254691966615552/801095491550314526/f64709d1060bb123f8ce3bc2c7eb16cbcdc121491f6bde95a15109ba65974010_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/556232561987158016/781385181767401502/image0.gif": null,
-            "https://media.discordapp.net/attachments/414568012989857792/779793073202003978/image0.gif": null,
-            "https://c.tenor.com/9_WEjFOg_wYAAAAd/bunger.gif": null,
-            "https://media.discordapp.net/attachments/558816716600377355/816477587919732756/image0-25.gif": null,
-            "https://media.discordapp.net/attachments/776172429394968576/777136414763646976/twitter.com_Isx8L6w5.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/814167205066440775/image0-5.gif": null,
-            "https://c.tenor.com/Y7MHybaoIdkAAAAC/the-concept-of-death-keanu-reeves-breastfeed.gif": null,
-            "https://media.discordapp.net/attachments/556526589610033160/812548022616457236/image0.gif": null,
-            "https://media.discordapp.net/attachments/310533111505223682/797663235989569536/image0-1.gif": null,
-            "https://c.tenor.com/WR9JuIas8MwAAAAd/shrip-mantis.gif": null,
-            "https://media.discordapp.net/attachments/316978886087016449/803295216659595274/1288705115768016896.gif": null,
-            "https://media.discordapp.net/attachments/722288324328423457/809680380222898176/image0-20.gif": null,
-            "https://media.discordapp.net/attachments/447252609238302721/774500696002396201/image0.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/809259972482302032/image0.gif": null,
-            "https://c.tenor.com/eglrsU536t8AAAAC/we-do-a-little-trollin.gif": null,
-            "https://c.tenor.com/m6IWt4yUBssAAAAd/roberto-dan%C3%A7a.gif": null,
-            "https://c.tenor.com/gVY3x5DsYMMAAAAC/flowlycord-workfrank.gif": null,
-            "https://c.tenor.com/HyYZ0_FKsSMAAAAC/bars-ray-johnson.gif": null,
-            "https://media.discordapp.net/attachments/690819748929470475/807956482511208468/atheisum.gif": null,
-            "https://media.discordapp.net/attachments/474446512005578753/807953165676052510/cry_about_it.gif": null,
-            "https://c.tenor.com/XhOHD1I1acYAAAAC/yo-mama-fat.gif": null,
-            "https://media.discordapp.net/attachments/730119164198387845/800245899619991552/image0.gif": null,
-            "https://media.discordapp.net/attachments/690819748929470475/807951654108135434/bron.gif": null,
-            "https://media.discordapp.net/attachments/499373423378563083/807575636419674152/piss.gif": null,
-            "https://c.tenor.com/rAxfFZZaa3YAAAAd/epic-pog.gif": null,
-            "https://images-ext-2.discordapp.net/external/j3Bq9BSnc8441tDjnEjFh80kcZ8qXV09q3FkYIhgOxs/https/media.discordapp.net/attachments/680538515318112257/800985707111907348/image0-1-1-1.gif": null,
-            "https://images-ext-2.discordapp.net/external/BtdMoPOeJaup2k7AEebeUyJ_CiydUFFf444TyWHPPis/https/media.discordapp.net/attachments/528927344690200576/800987048323973153/caption_1.gif": null,
-            "https://images-ext-1.discordapp.net/external/CnuDz7hQ8nMupGqO4vl3f8VDfCQus4N57TLetx7twK4/https/media.discordapp.net/attachments/680538515318112257/803159538789646416/image0-18-1-1.gif": null,
-            "https://c.tenor.com/JsrjRALTMWkAAAAd/tf2.gif": null,
-            "https://media.discordapp.net/attachments/747908950904537138/804520805882658876/despite_all_my_rage.gif": null,
-            "https://media.discordapp.net/attachments/339224673680359428/803660707466838066/image0.gif": null,
-            "https://media.discordapp.net/attachments/404008850321047552/800555424138788874/image0-5.gif": null,
-            "https://media.discordapp.net/attachments/399633269022261261/803120028516876318/ezgif-5-970436b8a50d.gif": null,
-            "https://images-ext-2.discordapp.net/external/rlYmRmrLaQYVXpJYPvqfs5ldv5wp6GSK7anG_wnM0MA/https/media.discordapp.net/attachments/724976219757609030/802539965556195358/bf9a3712c1549a0288a865a817d246d38b5faaa4554a799193f7a054514af749_1.gif-1.gif": null,
-            "https://images-ext-1.discordapp.net/external/CAPid6l3z8Qgbs3RNaNawv0dPUN3_oK7VetOQjb2z0E/https/media.discordapp.net/attachments/675497549020397568/802131640360108092/image0-12-2.gif": null,
-            "https://media.discordapp.net/attachments/341283238049742858/800798098355257344/image0.gif": null,
-            "https://c.tenor.com/rcEnlCyTlAwAAAAd/forget-to-place-towers-in-bloons-td5.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/801452440670306304/image0-21-1.gif": null,
-            "https://c.tenor.com/aZdYh_UQvWUAAAAC/joe-joe-swanson.gif": null,
-            "https://media.discordapp.net/attachments/560285839226175491/800610489855770654/ezgif-3-af729837039e.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/799322300905685083/image0.gif": null,
-            "https://c.tenor.com/sQ49knqLu_MAAAAd/drip-too-hard-among-drip.gif": null,
-            "https://c.tenor.com/teZcRHgORTEAAAAd/doin-ya-mom-gex.gif": null,
-            "https://media.discordapp.net/attachments/700539120543465594/781669416189952030/image0.gif": null,
-            "https://media.discordapp.net/attachments/334106551466065921/776610991827058688/image0.gif": null,
-            "https://c.tenor.com/N4aRJJASLDMAAAAd/chicken-shoes-funny-animals.gif": null,
-            "https://media.discordapp.net/attachments/560285839226175491/775285635044081695/image2.gif": null,
-            "https://media.discordapp.net/attachments/369924551502594048/765986128788455445/image1.gif": null,
-            "https://c.tenor.com/b2cxUaQJck0AAAAC/beyblade-ironic.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/769017374065950720/image0.gif": null,
-            "https://c.tenor.com/0R9WjwI3E28AAAAd/joker-crazy-hamburger.gif": null,
-            "https://media.discordapp.net/attachments/660619913056223242/772691965174349844/image0.gif": null,
-            "https://media0.giphy.com/media/oZUw2T8EYnPrfIObvF/giphy.gif": null,
-            "https://c.tenor.com/0_U6hswaCs4AAAAd/your.gif": null,
-            "https://media.discordapp.net/attachments/692168967455768606/770620658815598592/image0.gif": null,
-            "https://c.tenor.com/KsQ8OExMkdQAAAAC/i-like-your-cut-g-pvz.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/772586541527859220/image0.gif": null,
-            "https://media.discordapp.net/attachments/763527340797722654/763986406389317642/giffff.gif": null,
-            "https://media.discordapp.net/attachments/740507885129433139/760976577760067594/image0.gif": null,
-            "https://c.tenor.com/3u4WVGVARDgAAAAd/funny-happy-meal.gif": null,
-            "https://media.discordapp.net/attachments/560609048815337473/763212428297109535/image0.gif": null,
-            "https://c.tenor.com/whp-GZ23s_AAAAAd/mgs.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/762402880924680232/image0-2-2.gif": null,
-            "https://media.discordapp.net/attachments/511546997979873282/750576701263839252/whenthe.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/760550620129919047/image0.gif": null,
-            "https://img.ifunny.co/images/4ca365651140c419434e37722d60c4bfa2fd30c6d38a3e1ebda8d7ab363ab30b_1.gif": null,
-            "https://c.tenor.com/U94pxMBSm6MAAAAC/meeting-isreal.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/757604484540268574/b0808582242e729d22b8f5f0f651698e7491e0aa5641b935ba5fb7b1a56f1963_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/749812913749098506/image0-157.gif": null,
-            "https://media.discordapp.net/attachments/616298659159736331/754012499652640868/image3.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/756785181104537620/image0-39.gif": null,
-            "https://media.discordapp.net/attachments/427458548180451339/755834950674284585/image0-51.gif": null,
-            "https://media.discordapp.net/attachments/724009203072761876/753465260215894026/20200910_000149.gif": null,
-            "https://c.tenor.com/agr6IVV-DxIAAAAC/among-us.gif": null,
-            "https://media.discordapp.net/attachments/511546997979873282/755075023449882745/image0.gif": null,
-            "https://media.discordapp.net/attachments/748342733873217607/748366418193547264/humor_is_subjective.gif": null,
-            "https://media.discordapp.net/attachments/142480770265513984/753838511152431225/image0.gif": null,
-            "https://c.tenor.com/m0fVDMs4KPwAAAAC/rat-ratzone.gif": null,
-            "https://media.discordapp.net/attachments/382846587354873858/753093149127344269/ass14.gif": null,
-            "https://media.discordapp.net/attachments/241026774962667520/721364320151404664/image0.gif": null,
-            "https://media.discordapp.net/attachments/662394498441281564/713556707791601734/8570f6920139d056715fda5e0fc30697fff126e9a188d7ed10f19da4796c8bbe_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/724695973963497536/749444141515145246/5a2e6a5.gif": null,
-            "https://media.discordapp.net/attachments/452842109733699584/740701633364885575/image0.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/748546937606635560/image0.gif": null,
-            "https://c.tenor.com/Khq5WOEzUPMAAAAd/reddit-dance.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/747265035344019567/image0.gif": null,
-            "https://c.tenor.com/IvYRFke6tqkAAAAC/not-funny-big-chungus.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/745366928113270805/anti_cementic.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/744977903980380190/image1-1.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/744977888402735185/image0-1-1.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/744386491194671104/ezgif.com-gif-maker_1.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/743085869740851220/image0.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/743080145975246979/image0-35.gif": null,
-            "https://media.discordapp.net/attachments/654453880603541534/725728828416065556/cca1201e4a47824449834ec128757cd0a5bdb4f0.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/741796217452888094/image0-9-1.gif": null,
-            "https://c.tenor.com/oe1fBkTZHasAAAAC/cat-no.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/741378843108966490/you_are_about_to_die.gif": null,
-            "https://c.tenor.com/WrowzzSdN0wAAAAd/froge-sprinkle.gif": null,
-            "https://media.discordapp.net/attachments/420401922797993984/662138229801222177/cap.gif": null,
-            "https://media.discordapp.net/attachments/638950463315771393/727135621797117962/metalheads.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/738245953492090971/image0-1-4.gif": null,
-            "https://media.discordapp.net/attachments/665011644300001280/737849243305246820/image0.gif": null,
-            "https://images-ext-1.discordapp.net/external/XlVTOhMwlg1FRVUrnnEWzyW2Hm9jAK-frqQ8vBeceOQ/https/media.discordapp.net/attachments/722583110490914936/730855474760515614/image0-2.gif": null,
-            "https://media.discordapp.net/attachments/648400331583258631/677003106474786826/b8529bae4df34e59876fad00ddc5f32868880b3cc8ca8656f04b7e4b6535e31c_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/653443436187484203/736432598758195280/moses.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/734955208668610590/line.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/732287416802738247/living_room.gif": null,
-            "https://c.tenor.com/FRHK4GGy-7IAAAAC/reddit-moment-heckin-chonker.gif": null,
-            "https://media.discordapp.net/attachments/511546997979873282/733800355862675486/image0.gif": null,
-            "https://media.discordapp.net/attachments/689978886846415039/690026584442142781/BrawlboxAnimation6-1.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/732471618823127100/image0.gif": null,
-            "https://c.tenor.com/hK4RVDCZvgcAAAAd/door-repair.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/729911327279153182/image0-39.gif": null,
-            "https://media.discordapp.net/attachments/233231551192760320/731758467379101706/image0.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/731753619224789002/image0.gif": null,
-            "https://media.discordapp.net/attachments/645705194704863281/730418964257308732/image0.gif": null,
-            "https://media.discordapp.net/attachments/474446512005578753/731386096725786624/pagan.gif": null,
-            "https://images-ext-1.discordapp.net/external/l5oFdNuHpj90AqkbWgWQgRyI2Vo_-WGeMZKuvfk4KCY/https/media.discordapp.net/attachments/714931839088852995/730979920750313602/INTENSE_MATCH.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/727555194942128190/image0.gif": null,
-            "https://media.discordapp.net/attachments/710317808222732321/726659596344754247/marcelo_die.gif": null,
-            "https://media.discordapp.net/attachments/663622392194531328/665413625003114497/image0-4-1-1.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/725031979049025646/in.gif": null,
-            "https://media.discordapp.net/attachments/690819748929470475/724588223791104000/f_000ce1.gif": null,
-            "https://media.discordapp.net/attachments/690819748929470475/724581895223902279/caption-4.gif": null,
-            "https://media.discordapp.net/attachments/719427258913128479/722625593811664966/image0-4.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/722162568436908124/image0.gif": null,
-            "https://media.discordapp.net/attachments/690819748929470475/721297668315283477/lactose.gif": null,
-            "https://media.discordapp.net/attachments/710317808222732321/720104263329513493/rats.gif": null,
-            "https://media.discordapp.net/attachments/712640346852687954/720608105418719242/f_00869e.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/704932128869318656/biden.gif": null,
-            "https://media.discordapp.net/attachments/593661199158083595/704539325173465088/image0-1-1.gif": null,
-            "https://media.discordapp.net/attachments/418476008488828930/716856768063602768/Violence.gif": null,
-            "https://media.discordapp.net/attachments/617782714296303646/719758976740229140/image0-9-1.gif": null,
-            "https://c.tenor.com/pGqjus_vjskAAAAd/big-chungus-chungus.gif": null,
-            "https://media.discordapp.net/attachments/382724135832518659/712838310770507866/image0.gif": null,
-            "https://media.discordapp.net/attachments/710317808222732321/716461610532864080/c1d31a061163938a9e08a7f5e89ff18b581a1fe461af51185d250a2501b6eccb_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/529782281531949058/713090914477932564/97945713_171151-1590084482815.gif": null,
-            "https://media.discordapp.net/attachments/507526277918621697/713657813729017866/9b5bc7b6786526338f6320ad61230255099a6487c6d5bcc689141ab0bc8075e3_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/712561755066466345/zoo.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/711956454726434816/image0.gif": null,
-            "https://media.discordapp.net/attachments/546763235051700314/696015792185016370/64ffd22fb4026236a6b979da1bb91829df8a1fc88b921e5534b2419268c7533c_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/369883233594376194/706237394403459183/avdsdfrgewreasd.gif": null,
-            "https://c.tenor.com/Gm1hICXCSkgAAAAC/the-what-smile.gif": null,
-            "https://media.discordapp.net/attachments/683757872961814548/688184674790801419/28a63a10aaa56e310bb59941b589940af8e6accf9d0314a77f2a7429718692c2_1-1.gif": null,
-            "https://c.tenor.com/ifSCkD73lVAAAAAC/this-nuts-watermelon-cat.gif": null,
-            "https://media.discordapp.net/attachments/683757872961814548/692950617806733352/image1.gif": null,
-            "https://media.discordapp.net/attachments/683757872961814548/692950545954111489/image0-1.gif": null,
-            "https://media.discordapp.net/attachments/582768969186803713/687779794905071685/73a3ef801363e9ab1bde2db19d9111d9d7e533bcf321977e169fa2c3e3282333_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/628799245482459148/684630155762597911/bb9a8d9a843ada7e4acc71ad22ec6e8f209a4fa469ddf010559a05997e1d4d7a_1.gif.gif?RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_RAT_": null,
-            "https://c.tenor.com/st7vTBmbAw4AAAAC/obama-pyramid.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/678861326373617664/b0ada52-1.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/678866648500797470/74b0382.gif": null,
-            "https://media.discordapp.net/attachments/628110652547923999/669236051763527690/image1-1.gif": null,
-            "https://media.discordapp.net/attachments/670396162515402755/676282693649956874/1579054170065.gif": null,
-            "https://media.discordapp.net/attachments/504042906839941121/656402676304707585/image0-1-1-1.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/659469841958174732/31c2d5b.gif": null,
-            "https://media.discordapp.net/attachments/648400331583258631/651406079871287297/image0-10-1-1.gif": null,
-            "https://c.tenor.com/LC65Kv_eyVMAAAAC/big-chungus.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/638255143015415809/b9c18dd.gif": null,
-            "https://media.discordapp.net/attachments/599807519891783680/600266046275846144/tumblr_oo4lr9haXC1vvs38vo1_500.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/599596561961582592/8ce813718bd2bcce49bb38f404f77954f110fc2db5002388eb1394b696c12098_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/585671003372388352/bc4566fecc975fab3ce9625248087f9008eb56a89c6bbcf05f9d4b30fe3a95f4_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/910847279592775710/caption.gif": null,
-            "https://c.tenor.com/fDPxJ6UJG24AAAAd/wavetro-wavetro-hq.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/910850316818341888/caption.gif": null,
-            "https://c.tenor.com/NXXMvotxEL4AAAAC/travis-touchdown-no-more-heroes.gif": null,
-            "https://c.tenor.com/Yfz3eq2ZLo0AAAAd/pee.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/871612654131765298/image0-57.gif": null,
-            "https://media.discordapp.net/attachments/546763235051700314/871602878823952444/image0.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/870695752345747506/speed.gif": null,
-            "https://media.discordapp.net/attachments/787379229380575272/867911774639386744/image0.gif": null,
-            "https://media.discordapp.net/attachments/560285839226175491/862187037100212235/image0.gif": null,
-            "https://media.discordapp.net/attachments/775752263981072414/826533341145858068/speed.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/841977124113219594/mmm.gif": null,
-            "https://media.discordapp.net/attachments/722288324328423457/833562680425316352/when.gif": null,
-            "https://media.discordapp.net/attachments/775752263981072414/816776900780883988/image0.gif": null,
-            "https://media.discordapp.net/attachments/240196923644968960/815792374638575676/EvVE4RKXcAU5_Wm_1.gif": null,
-            "https://media.discordapp.net/attachments/528927610630176783/813980676834721792/caption.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/830993546441654302/image0-2-3.gif": null,
-            "https://media.discordapp.net/attachments/752169779166576682/829583942255640576/caption-26.gif": null,
-            "https://media.discordapp.net/attachments/558816716600377355/826611549581213696/image0.gif": null,
-            "https://media.discordapp.net/attachments/796784028120383489/821357529027837992/caption.gif": null,
-            "https://media.discordapp.net/attachments/743684085062565908/816059666672779374/caption.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/826655141397659668/caption.gif": null,
-            "https://media.discordapp.net/attachments/542875308437798932/815270082031910962/image0-62.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/825942940185526312/caption.gif": null,
-            "https://media.discordapp.net/attachments/419309723373010958/825940255488213022/caption.gif?width=488&height=473": null,
-            "https://media.discordapp.net/attachments/419309937328390148/824981958727172146/caption.gif": null,
-            "https://media.discordapp.net/attachments/618576227954982918/776840230430834698/image0-2.gif": null,
-            "https://media.discordapp.net/attachments/419309937328390148/823180766899863552/caption.gif": null,
-            "https://media.discordapp.net/attachments/719904374473883700/823157097415180348/caption.gif": null,
-            "https://media.discordapp.net/attachments/470168157148020756/810573725031465035/image0-16.gif": null,
-            "https://media.discordapp.net/attachments/546763235051700314/817607717757648896/image0.gif": null,
-            "https://media.discordapp.net/attachments/516504307902971904/818521700957290496/image0.gif": null,
-            "https://media.discordapp.net/attachments/306919445618491393/818613160377712650/speed.gif": null,
-            "https://media.discordapp.net/attachments/195225652696317975/817274832882237480/image0-4-6.gif": null,
-            "https://media.discordapp.net/attachments/781348134239338496/809149588811546754/image0-4.gif": null,
-            "https://media.discordapp.net/attachments/775752263981072414/815909052126330880/image0-7.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/814726070543712266/image0-23.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/812716495213821983/fo3.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/812195427339993098/46cda0587d68bcde7e67d91390d3ea6835ac93846f9cb0ad27fc9484952a34c4_1.gif.gif": null,
-            "https://media.discordapp.net/attachments/376366713060720640/810964118671982672/dad.gif": null,
-            "https://media.discordapp.net/attachments/452219191580295168/808681899999756398/dog_go_voosh.gif": null,
-            "https://images-ext-2.discordapp.net/external/gQHyrNETCQdwWRvNAGftc0DfmHJpGEScSLirGVlrJVs/https/media.discordapp.net/attachments/467231287250255872/802243608215552000/image0-11-2.gif": null,
-            "https://media.discordapp.net/attachments/763261976049877022/799083787077156864/image0.gif": null,
-            "https://media.discordapp.net/attachments/433655086926004235/796776830513709086/oyrue.gif": null,
-            "https://c.tenor.com/YZ2ZXkr7bvwAAAAd/on-our-way-to-your-mom-parkour.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/771816837990056036/image0-52.gif": null,
-            "https://media.discordapp.net/attachments/756736839502528522/772127629284999180/image0-21.gif": null,
-            "https://media.discordapp.net/attachments/399690081054490656/763415198911823872/image0.gif": null,
-            "https://media.discordapp.net/attachments/654857126002556944/763192979362938890/image0-95.gif": null,
-            "https://media.discordapp.net/attachments/534946402875211777/757667048028373043/image0-37-1.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/760216199584940062/pogchampion.gif": null,
-            "https://media.discordapp.net/attachments/366160654442299395/750169594525646958/image0-2.gif": null,
-            "https://media.discordapp.net/attachments/307353605608964096/749047331084566538/r.gif": null,
-            "https://images-ext-2.discordapp.net/external/KAQAnHk7GCthoQzTP-xjlqY1WJ8TEPYcE1RW8BRl49E/https/media.discordapp.net/attachments/713935664340795422/735860751931015209/caption.gif": null,
-            "https://c.tenor.com/4UkqRRjN2fwAAAAC/goopie-gifcaption.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/746392816413966376/image0.gif": null,
-            "https://media.discordapp.net/attachments/439573756248195074/739630644623048754/caption.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/738257738546806934/image0.gif": null,
-            "https://media.discordapp.net/attachments/587961939334922251/737992094228021299/image0-7.gif": null,
-            "https://media.discordapp.net/attachments/715477112437473352/724726187829493760/image0.gif": null,
-            "https://media.discordapp.net/attachments/704202033519132732/728267785171632306/image0.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/731057572970496050/image0-12.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/726335473374593085/Dab.gif": null,
-            "https://media.discordapp.net/attachments/714607970964734013/716029358023901244/1c9da2f.gif": null,
-            "https://media.discordapp.net/attachments/710317808222732321/719060429963264040/image0.gif": null,
-            "https://media.discordapp.net/attachments/285880764493725696/717811398289391616/image0-2-1_1.gif": null,
-            "https://media.discordapp.net/attachments/161658064682876928/708148601427066940/image0.gif": null
-        },
-        "379440775206797385": {
-            "https://media.discordapp.net/attachments/841208671169675354/901739986536263680/temp.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/901740795495850015/temp.gif": null,
-            "https://c.tenor.com/Io5XUy25djYAAAAd/coping-harder.gif": null,
-            "https://media.discordapp.net/attachments/869864347449577512/903252638215335986/temp.gif": null,
-            "https://c.tenor.com/tMT1R_dfec4AAAAC/yes-chad.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/912679733609775134/841208671169675354_741169124817764372.gif": null,
-            "https://c.tenor.com/tGnOEJxctyUAAAAC/esmbot.gif": null,
-            "https://c.tenor.com/KUgpgKkWNMEAAAAC/esmbot.gif": null
-        },
-        "429305856241172480": {
-            "https://media.discordapp.net/attachments/841208671169675354/901744140499427328/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/901785601420976138/caption.gif": null,
-            "https://media.discordapp.net/attachments/841208671169675354/901785889913581578/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/905732076001706024/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906817251339038760/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906817445459820594/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906821676417818684/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/906866237185863720/caption.gif": null,
-            "https://media.discordapp.net/attachments/868888972120702999/912533650921357352/caption.gif": null,
-            "https://media.discordapp.net/attachments/712243005519560736/935093365349941259/caption.gif": null,
-            "https://cdn.discordapp.com/attachments/846175975560839178/950267801870946304/freeze.gif": null,
-            "https://cdn.discordapp.com/attachments/869864347449577512/953225282452619284/flip.gif": null
-        },
-        "449959767834755123": {
-            "https://media.discordapp.net/attachments/841208671169675354/901744140499427328/caption.gif": null,
-            "https://media.discordapp.net/attachments/702322144041893918/800242058781786142/image0-8.gif": null
-        },
-        "141388048037314560": {
-            "https://media.discordapp.net/attachments/630306461330964495/816765020406022175/image0.gif": null,
-            "https://c.tenor.com/VGWokGdwt-EAAAAC/the-voices-voices-in-my-head.gif": null
-        },
-        "179894333275766784": {
-            "https://c.tenor.com/Xf1V_xSFEdcAAAAd/you-should-kill-yourself-now-kou.gif": null,
-            "https://c.tenor.com/iMPZD8Zg82QAAAAC/ok-and-mc-ride.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/855063181285392414/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/848196875488460830/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/848123440464789514/caption.gif": null,
-            "https://c.tenor.com/-9Rw--2ntDMAAAAC/epic-link-perm-fail.gif": null,
-            "https://c.tenor.com/RDQPH421sd4AAAAd/processing-esmbot.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/837922193258053632/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/827168255948226581/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/824109367392862219/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/823755865454280724/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/821714910546886667/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/821714552169299968/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/821713332952236072/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/821713051694006272/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/821711921735794698/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/821711138823077898/caption.gif": null,
-            "https://media.discordapp.net/attachments/795238875677065228/821710693623005194/caption.gif": null,
-            "https://c.tenor.com/DPFG1GRBDjIAAAAd/robert-de-niro-embed-fail.gif": null,
-            "https://media.discordapp.net/attachments/800349854152130570/816504884357759006/sportsbet.gif": null,
-            "https://c.tenor.com/JiMGsefwbekAAAAC/kys-kill-yourself.gif": null,
-            "https://c.tenor.com/rd_CpyUldQQAAAAC/troll-troll-face.gif": null,
-            "https://media.discordapp.net/attachments/654768233827794960/818213943045783626/image0-30.gif": null,
-            "https://c.tenor.com/Ip0683gyRNwAAAAC/stupid-love.gif": null,
-            "https://media.discordapp.net/attachments/787227153741381655/797803939130245140/LOL.gif": null,
-            "https://c.tenor.com/weB0PGdBKZgAAAAC/cope.gif": null,
-            "https://c.tenor.com/Go-E_BQRWZ8AAAAC/dylanntroll.gif": null,
-            "https://c.tenor.com/eglrsU536t8AAAAC/we-do-a-little-trollin.gif": null,
-            "https://media.discordapp.net/attachments/804524644643635264/804851793007738880/Gamestop_wallstreet.gif": null,
-            "https://c.tenor.com/p9lk5o_JGhMAAAAC/i-funny-gifcaption.gif": null,
-            "https://media.discordapp.net/attachments/381916320423215104/804456716740853851/99109e1-2.gif": null,
-            "https://media.discordapp.net/attachments/396090984242479114/804539939597451285/england.gif": null,
-            "https://media.discordapp.net/attachments/803441338208485427/803643163448836146/trumppard.gif": null,
-            "https://media.discordapp.net/attachments/751877825178370099/799996199657930772/image0_1.gif": null,
-            "https://media.discordapp.net/attachments/751877825178370099/799996170692067378/image0.gif": null,
-            "https://media.discordapp.net/attachments/439519668819066880/676413470912020500/image0-20-1.gif": null,
-            "https://media.discordapp.net/attachments/600659917459816449/692400681931505664/mha.gif": null,
-            "https://images-ext-2.discordapp.net/external/Yrss94ufxPQ8-jYkf7vDi1RFpHANH0Hsrq7uZBpFrnU/https/media.discordapp.net/attachments/439519668819066880/753374556395405460/3d580297d90a002e26dd27264026129d404192ccc3e52a29f9276e18ae8f24e0_1.gif.gif": null,
-            "https://c.tenor.com/c5hB9oTcLLsAAAAC/squidward-squid-edward.gif": null,
-            "https://c.tenor.com/ylVBbeKIl64AAAAC/cope-seethe-cope-cope.gif": null,
-            "https://c.tenor.com/RcF158WTRJ4AAAAC/cryaboutit-domino.gif": null,
-            "https://c.tenor.com/nWnUEov7yIoAAAAC/crying-cat.gif": null,
-            "https://c.tenor.com/NCsca_exmC0AAAAC/cry-about-it.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/801173972195737601/image0-9.gif": null,
-            "https://media.discordapp.net/attachments/724976219757609030/801173971172851722/image0-4-1-1.gif": null,
-            "https://media.discordapp.net/attachments/775752263981072414/801150788021649428/image0-5_1.gif": null,
-            "https://media.discordapp.net/attachments/439519668819066880/799423960529633360/freeze.gif": null,
-            "https://c.tenor.com/1z3hj4JGd7QAAAAC/my-cat-when-it-once-again-lets-its-gaurd-down-pet.gif": null,
-            "https://media.discordapp.net/attachments/648400331583258631/665996766017224716/image0-10-1.gif": null,
-            "https://media.discordapp.net/attachments/666676467723272212/798944916679163934/image0.gif": null,
-            "https://c.tenor.com/RZQU1_c6suwAAAAd/bodeguys-you-can-be-racist-to-me.gif": null,
-            "https://c.tenor.com/dgc-LAOnxT0AAAAC/angry-look-angry.gif": null,
-            "https://c.tenor.com/bahRI6W2bAsAAAAC/cross-angry.gif": null,
-            "https://c.tenor.com/aYWMDPzj7JsAAAAC/cross-angry.gif": null,
-            "https://c.tenor.com/yPwxHNp9bmUAAAAC/cross-angry.gif": null,
-            "https://media.discordapp.net/attachments/719904374473883700/798532585612509224/oi_l.gif": null,
-            "https://media.discordapp.net/attachments/456230331507277824/789951717952192522/image0.gif": null,
-            "https://media.discordapp.net/attachments/498943000353964032/765694395579760670/image0.gif": null,
-            "https://c.tenor.com/x9-rb7oIGF4AAAAC/me-looking-for-funny-looking-for-the-funny.gif": null,
-            "https://c.tenor.com/8UpMdIyCN8UAAAAC/wake-the-fuck-up-crewmate-we-have-an-imposter-to-eject.gif": null,
-            "https://c.tenor.com/KoraOVopTMsAAAAd/when-the-imposter-is-sus-jerma.gif": null,
-            "https://media.discordapp.net/attachments/724975122842255471/776355795503546418/image0-1.gif": null,
-            "https://media.discordapp.net/attachments/724055819548622968/752389344991510608/image0-27.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/743936500147814451/Koko.gif": null,
-            "https://media.discordapp.net/attachments/296056831514509312/748856543553781780/image04.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/753005224733573221/image0-90.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/752099906692448338/Tightlippedlikeableredpanda_0234cf_7950774.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/744977903980380190/image1-1.gif": null,
-            "https://media.discordapp.net/attachments/648704600437948421/744977888402735185/image0-1-1.gif": null
-        }
+        
     }
 }
+
+class AttachmentURL:
+    def __init__(self, url, guildID = None, channelID = None, userID = None) -> None:
+        self.url = url
+        self.guildID = str(guildID)
+        self.channelID = str(channelID)
+        self.userID = str(userID)
+
+class Json:
+    def __init__(self,file_name) -> None:
+        self.file_name = file_name
+        self.dict = file_name
+        self.subdict = None
+        self.key = None
+
+    def _load_json(self):
+        """
+        Opens JSON file and returns a dictionary of contained data
+        """
+        with open(self.file_name, "r") as f:
+            dict = json.load(f)
+            return dict
+        
+    def dump_json(self):
+        """
+        Opens JSON file and dumps dictionary data
+        """
+        self._update_dict()
+        with open(self.file_name,"w") as fw:
+            json.dump(self.dict, fw, indent=4)
+    
+    def contains(self, item, subkey= None, subsubkey= None):
+        if subkey == None:
+            return item in self.subdict
+        if subsubkey == None:
+            return item in self.subdict[subkey]
+        return item in self.subdict[subkey][subsubkey]
+    
+    def addsubKey(self,keyName):
+        """
+        Creates a new subkey inside the subdictionary
+        Useful for adding guild ID's to guild or user ID's to user
+
+        if subKey already exists, return None
+        """
+        if self.contains(keyName):
+            return None
+        self.add(keyName,{})
+    
+    def addsubsubKey(self,subKey,subsubKey):
+        """
+        Creates a new subsubkey inside the dictionary
+        useful for adding new tags
+        """
+        if self.contains(subsubKey,subKey):
+            return None
+        self.add(subsubKey,{},subKey)
+
+    def add(self, item, data = None, subkey = None,subsubkey=None):
+        if self.subdict != None:
+            if subkey == None:
+                if not self.contains(item):
+                    self.subdict[item] = data
+            else:
+                if subsubkey == None:
+                    if not self.contains(item,subkey):
+                        self.subdict[subkey][item] = data
+                else:
+                    if not self.contains(item,subkey,subsubkey):
+                        self.subdict[subkey][subsubkey][item] = data
+    
+    def set_file_name(self, new_file_name):
+        if new_file_name[-5:].lower() == ".json":
+            self.file_name = new_file_name
+    
+    def _update_dict(self):
+        if self.key != None:
+            self.dict[self.key] = self.subdict
+    
+    def __len__(self):
+        return len(self.subdict)
+
+class JsonGifs(Json):
+
+    def __init__(self,file_name,key = None) -> None:
+        Json.__init__(self,file_name)
+        if key != None:
+            self.key = self.set_catagory(key)
+
+    def set_catagory(self, catagory):
+        """
+        Returns the dictionary of urls contained within the catagory
+        """
+        try:
+            self._update_dict()
+            self.subdict = self.dict[catagory.lower()]
+            self.key = catagory
+            return catagory.lower()
+        except ValueError:
+            return None
+    
+    def contains_alt_url(self, url, subkey=None,subsubkey=None):
+        contains = False
+        if len(url.url) > 39 and url.url[:39] == "https://cdn.discordapp.com/attachments/":
+            if self.contains("https://media.discordapp.net/attachments/"+url.url[39:],subkey=subkey,subsubkey=subsubkey):
+                    contains = True
+        if len(url.url) > 41 and url.url[:41] == "https://media.discordapp.net/attachments/":
+            if self.contains("https://cdn.discordapp.com/attachments/"+url.url[:41],subkey=subkey,subsubkey=subsubkey):
+                    contains = True
+        return contains
+
+if __name__ == "__main__":
+    pass
+
+
+def search_gif(*ags, **kws):
+    new_task_content = Element("searchBar").element.value
+    button = Element("searchButton").element
+    search_terms = new_task_content.split(",")
+    search_terms = [term.strip() for term in search_terms]
+    print(search_terms)
+    if len(search_terms) != 0 and search_terms != ['']:
+        urls = get_gifs(search_terms)
+        print(urls)
+        if len(urls) != 0:
+            #element = document.createElement('h1')
+            #element.innerText = "Hello"
+            
+            #js.document.getElementById("resultWindow").clear()
+            for i in range(min(len(urls),4)):
+                gif = js.document.createElement('img')
+                print(type(gif))
+                gif.src = urls[i]
+                gif.className = 'result-gif'
+                gif.alt = "Animated GIF"
+                #print(type(gif.element))
+                js.document.getElementById("resultWindow").append(gif)
+                #Element("resultWindow").element.appendChild(gif.element)
+                #Element("resultWindow").add(<img class='gif center' src='urls[i]}' alt='Animated GIF'/>)
+            
+            
+
+
+
+def get_gifs(search_terms):
+    #Add singular and plural version of search term to list
+    for i in range(len(search_terms)):
+        if search_terms[i][-1] != "s":
+            search_terms += [search_terms[i] + "s"]
+        else:
+            search_terms += [search_terms[i][:-1]]
+    urls = []
+    scores = []
+    #json_tags = requests.get("https://github.com/maxcraig112/Giffy-bot/blob/main/Json/tags.json").json()
+    #json_archived = requests.get("https://github.com/maxcraig112/Giffy-bot/blob/main/Json/archivedcaptiongifs.json").json()
+    tags_json = JsonGifs(json_tags,"global")
+    #for every search term the user inputted
+    for term in search_terms:
+        #for every single slice of that search term
+        for i in range(len(term) + 1):
+            #if search term exists in tags
+            if tags_json.contains(term):
+                # yoink every url inside tag, if url has been grabbed before, add to existing score
+                for url in tags_json.subdict[term]:
+                    #if url already grabbed, increment score by one
+                    if url in urls:
+                        scores[urls.index(url)] += 1
+                    else:
+                        #otherwise, add to list, give score of 1
+                        urls += [url]
+                        scores += [i/len(term)]
+                        caption_json = JsonGifs(json_archived,"global")
+    
+    return urls
