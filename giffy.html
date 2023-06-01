@@ -12,16 +12,13 @@
     ></script>
   </head>
   <body style="background-color: black">
-    <py-tutor modules="./utils.py;./todo.py">
+
+    <py-tutor modules="basic_giffy/src/main.py">
       <py-config>
-          plugins = [
-            "https://pyscript.net/latest/plugins/python/py_tutor.py"
-          ]
-          [[fetch]]
-          files = ["./main.py"]
+        packages = ["requests"]
       </py-config>
 
-      <py-script src="./main.py"></py-script>
+      <py-script src="basic_giffy/src/main.py"> import requests</py-script>
     </py-tutor>
     <div class="bg-animation">
       <div id="stars"></div>
@@ -51,7 +48,7 @@
           (seperated by commas) into the searchbar below to serach for caption
           gifs
         </p>
-        <input class="center" id="searchBar" py-click="search_gif()" placeholder="e.g. dog, cat" /><span
+        <input class="center" id="searchBar" py-onkeydown="search_gif()" placeholder="e.g. dog, cat" /><span
           id="index"
         ></span>
         <div class="container">
