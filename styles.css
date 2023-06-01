@@ -36,6 +36,10 @@ body{
 
 .btn:hover{
     background-color: darkblue;
+    border-left-color: rgba(0,0,219,1);
+    border-top-color: rgba(0,0,219,1);
+    border-bottom-color: rgba(0,0,80,1);;
+    border-right-color: rgba(0,0,80,1);
     color: white;
     cursor: pointer;
 }
@@ -124,6 +128,7 @@ body {
 
 
 .window {
+  max-width: 50%;
   background-color: rgba(191, 184, 191, 1);
   border-style: outset;
   padding: 2em;
