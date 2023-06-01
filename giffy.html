@@ -4,6 +4,8 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://pyscript.net/releases/2022.12.1/pyscript.css" />
+  <script defer src="https://pyscript.net/releases/2022.12.1/pyscript.js"></script>
 </head>
 <body style="background-color: black;">
   <div class="bg-animation">
@@ -14,21 +16,22 @@
   </div>
   <div class="page">
     <div class="window">
+      <py-script>print("hello world")</py-script>
         <div class="escape-btn" onclick="window.location.href = 'index.html';">
             <p>X</p>
         </div>
-      <p class="text large-text">Projects</p>
-      <p class="text medium-text">Giffy</p>
+      <p class="text large-text">Giffy</p>
+      <p class="text medium-text">What am I?</p>
       <p class="text small-text">A multipurpose application designed to allow the manipulation, tagging, archiving and retrieval of gifs.</p>
-      <div class="container center">
+      <img class="gif center" src="https://c.tenor.com/oylHwLtwhbsAAAAC/gif-jif.gif" alt="Animated GIF">
+      <p class="text small-text">While I am best used as a discord bot, feel free to type keywords (seperated by commas) into the searchbar below to serach for caption gifs</p>
+      <input class="center" id = "searchBar" placeholder="e.g. dog, cat"/><span id="index"></span>
+      <div class="container">
         <a href="https://github.com/maxcraig112/Giffy-bot" class="no-link-style">
         <div class="btn small-btn">
           <p class="text">Github</p>
         </div>
         </a>
-        <div class="btn small-btn" onclick="window.location.href = 'giffy.html';">
-          <p class="text">Try me</p>
-        </div>
         <a href="https://discord.com/api/oauth2/authorize?client_id=893293074413916230&permissions=36768320&scope=bot" class="no-link-style">
           <div class="btn small-btn">
             <p class="text">Invite me</p>

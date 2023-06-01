@@ -4,10 +4,25 @@
   color: inherit;
 }
 
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+}
+
+.gif{
+  width: 60%;
+}
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.bold{
+  font-weight: bold;
 }
 
 body{
