@@ -1,6 +1,13 @@
 
+.no-link-style {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body{
@@ -146,11 +153,26 @@ body {
   width: 100%;
 }
 
-.large {
+.large-btn{
+  height: 50px;
+  width: 150px;
+}
+
+.small-btn{
+  height: 40px;
+  width: 90px;
+  font-size: 0.8em;
+}
+
+.large-text {
   font-size: 2em;
 }
 
-.small {
+.medium-text {
+  font-size: 1.5em;
+}
+
+.small-text {
   font-size: 1em;
 }
 
