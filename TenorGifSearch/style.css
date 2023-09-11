@@ -2,6 +2,14 @@
     text-align: center;
 }
 
+
+/* Apply padding to everything inside the div */
+
+.padded {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .center-div {
     margin-left: auto;
     margin-right: auto;

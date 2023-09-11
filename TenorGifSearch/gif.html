@@ -18,21 +18,31 @@
         Powered by Tenor, this webpage allows you to search for gifs, only returning ones that are caption gifs
     </p>
     <div class="container-fluid ">
-        <nav class="navbar navbar-light bg-light max-width">
+        <nav class="navbar navbar-light bg-light max-width form-group">
             <form class="form-inline center-div">
                 <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+                <button id="searchButton" class="btn btn-outline-success my-2 mr-sm-2" type="button">Search</button>
+                <small id="passwordHelpInline" class="text-muted mr-sm-2">
+                    Display size
+                </small>
+                <select id="searchLimit" class="form-control center-text">
+                <option>5</option>
+                <option>10</option>
+                <option>25</option>
+                <option>50</option>
+                </select>
+
             </form>
         </nav>
     </div>
 
 
-    <div class="wrapper">
-        <div class="images" id="gif_results">
+    <div class=" wrapper ">
+        <div class="images " id="gif_results">
         </div>
     </div>
 
-    <script src="gif.js"></script>
+    <script src="gif.js "></script>
 </body>
 
 </html>
