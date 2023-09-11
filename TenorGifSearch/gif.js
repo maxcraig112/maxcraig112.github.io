@@ -65,7 +65,7 @@ function displayGifs(responsetext) {
 // function to call the trending and category endpoints
 function grab_data(search_term, lmt) {
     // set the apikey and limit
-    var apikey = "AIzaSyBPvhPneSqxgGnoBOLk8BUHDcdgs9_5Cn0";
+    var apikey = "";
     var clientkey = "my_test_app";
 
     // test search term
