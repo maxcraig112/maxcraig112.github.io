@@ -3,15 +3,16 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 let apiKey;
-fetch('../config.json')
-  .then(response => response.json())
-  .then(data => {
-    apiKey = data.api_key;
-    console.log(apiKey); // or do something with the apiKey
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
+apiKey = process.env.API_KEY;
+// fetch('../configs.json')
+//   .then(response => response.json())
+//   .then(data => {
+//     apiKey = data.api_key;
+//     console.log(apiKey); // or do something with the apiKey
+//   })
+//   .catch(error => {
+//     console.error('Error:', error);
+//   });
 
 // url Async requesting function
 function httpGetAsync(theUrl, callback) {
