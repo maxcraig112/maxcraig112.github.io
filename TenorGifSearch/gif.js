@@ -53,7 +53,7 @@ function tenorCallback_search(responsetext) {
 }
 
 function displayGifs(responsetext) {
-
+    const checkBox = document.getElementById("captionToggle");
     // Parse the JSON response
     var response_objects = JSON.parse(responsetext);
 
@@ -61,16 +61,46 @@ function displayGifs(responsetext) {
     const gifContainer = document.getElementById("gif_results")
     gifContainer.innerHTML = "";
     top_10_gifs.forEach(function(url) {
+        if (checkBox.checked){
+            let apiUrl = "http://flask-env.eba-8pmhw8mm.ap-southeast-2.elasticbeanstalk.com/is-caption-gif/" + url["media_formats"]["gif"]["url"]
+
+            const requestOptions = {
+                method: 'GET',
+                mode: 'no-cors',
+              };
+            fetch(apiUrl)
+                .then(response => {
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data);
+                    if (data["result"]){
+                        const gifImage = document.createElement("img");
+                        gifImage.src = url["media_formats"]["gif"]["url"];
+                        gifImage.alt = "GIF";
+                        console.log(url["media_formats"]["gif"]["url"]);
+                
+                        //gifItem.appendChild(gifImage);
+                        gifContainer.appendChild(gifImage);
+                    }
+                })
+                .catch(error => {
+                    console.error("Fetch error:", error);
+                });
+        }
+        else{
+            const gifImage = document.createElement("img");
+            gifImage.src = url["media_formats"]["gif"]["url"];
+            gifImage.alt = "GIF";
+            console.log(url["media_formats"]["gif"]["url"]);
+    
+            //gifItem.appendChild(gifImage);
+            gifContainer.appendChild(gifImage);
+        }
         // const gifItem = document.getElementById("gif_results");
         // gifItem.classList.add("gif-item");
 
-        const gifImage = document.createElement("img");
-        gifImage.src = url["media_formats"]["gif"]["url"];
-        gifImage.alt = "GIF";
-        console.log(url["media_formats"]["gif"]["url"]);
 
-        //gifItem.appendChild(gifImage);
-        gifContainer.appendChild(gifImage);
     });
 }
 

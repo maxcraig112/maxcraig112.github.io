@@ -2,6 +2,9 @@
     text-align: center;
 }
 
+.top-background {
+    background-color: white;
+  }
 
 /* Apply padding to everything inside the div */
 
@@ -50,3 +53,4 @@
     max-height: 15rem;
     border: 1px solid #111;
 }
+

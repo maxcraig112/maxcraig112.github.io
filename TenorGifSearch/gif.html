@@ -13,27 +13,36 @@
 </head>
 
 <body>
-    <h1 class="display-2 center-text top-padding">Caption Gif Search</h1>
-    <p class="lead center-text">
-        Powered by Tenor, this webpage allows you to search for gifs, only returning ones that are caption gifs
-    </p>
-    <div class="container-fluid ">
-        <nav class="navbar navbar-light bg-light max-width form-group">
-            <form class="form-inline center-div">
-                <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button id="searchButton" class="btn btn-outline-success my-2 mr-sm-2" type="button">Search</button>
-                <small id="passwordHelpInline" class="text-muted mr-sm-2">
-                    Display size
-                </small>
-                <select id="searchLimit" class="form-control center-text">
-                <option>5</option>
-                <option>10</option>
-                <option>25</option>
-                <option>50</option>
-                </select>
+    <div class = "top-background">
+        <h1 class="display-2 center-text top-padding">Caption Gif Search</h1>
+        <p class="lead center-text">
+            Powered by Tenor, this webpage allows you to search for gifs, only returning ones that are caption gifs
+        </p>
+        <div class="container-fluid ">
+            <nav class="navbar navbar-light bg-light max-width form-group">
+                <form class="form-inline center-div">
+                    <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="searchButton" class="btn btn-outline-success my-2 mr-sm-2" type="button">Search</button>
+                    <small id="passwordHelpInline" class="text-muted mr-sm-2">
+                        Display size
+                    </small>
+                    <select id="searchLimit" class="form-control center-text mr-sm-2">
+                    <option>5</option>
+                    <option>10</option>
+                    <option>25</option>
+                    <option>50</option>
+                    </select>
+                    <small id="passwordHelpInline" class="text-muted mr-sm-2">
+                        Caption Gifs Only
+                    </small>
+                    <div class="form-switch mr-sm-2">
+                        <input class="form-check-input" type="checkbox" role="switch" id="captionToggle">
+                        
+                    </div>
 
-            </form>
-        </nav>
+                </form>
+            </nav>
+        </div>
     </div>
 
 
