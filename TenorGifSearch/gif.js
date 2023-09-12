@@ -58,8 +58,8 @@ function tenorCallback_search(responsetext) {
 async function fetchUrls(urls) {
     
     for (const url of urls) {
-        console.log("http://flask-env.eba-8pmhw8mm.ap-southeast-2.elasticbeanstalk.com/is-caption-gif/" + url["media_formats"]["gif"]["url"])
-        await httpGetAsync("http://flask-env.eba-8pmhw8mm.ap-southeast-2.elasticbeanstalk.com/is-caption-gif/" + url["media_formats"]["gif"]["url"],checkCaptionGif);
+        console.log("https://flask-env.eba-8pmhw8mm.ap-southeast-2.elasticbeanstalk.com/is-caption-gif/" + url["media_formats"]["gif"]["url"])
+        await httpGetAsync("https://flask-env.eba-8pmhw8mm.ap-southeast-2.elasticbeanstalk.com/is-caption-gif/" + url["media_formats"]["gif"]["url"],checkCaptionGif);
     }
   }
 
