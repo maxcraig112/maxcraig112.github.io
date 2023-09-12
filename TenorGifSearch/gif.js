@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // Your JavaScript code here
 });
 
-let apiKey;
-apiKey = process.env.API_KEY;
+let apiKey = "AIzaSyBXLT3uRiiw6kfejt0DgtJPlpgYngsVx08";
+//apiKey = process.env.API_KEY;
 // fetch('../configs.json')
 //   .then(response => response.json())
 //   .then(data => {
