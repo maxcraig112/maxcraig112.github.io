@@ -26,7 +26,6 @@ function httpGetAsync(theUrl, callback) {
     // set the state change callback to capture when the response comes in
     xmlHttp.onreadystatechange = function() {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-            console.log("RESPONSE" + xmlHttp.responseText)
             callback(xmlHttp.responseText);
         }
     }
@@ -66,6 +65,7 @@ async function fetchUrls(urls) {
 
 function checkCaptionGif(responseText){
     let object = JSON.parse(responseText)
+    console.log(object)
     if (object["result"]){
         const gifImage = document.createElement("img");
         gifImage.src = object["url"];
