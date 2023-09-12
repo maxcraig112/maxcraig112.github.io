@@ -2,6 +2,10 @@ document.addEventListener("DOMContentLoaded", function() {
     // Your JavaScript code here
 });
 
+const gifContainer = document.getElementById("gif_results");
+gifContainer.innerHTML = "";
+const checkBox = document.getElementById("captionToggle");
+
 let apiKey = "AIzaSyBXLT3uRiiw6kfejt0DgtJPlpgYngsVx08";
 //apiKey = process.env.API_KEY;
 // fetch('../configs.json')
@@ -22,6 +26,7 @@ function httpGetAsync(theUrl, callback) {
     // set the state change callback to capture when the response comes in
     xmlHttp.onreadystatechange = function() {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+            console.log("RESPONSE" + xmlHttp.responseText)
             callback(xmlHttp.responseText);
         }
     }
@@ -51,57 +56,47 @@ function tenorCallback_search(responsetext) {
     return;
 
 }
+async function fetchUrls(urls) {
+    
+    for (const url of urls) {
+        console.log("http://flask-env.eba-8pmhw8mm.ap-southeast-2.elasticbeanstalk.com/is-caption-gif/" + url["media_formats"]["gif"]["url"])
+        await httpGetAsync("http://flask-env.eba-8pmhw8mm.ap-southeast-2.elasticbeanstalk.com/is-caption-gif/" + url["media_formats"]["gif"]["url"],checkCaptionGif);
+    }
+  }
 
+function checkCaptionGif(responseText){
+    let object = JSON.parse(responseText)
+    if (object["result"]){
+        const gifImage = document.createElement("img");
+        gifImage.src = object["url"];
+        gifImage.alt = "GIF";
+        //console.log(url["media_formats"]["gif"]["url"]);
+
+        //gifItem.appendChild(gifImage);
+        gifContainer.appendChild(gifImage);
+    }
+}
 function displayGifs(responsetext) {
-    const checkBox = document.getElementById("captionToggle");
     // Parse the JSON response
     var response_objects = JSON.parse(responsetext);
 
     top_10_gifs = response_objects["results"];
-    const gifContainer = document.getElementById("gif_results")
-    gifContainer.innerHTML = "";
-    top_10_gifs.forEach(function(url) {
-        if (checkBox.checked){
-            let apiUrl = "http://flask-env.eba-8pmhw8mm.ap-southeast-2.elasticbeanstalk.com/is-caption-gif/" + url["media_formats"]["gif"]["url"]
 
-            const requestOptions = {
-                method: 'GET',
-                mode: 'no-cors',
-              };
-            fetch(apiUrl)
-                .then(response => {
-                    return response.json();
-                })
-                .then(data => {
-                    console.log(data);
-                    if (data["result"]){
-                        const gifImage = document.createElement("img");
-                        gifImage.src = url["media_formats"]["gif"]["url"];
-                        gifImage.alt = "GIF";
-                        console.log(url["media_formats"]["gif"]["url"]);
-                
-                        //gifItem.appendChild(gifImage);
-                        gifContainer.appendChild(gifImage);
-                    }
-                })
-                .catch(error => {
-                    console.error("Fetch error:", error);
-                });
-        }
-        else{
+    if (checkBox.checked){
+        fetchUrls(top_10_gifs);
+    }
+    else{
+        for (let index = 0; index < top_10_gifs.length; index++) {
+            const url = top_10_gifs[index];
             const gifImage = document.createElement("img");
             gifImage.src = url["media_formats"]["gif"]["url"];
             gifImage.alt = "GIF";
-            console.log(url["media_formats"]["gif"]["url"]);
-    
+            //console.log(url["media_formats"]["gif"]["url"]);
+
             //gifItem.appendChild(gifImage);
             gifContainer.appendChild(gifImage);
         }
-        // const gifItem = document.getElementById("gif_results");
-        // gifItem.classList.add("gif-item");
-
-
-    });
+    }
 }
 
 // function to call the trending and category endpoints
@@ -113,7 +108,7 @@ function grab_data(search_term, lmt) {
 
     // using default locale of en_US
     var search_url = "https://tenor.googleapis.com/v2/search?q=" + search_term + "&key=" +
-    apiKey + "&client_key=" + clientkey + "&limit=" + lmt;
+    apiKey + "&client_key=" + clientkey + "&limit=" + lmt + "&pos=1";
 
     httpGetAsync(search_url, displayGifs);
 
@@ -136,7 +131,8 @@ const searchLimit = document.getElementById("searchLimit")
 searchButton.addEventListener("click", function() {
     // Your JavaScript code to run when the button is clicked
     const search_term = searchBox.value;
-
+    const gifContainer = document.getElementById("gif_results")
+    gifContainer.innerHTML = "";
     grab_data(search_term, searchLimit.value);
 
     // You can replace the alert with your desired code.
