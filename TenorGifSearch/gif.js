@@ -59,7 +59,7 @@ async function fetchUrls(urls) {
     
     for (const url of urls) {
         console.log("https://flask-env.eba-8pmhw8mm.ap-southeast-2.elasticbeanstalk.com/is-caption-gif/" + url["media_formats"]["gif"]["url"])
-        await httpGetAsync("https://flask-env.eba-8pmhw8mm.ap-southeast-2.elasticbeanstalk.com/is-caption-gif/" + url["media_formats"]["gif"]["url"],checkCaptionGif);
+        await httpGetAsync("http://flask-env.eba-8pmhw8mm.ap-southeast-2.elasticbeanstalk.com/is-caption-gif/" + url["media_formats"]["gif"]["url"],checkCaptionGif);
     }
   }
 
@@ -67,6 +67,7 @@ function checkCaptionGif(responseText){
     let object = JSON.parse(responseText)
     console.log(object)
     if (object["result"]){
+        console.log("Adding gif")
         const gifImage = document.createElement("img");
         gifImage.src = object["url"];
         gifImage.alt = "GIF";
@@ -83,6 +84,7 @@ function displayGifs(responsetext) {
     top_10_gifs = response_objects["results"];
 
     if (checkBox.checked){
+        console.log("ticked")
         fetchUrls(top_10_gifs);
     }
     else{
