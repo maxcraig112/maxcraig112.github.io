@@ -32,12 +32,13 @@ function httpGetAsync(theUrl, callback) {
 
     // open as a GET call, pass in the url and set async = True
     xmlHttp.open("GET", theUrl, true);
-
+    //xmlHttp.setRequestHeader("Access-Control-Allow-Origin", "*");
     // call send with no params as they were passed in on the url string
     xmlHttp.send(null);
 
     return;
 }
+
 
 // callback for the top 8 GIFs of search
 function tenorCallback_search(responsetext) {
@@ -58,7 +59,7 @@ function tenorCallback_search(responsetext) {
 async function fetchUrls(urls) {
     
     for (const url of urls) {
-        console.log("https://flask-env.eba-8pmhw8mm.ap-southeast-2.elasticbeanstalk.com/is-caption-gif/" + url["media_formats"]["gif"]["url"])
+        console.log("http://flask-env.eba-8pmhw8mm.ap-southeast-2.elasticbeanstalk.com/is-caption-gif/" + url["media_formats"]["gif"]["url"])
         await httpGetAsync("http://flask-env.eba-8pmhw8mm.ap-southeast-2.elasticbeanstalk.com/is-caption-gif/" + url["media_formats"]["gif"]["url"],checkCaptionGif);
     }
   }
