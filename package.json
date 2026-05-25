@@ -1,0 +1,13 @@
+{
+  "name": "maxcraig112-blog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "compiiile dev",
+    "build": "compiiile build",
+    "preview": "compiiile preview"
+  },
+  "devDependencies": {
+    "@compiiile/compiiile": "latest"
+  }
+}
