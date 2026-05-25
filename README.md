@@ -10,7 +10,6 @@
 While you're stopping by, feel free to check out my
 
 * [Blog](/c/blog/readme/)
-* [Projects](/c/projects/readme/)
 * [Contact Me](/c/contactme/)
 
 ---
@@ -72,15 +71,13 @@ A website to help you practice saying and reading Vietnamese numbers from 1-1,00
 
 ## [Esoteric Puzzles](https://github.com/maxcraig112/Esoteric-Puzzles/blob/main/README.md)
 
-## [Anki Heisig Card Generator](https://github.com/maxcraig112/Anki-Heisig-Card-Generator)
-
-Program to automatically generatea Anki flashcards relating to Kanji from `Remembering the Kanji` by James Heisig.
-
-
 > **Esoteric Puzzle**
 > 
 > A puzzle that is unique, unusual, or deliberately hard to understand, often requiring niche knowledge, unconventional thinking, or hidden rules to solve.
 
+## [Anki Heisig Card Generator](https://github.com/maxcraig112/Anki-Heisig-Card-Generator)
+
+A Program for automatically generating Anki flashcards relating to Kanji from `Remembering the Kanji` by James Heisig.
 
 ---
 
@@ -99,3 +96,12 @@ A 24 km trail that connects the town of Kudoyama to Koyasan, the founding place 
 
 A mountain located within the Central Highlands of Tasmania, including a 12km loop with a summit 1,545m above sea level.
 `<img src="/image/README/CradleMountain.png" alt="CradleMountain" width="70%">`
+
+## Self-Hosting
+
+I currently operate a home server where I self-host
+
+1. A [Jellyfin](https://github.com/jellyfin/jellyfin) home media server
+2. A self hosted OneDrive using [OpenMediaVault](https://www.openmediavault.org/)
+3. Minecraft servers via [MineOS](https://mineos.net/)
+4. Network Wide Ad Blocking via [Pi-hole](https://pi-hole.net/)
