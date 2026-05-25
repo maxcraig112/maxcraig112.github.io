@@ -2,11 +2,11 @@
 
 # About Me
 
-👋 I'm Max, a Software Engineer based in Sydney. I have lived my entire life in Melbourne, however I have moved up here to pursue a career in the Software Engineering industry. Welcome!
+👋 I'm Max, a Software Engineer based in Sydney. I've lived my entire life in Melbourne, however I have moved up to pursue a career in the Software Engineering industry. Welcome!
 
 <img src="/image/README/Selfie.JPEG" alt="This is me" width="50%">
 
-While you're stopping by, feel free to check out my [Blog](/c/blog/readme/)
+While you're stopping by, feel free to check out my [blog](/c/blog/readme/).
 
 [Contact Me](/c/contactme/)
 
