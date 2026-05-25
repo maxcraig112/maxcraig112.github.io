@@ -6,7 +6,6 @@
 
 <img src="/image/README/Selfie.JPEG" alt="This is me" width="50%">
 
-
 While you're stopping by, feel free to check out my [Blog](/c/blog/readme/)
 
 [Contact Me](/c/contactme/)
