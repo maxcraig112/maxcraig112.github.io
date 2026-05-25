@@ -1,20 +1,17 @@
 # Maximilian Craig
 
-👋 I'm Max, a software engineer based in Sydney. Welcome!
-
-If you've stopping by, feel free to check out my
-
-* [Blog](blog/)
-* [Projects](projects/)
-* [Contact](contact.md)
-
----
-
 # About Me
 
-I'm a 23 year old Software Engineer based in Sydney (formally Melbourne). I graduated from Monash University with a double degree in Computer Science and Software Engineering (Honours)
+👋 I'm Max, a Software Engineer based in Sydney. I have lived my entire life in Melbourne, however I have moved up here to pursue a career in the Software Engineering industry. Welcome!
 
 <img src="/image/README/Selfie.JPEG" alt="This is me" width="50%">
+
+
+While you're stopping by, feel free to check out my
+
+* [Blog](/c/blog/readme/)
+* [Projects](/c/projects/readme/)
+* [Contact Me](/c/contactme/)
 
 ---
 
@@ -22,7 +19,6 @@ I'm a 23 year old Software Engineer based in Sydney (formally Melbourne). I grad
 
 ```mermaid
 gantt
-    title Career Timeline
     dateFormat YYYY-MM
     axisFormat %Y
 
@@ -58,22 +54,7 @@ Melbourne, Australia · Mar 2023 – Feb 2025
 * Ran weekly consultations and oversaw the invigilation and marking of assessments.
 * Achieved 95% student satisfaction.
 
-# Hobbies
-
-## Hiking
-
-I love to hike when I get the chance! Noteable hikes I've done include
-
-### Koyasan Choishi-Michi Pilgrimage
-
-A 24 km trail that connects the town of Kudoyama to Koyasan, the founding place of the largest branch of Buddhism, and home to Okunoin Cemetery, the largest in Japan.
-<img src="/image/README/ChoishiMichi.png" alt="Choishi Michi" width="70%">
-
-### Summit of Cradle Mountain and Circuit of Dove Lake
-
-A mountain located within the Central Highlands of Tasmania, including a 12km loop with a summit 1,545m above sea level.
-<img src="/image/README/CradleMountain.png" alt="CradleMountain" width="70%">
-
+---
 
 # Projects
 
@@ -88,3 +69,33 @@ A multipurpose Discord bot designed to allow the manipulation, tagging, archivin
 A website to help you practice saying and reading Vietnamese numbers from 1-1,000
 
 ![1779707157241](/image/README/LearningVietnamese.png)
+
+## [Esoteric Puzzles](https://github.com/maxcraig112/Esoteric-Puzzles/blob/main/README.md)
+
+## [Anki Heisig Card Generator](https://github.com/maxcraig112/Anki-Heisig-Card-Generator)
+
+Program to automatically generatea Anki flashcards relating to Kanji from `Remembering the Kanji` by James Heisig.
+
+
+> **Esoteric Puzzle**
+> 
+> A puzzle that is unique, unusual, or deliberately hard to understand, often requiring niche knowledge, unconventional thinking, or hidden rules to solve.
+
+
+---
+
+# Hobbies
+
+## Hiking
+
+I love to hike when I get the chance! Noteable hikes I've done include
+
+### Koyasan Choishi-Michi Pilgrimage
+
+A 24 km trail that connects the town of Kudoyama to Koyasan, the founding place of the largest branch of Buddhism, and home to Okunoin Cemetery, the largest in Japan.
+`<img src="/image/README/ChoishiMichi.png" alt="Choishi Michi" width="70%">`
+
+### Summit of Cradle Mountain and Circuit of Dove Lake
+
+A mountain located within the Central Highlands of Tasmania, including a 12km loop with a summit 1,545m above sea level.
+`<img src="/image/README/CradleMountain.png" alt="CradleMountain" width="70%">`

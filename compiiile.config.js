@@ -1,6 +1,6 @@
 export default {
-  title: "Max Craig",
-  description: "Dev blog — projects, experiments, and random tech thoughts.",
+  title: "Maximilian Craig",
+  description: "Software Engineer based in Sydney, Australia",
   theme: "dark",
-  siteUrl: "https://maxcraig112.github.io",
+  siteUrl: "https://maxcraig.me",
 }

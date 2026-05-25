@@ -4,4 +4,4 @@ Posts about dev projects, experiments, and things I've figured out the hard way
 
 ---
 
-- [Hello World](hello-world.md) — May 25, 2026
+- [How I Built This Site](/c/blog/25-05-2026-this-site/) — May 25, 2026
