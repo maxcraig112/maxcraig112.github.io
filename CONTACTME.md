@@ -2,7 +2,7 @@
 
 https://yeshello.org/
 
-Don't hesitate to reach out and send me a message!
+Don't hesitate to reach out!
 
 |                    |                                                                              |
 | ------------------ | ---------------------------------------------------------------------------- |
