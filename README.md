@@ -7,10 +7,9 @@
 <img src="/image/README/Selfie.JPEG" alt="This is me" width="50%">
 
 
-While you're stopping by, feel free to check out my
+While you're stopping by, feel free to check out my [Blog](/c/blog/readme/)
 
-* [Blog](/c/blog/readme/)
-* [Contact Me](/c/contactme/)
+[Contact Me](/c/contactme/)
 
 ---
 
@@ -90,12 +89,14 @@ I love to hike when I get the chance! Noteable hikes I've done include
 ### Koyasan Choishi-Michi Pilgrimage
 
 A 24 km trail that connects the town of Kudoyama to Koyasan, the founding place of the largest branch of Buddhism, and home to Okunoin Cemetery, the largest in Japan.
-`<img src="/image/README/ChoishiMichi.png" alt="Choishi Michi" width="70%">`
+
+<img src="/image/README/ChoishiMichi.png" alt="Choishi Michi" width="70%">
 
 ### Summit of Cradle Mountain and Circuit of Dove Lake
 
 A mountain located within the Central Highlands of Tasmania, including a 12km loop with a summit 1,545m above sea level.
-`<img src="/image/README/CradleMountain.png" alt="CradleMountain" width="70%">`
+
+<img src="/image/README/CradleMountain.png" alt="CradleMountain" width="70%">
 
 ## Self-Hosting
 
