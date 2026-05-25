@@ -21,16 +21,17 @@ I'm a 23 year old Software Engineer based in Sydney (formally Melbourne). I grad
 # Employment History
 
 ```mermaid
-timeline
+gantt
     title Career Timeline
-    2018 : Woolworths Group (2018–2025)
-         : Asst. Front End Manager
-    2023 : Monash University (2023–2025)
-         : Teaching Associate
-    2024 : ANZ Bank (2024–2026)
-         : Platform Engineer
-    2026 : Macquarie Group (2026–Present)
-         : Software Engineer
+    dateFormat YYYY-MM
+    axisFormat %Y
+
+    section Academia
+    Monash University        :2023-03, 2025-02
+
+    section Engineering
+    ANZ Bank                  :2024-01, 2026-02
+    Macquarie Group           :2026-03, 2027-01
 ```
 
 ## Software Engineer — Macquarie Group

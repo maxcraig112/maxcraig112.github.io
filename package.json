@@ -3,11 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "compiiile dev",
-    "build": "compiiile build",
-    "preview": "compiiile preview"
+    "dev": "compiiile-pro dev",
+    "build": "compiiile-pro build",
+    "preview": "compiiile-pro preview"
   },
   "devDependencies": {
-    "@compiiile/compiiile": "latest"
+    "@compiiile/compiiile-pro": "latest"
   }
 }
