@@ -97,11 +97,33 @@ A mountain located within the Central Highlands of Tasmania, including a 12km lo
 
 <img src="/image/README/CradleMountain.png" alt="CradleMountain" width="70%">
 
+### The Great North Walk
+
+The Great North Walk is a 260km track that stretches from Sydney to Newcastle. I've completed parts of this trail and highly reccomend it!
+
+<img src="/image/README/GreatNorthWalk.png" alt="CradleMountain" width="70%">
+
 ## Self-Hosting
 
-I currently operate a home server where I self-host
+I currently run a Home Server where I self-host applications, games, and run tests.
+
+* [Proxmox](https://www.proxmox.com/en/) is used to manage the deployment of VMs and Containers
+* [Tailscale](https://tailscale.com/) is used to remotely access my VMs
+
+I'm currently self-hosting
 
 1. A [Jellyfin](https://github.com/jellyfin/jellyfin) home media server
 2. A self hosted OneDrive using [OpenMediaVault](https://www.openmediavault.org/)
 3. Minecraft servers via [MineOS](https://mineos.net/)
 4. Network Wide Ad Blocking via [Pi-hole](https://pi-hole.net/)
+
+### Specs
+
+| Component | Details |
+| --------- | ------- |
+| CPU | AMD Ryzen 5 5600X 6-Core (12 Threads) |
+| RAM | 32 GB DDR4 |
+| GPU | NVIDIA GeForce GTX 1060 |
+| Storage | 2x 4TB Seagate IronWolf HDD, 500GB Samsung 970 EVO M.2 NVMe |
+| Hypervisor | Proxmox VE 8.3.0 |
+| Kernel | Linux 6.8.12-4-pve |
