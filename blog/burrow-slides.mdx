@@ -5,6 +5,7 @@ description: "Encrypted, self-hosted peer-to-peer file transfer"
 ---
 
 import logoSrc from './images/burrow/logo.png'
+import tailscaleSrc from './images/burrow/tailscale.png'
 import sequenceDiagramSrc from './images/burrow/sequence-diagram.png'
 import demoSrc from './images/burrow/demo.gif'
 import gopherSrc from './images/burrow/golang-gopher.png'
@@ -205,6 +206,29 @@ services:
 </div>
 </CGrid>
 
+---
+
+<CGrid template="3 2" align="center">
+<div>
+
+<small style="opacity: 0.6;"><em>Optional, but recommended</em></small>
+
+## Works anywhere with Tailscale
+
+Connect all your devices in a private mesh network.
+
+- Works on any device
+- Works across the internet like a local network
+- No port forwarding required
+- Free for personal use
+
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem;">
+
+<img src={tailscaleSrc.src} alt="Tailscale" style="width: 85%; height: auto; border-radius: 12px;" />
+
+</div>
+</CGrid>
 
 ---
 <CGrid template="6 5" align="center top">
