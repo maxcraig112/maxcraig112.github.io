@@ -5,6 +5,8 @@ description: "Encrypted, self-hosted peer-to-peer file transfer"
 ---
 
 import logoSrc from './images/burrow/logo.png'
+import sequenceDiagramSrc from './images/burrow/sequence-diagram.png'
+import demoSrc from './images/burrow/demo.gif'
 import gopherSrc from './images/burrow/golang-gopher.png'
 import wormholeSrc from './images/burrow/magic-wormhole.png'
 import fileTransferSrc from './images/burrow/file-transfer.png'
@@ -16,7 +18,11 @@ import dropboxSrc from './images/burrow/dropbox.png'
 <CSlide theme="dark">
 
 # Burrow
+<br />
+<img src={logoSrc.src} alt="Burrow logo" style="width: 50%; height: auto; display: block; margin: 1rem auto 0.25rem;" />
 
+<small><em>A gopher hole is called a burrow</em></small>
+<br />
 Encrypted peer-to-peer file transfer, entirely under your control.
 
 </CSlide>
@@ -49,22 +55,30 @@ Sending files between devices means either
 
 ---
 
-<CGrid template="1 1" align="center">
-<div>
-
 ## I want a tool that can
 
-1. Transfer files between devices
-2. Avoid third parties / middlemen
-3. Be self hosted (free for life)
+<span class="fragment"></span>
+
+<div class="fragment">
+
+> [!TIP] Transfer files between any device
+> Works on any device within my network
 
 </div>
-<div>
 
-<img src={fileTransferSrc.src} alt="File transfer" style="width: 50%; height: auto;" />
+<div class="fragment">
+
+> [!TIP] Avoid third parties / middlemen
+> Files go straight from sender to receiver
 
 </div>
-</CGrid>
+
+<div class="fragment">
+
+> [!TIP] Self-hosted — free for life
+> Run on my own infrastructure, no subscriptions
+
+</div>
 
 ---
 
@@ -87,7 +101,8 @@ Receive file written to important-stuff.txt
 
 </div>
 <div>
-
+<br/>
+<br/>
 <img src={wormholeSrc.src} alt="Magic Wormhole" style="width: 100%; height: auto;" />
 
 </div>
@@ -96,6 +111,8 @@ Receive file written to important-stuff.txt
 ---
 
 ## The Problem with Wormhole
+
+<span class="fragment"></span>
 
 <div class="fragment">
 
@@ -133,17 +150,30 @@ Receive file written to important-stuff.txt
 </div>
 <div>
 
-<img src={logoSrc.src} alt="Burrow logo" style="width: 75%; height: auto;" />
+<img src={logoSrc.src} alt="Burrow logo" style="width: 75%; height: auto; display: block; margin: 0 auto;" />
+<small style="display: block; text-align: center;"><em>A gopher hole is called a burrow</em></small>
 
 </div>
 </CGrid>
 
 ---
 
+## How it works
+
+<div style="display: flex; justify-content: center;">
+
+<img src={sequenceDiagramSrc.src} alt="Connection sequence diagram" style="max-height: 70vh; width: auto; border-radius: 16px;" />
+
+</div>
+
+---
+
 <CGrid template="1 1" align="center top">
 <div>
 
-## Burrow is completely self-hosted
+## Burrow 
+## is completely
+## self-hosted
 
 </div>
 <div>
@@ -169,6 +199,7 @@ services:
 
 </div>
 </CGrid>
+
 
 ---
 <CGrid template="1 1" align="center top">
@@ -213,7 +244,7 @@ Done!
 
 ## Multi-file transfers & mobile support
 
-![Burrow demo](./images/burrow/demo.gif)
+<img src={demoSrc.src} alt="Burrow demo" style="width: 80%; height: auto;" />
 
 
 ---
