@@ -18,7 +18,6 @@ import dropboxSrc from './images/burrow/dropbox.png'
 <CSlide theme="dark">
 
 # Burrow
-<br />
 <img src={logoSrc.src} alt="Burrow logo" style="width: 50%; height: auto; display: block; margin: 1rem auto 0.25rem;" />
 
 <small><em>A gopher hole is called a burrow</em></small>
@@ -69,14 +68,14 @@ Sending files between devices means either
 <div class="fragment">
 
 > [!TIP] Avoid third parties / middlemen
-> Files go straight from sender to receiver
+> Files go straight from sender to receiver, without being stored in the middle
 
 </div>
 
 <div class="fragment">
 
 > [!TIP] Self-hosted — free for life
-> Run on my own infrastructure, no subscriptions
+> Runs on my own infrastructure, no subscriptions
 
 </div>
 
@@ -85,7 +84,7 @@ Sending files between devices means either
 <CGrid template="1 1" align="center top">
 <div>
 
-## Current solution: Magic Wormhole
+<h3>Current solution:<br/><span style="color: #2D3BC9;">Magic Wormhole</span></h3>
 
 ```bash
 % wormhole send important-stuff.txt
@@ -101,8 +100,7 @@ Receive file written to important-stuff.txt
 
 </div>
 <div>
-<br/>
-<br/>
+<br/><br/>
 <img src={wormholeSrc.src} alt="Magic Wormhole" style="width: 100%; height: auto;" />
 
 </div>
@@ -110,7 +108,7 @@ Receive file written to important-stuff.txt
 
 ---
 
-## The Problem with Wormhole
+## The Problem with <br/><span style="color: #2D3BC9;">Magic Wormhole</span>
 
 <span class="fragment"></span>
 
@@ -131,14 +129,21 @@ Receive file written to important-stuff.txt
 <div class="fragment">
 
 > [!WARNING] Not compatible with mobile
-> Requires Python - no iOS app
+> No iOS app available
+
+</div>
+
+<div class="fragment">
+
+> [!WARNING] Written in Python
+> ...
 
 </div>
 
 ---
 
 <CGrid template="1 1" align="center">
-<div>
+<div style="text-align: center;">
 
 ## Burrow
 
@@ -170,7 +175,7 @@ Receive file written to important-stuff.txt
 
 <CGrid template="1 1" align="center top">
 <div>
-
+<br/><br/>
 ## Burrow 
 ## is completely
 ## self-hosted
@@ -202,16 +207,11 @@ services:
 
 
 ---
-<CGrid template="1 1" align="center top">
+<CGrid template="6 5" align="center top">
 <div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<br/><br/><br/><br/><br/><br/>
 
-## Feature parity with Magic Wormhole
+<h2>Feature<br/>parity with<br/><span style="color: #2D3BC9;">Magic Wormhole</span></h2>
 
 </div>
 <div>
