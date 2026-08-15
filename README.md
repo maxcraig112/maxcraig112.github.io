@@ -8,7 +8,7 @@
 
 While you're stopping by, feel free to check out my [blog](/c/blog/readme/).
 
-[Contact Me](/c/contactme/)
+[Contact Me](/c/contactme/) · [Resume](/docs/Maximilian_Craig_Resume.pdf)
 
 ---
 
