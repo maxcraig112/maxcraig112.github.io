@@ -1,0 +1,35 @@
+.files-tree {
+  display: flex;
+  flex-direction: column;
+}
+
+.files-tree > li:has(> button[data-folder-id="blog"]) {
+  order: 1;
+}
+
+/* Order blog's own nav entries to match blog/README.md's listed order,
+   with everything not listed there falling in after. */
+.files-tree > li:has(> button[data-folder-id="blog"]) > ul.nav-list-item-children {
+  display: flex;
+  flex-direction: column;
+}
+
+.files-tree > li:has(> button[data-folder-id="blog"]) > ul.nav-list-item-children
+  > li:has(> a[href="/c/blogreadme"]) {
+  order: 0;
+}
+
+.files-tree > li:has(> button[data-folder-id="blog"]) > ul.nav-list-item-children
+  > li:has(> a[href="/c/bloghow-i-built-this-website"]) {
+  order: 1;
+}
+
+.files-tree > li:has(> button[data-folder-id="blog"]) > ul.nav-list-item-children
+  > li:has(> a[href="/s/blogburrow-slides"]) {
+  order: 2;
+}
+
+.files-tree > li:has(> button[data-folder-id="blog"]) > ul.nav-list-item-children
+  > li:has(> a[href="/c/bloghow-i-become-a-1.28"]) {
+  order: 2;
+}
