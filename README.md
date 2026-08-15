@@ -59,7 +59,7 @@ Melbourne, Australia · Mar 2023 – Feb 2025
 
 An encrypted, self-hosted peer-to-peer file transfer tool inspired by [magic-wormhole](https://github.com/magic-wormhole/magic-wormhole).
 
-<img src="/blog/images/burrow/demo.gif" alt="Choishi Michi" width="70%">
+![177970757241](/image/README/demo.gif)
 
 ## [Giffy](https://github.com/maxcraig112/GoGiffy)
 
