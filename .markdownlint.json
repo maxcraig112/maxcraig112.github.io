@@ -2,6 +2,6 @@
   "MD013": false,
   "MD025": false,
   "MD033": {
-    "allowed_elements": ["img", "div"]
+    "allowed_elements": ["img", "div", "p"]
   }
 }

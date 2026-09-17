@@ -27,24 +27,24 @@ gantt
     Macquarie Group           :2026-03, 2027-01
 ```
 
-## Software Engineer — Macquarie Group
+## Software Engineer
 
-Sydney, Australia · Mar 2026 – Present
+<p class="job-subtitle">Macquarie Group · Sydney, Australia · Mar 2026 – Present</p>
 
 Working within the Software Development Lifecycle Team developing automated processes for provisioning GitHub Repositories and GitHub Advanced Security.
 
-## Platform Engineer — ANZ Bank
+## Platform Engineer
 
-Melbourne, Australia · Jan 2024 – Jan 2026
+<p class="job-subtitle">ANZ Bank · Melbourne, Australia · Jan 2024 – Jan 2026</p>
 
 * Developed Kubernetes operators for automatic provisioning and lifecycle management of cloud infrastructure.
 * Built and maintained CI/CD pipelines for deploying cloud-native applications.
 * Investigated and implemented multi-region architectures to meet financial risk and resiliency requirements.
 * Designed and executed automated migrations across 20,000+ configuration files.
 
-## Teaching Associate — Monash University
+## Teaching Associate
 
-Melbourne, Australia · Mar 2023 – Feb 2025
+<p class="job-subtitle">Monash University · Melbourne, Australia · Mar 2023 – Feb 2025</p>
 
 * Taught FIT1045: Introduction to Programming and FIT1008: Introduction to Computer Science.
 * Led weekly workshops, supporting and teaching course material to 200+ students.

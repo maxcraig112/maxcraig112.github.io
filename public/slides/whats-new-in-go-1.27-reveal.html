@@ -1,0 +1,1473 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's new in Go 1.27</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/theme/white.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+         :root {
+            --accent: #00ADD8;
+            --accent-dark: #007d9c;
+            --ink: #1a1f26;
+            --muted: #6b7280;
+            --hairline: #e5e9ee;
+            --track: #eef1f4;
+        }
+        
+        .reveal {
+            font-family: "Inter", -apple-system, "Segoe UI", sans-serif;
+            color: var(--ink);
+        }
+        
+        .reveal .slides {
+            text-align: left;
+        }
+        
+        .reveal .slides section {
+            background: #ffffff;
+            padding: 20px 8px;
+        }
+        
+        .reveal h1,
+        .reveal h2,
+        .reveal h3 {
+            color: var(--ink);
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+        
+        .reveal a {
+            color: var(--accent-dark);
+        }
+        
+        .reveal blockquote {
+            border: none;
+            border-left: 4px solid var(--accent);
+            background: none;
+            box-shadow: none;
+            font-style: normal;
+            font-size: 0.72em;
+            color: #333c46;
+            padding: 0.3em 0 0.3em 1em;
+            margin: 0.6em 0;
+            width: 100%;
+            max-width: none;
+        }
+        /* ---- title slide ---- */
+        
+        .title-slide {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        .title-slide h1 {
+            font-size: 2.2em;
+            margin-bottom: 0.15em;
+        }
+        
+        .title-rule {
+            width: 160px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+            margin: 0.5em 0;
+        }
+        
+        .title-slide .subtitle {
+            color: var(--muted);
+            font-size: 0.62em;
+            letter-spacing: 0.02em;
+        }
+        /* ---- agenda ---- */
+        
+        .agenda-label {
+            margin-top: 34px;
+            font-size: 23px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+        }
+        
+        .agenda-list {
+            display: grid !important;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-rows: repeat(4, auto);
+            grid-auto-flow: column;
+            gap: 16px 48px;
+            width: 100%;
+            max-width: 680px;
+            margin: 14px auto 0;
+            text-align: left;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .agenda-list li {
+            position: relative;
+            list-style: none;
+            padding-left: 26px;
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--ink);
+        }
+        
+        .agenda-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.5em;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+        /* ---- gopher + pillars ---- */
+        
+        .stack {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2.2em;
+            padding-top: 0.4em;
+        }
+        
+        .stack img {
+            width: 220px;
+            height: auto;
+        }
+        
+        .pillars {
+            display: flex;
+            justify-content: center;
+            gap: 1.4em;
+            flex-wrap: wrap;
+        }
+        
+        .pillar {
+            border: 1px solid var(--hairline);
+            border-top: 3px solid var(--accent);
+            border-radius: 8px;
+            padding: 0.9em 1.6em;
+            font-size: 0.52em;
+            font-weight: 600;
+            color: var(--ink);
+            background: #fafcfd;
+        }
+        /* ---- upgrade benefits ---- */
+        
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 26px;
+            width: 100%;
+            max-width: 760px;
+            margin: 28px auto 0;
+        }
+        
+        .benefit-card {
+            text-align: left;
+            border: 1px solid var(--hairline);
+            border-top: 4px solid var(--accent);
+            border-radius: 12px;
+            padding: 28px 26px;
+            background: #fafcfd;
+            box-sizing: border-box;
+        }
+        
+        .benefit-card h3 {
+            font-size: 24px;
+            margin: 0 0 10px;
+            text-transform: none;
+            line-height: 1.25;
+        }
+        
+        .benefit-card p {
+            font-size: 16px;
+            color: var(--muted);
+            line-height: 1.5;
+            margin: 0;
+        }
+        /* ---- chapter slides (Go 1.27 features) ---- */
+        
+        .reveal .slides section.chapter-slide {
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start !important;
+            text-align: center;
+            padding-top: 34px;
+            /* Reveal's center:true vertically centers each slide based on its
+               own content height, so shorter slides sit lower than taller ones.
+               Locking height to the slide canvas (matches Reveal.initialize
+               height:700) leaves no slack to centre within, pinning every
+               chapter-slide's heading to the same fixed Y. */
+            height: 700px !important;
+            box-sizing: border-box !important;
+        }
+        /* Fixed-height heading zone: every slide's title-rule / body starts at
+           the same Y, regardless of a 1- vs 2-line title or a missing subtitle. */
+        
+        .chapter-slide .chapter-head {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            min-height: 128px;
+        }
+        
+        .chapter-slide .chapter-head h2 {
+            margin: 0;
+        }
+        
+        .chapter-slide .title-rule {
+            margin: 10px auto 26px;
+        }
+        
+        .chapter-slide .chapter-subtitle {
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: none;
+            color: var(--accent-dark);
+            margin: 4px 0 0;
+        }
+        
+        .chapter-slide .chapter-body {
+            width: 100%;
+            max-width: 940px;
+            display: flex;
+            gap: 44px;
+            align-items: flex-start;
+            text-align: left;
+        }
+        
+        .chapter-slide .chapter-bullets {
+            flex: 1 1 0;
+            min-width: 0;
+            list-style: none;
+            margin: 4px 0 0;
+            padding: 0;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--ink);
+        }
+        
+        .chapter-slide .chapter-bullets li {
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 12px;
+        }
+        
+        .chapter-slide .chapter-bullets li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.6em;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+        
+        .chapter-slide .chapter-example {
+            flex: 1 1 0;
+            min-width: 0;
+        }
+        /* 2/3 + 1/3 layout: image with a single bullet, vs. a table/example */
+        
+        .chapter-slide .chapter-visual {
+            flex: 2 1 0;
+            min-width: 0;
+        }
+        
+        .chapter-slide .chapter-visual img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(20, 30, 40, 0.12);
+        }
+        
+        .chapter-slide .chapter-visual img.diagram-img {
+            width: auto;
+            max-width: 100%;
+            max-height: 360px;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .chapter-slide .chapter-visual .chapter-bullets {
+            flex: none;
+            width: 100%;
+            margin-top: 18px;
+        }
+        /* full-width bullets-only variant, for chapters with no code example */
+        
+        .chapter-slide .chapter-bullets.wide {
+            flex: none;
+            width: 100%;
+            max-width: 620px;
+            margin: 4px auto 0;
+            font-size: 16px;
+        }
+        
+        .chapter-slide .chapter-bullets.wide li {
+            padding-left: 20px;
+            margin-bottom: 14px;
+        }
+        
+        .chapter-slide .chapter-bullets.wide li::before {
+            width: 7px;
+            height: 7px;
+            top: 0.5em;
+        }
+        
+        .code-label {
+            font-family: "JetBrains Mono", Consolas, monospace;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--muted);
+            margin: 0 0 5px;
+        }
+        
+        pre.code-block {
+            font-family: "JetBrains Mono", Consolas, monospace;
+            font-size: 12.5px;
+            line-height: 1.55;
+            background: #f6f8fa;
+            border: 1px solid var(--hairline);
+            border-radius: 8px;
+            padding: 12px 14px;
+            margin: 0 0 16px;
+            overflow-x: auto;
+            white-space: pre;
+            color: #24292f;
+            font-variant-ligatures: none;
+            -webkit-font-variant-ligatures: none;
+            font-feature-settings: "liga" 0, "calt" 0;
+            box-shadow: none;
+        }
+        
+        pre.code-block code.hljs {
+            background: transparent;
+            padding: 0;
+            font-size: inherit;
+            font-family: inherit;
+            white-space: pre;
+        }
+        
+        .code-compare pre.code-block:last-child {
+            margin-bottom: 0;
+            border-left: 3px solid var(--accent);
+        }
+        
+        .code-columns {
+            display: flex;
+            gap: 16px;
+        }
+        
+        .column-heading {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--ink);
+            margin: 4px 0 14px;
+        }
+        
+        .code-column {
+            flex: 1 1 0;
+            min-width: 0;
+        }
+        
+        .code-column pre.code-block:last-child {
+            margin-bottom: 0;
+        }
+        
+        pre.code-block.code-block-accent {
+            border-left: 3px solid var(--accent);
+        }
+        
+        .reshaping-slide .chapter-body {
+            max-width: 1040px;
+        }
+        
+        .reshaping-slide .chapter-bullets {
+            flex: 0.8 1 0;
+        }
+        
+        .reshaping-slide .chapter-example {
+            flex: 1.6 1 0;
+        }
+        
+        .uuid-replace-slide .chapter-visual {
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .uuid-replace-slide .chapter-example {
+            align-self: center;
+        }
+        
+        .mapping-list {
+            font-family: "JetBrains Mono", Consolas, monospace;
+            font-size: 13px;
+        }
+        
+        .mapping-list .row {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            padding: 9px 0;
+            border-bottom: 1px solid var(--hairline);
+        }
+        
+        .mapping-list .row:first-child {
+            padding-top: 0;
+        }
+        
+        .mapping-list .row:last-child {
+            border-bottom: none;
+        }
+        
+        .mapping-list .row-title {
+            font-family: "Inter", -apple-system, "Segoe UI", sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--muted);
+        }
+        
+        .mapping-list .old {
+            color: var(--muted);
+            text-align: left;
+        }
+        
+        .mapping-list .old::before {
+            content: "\00D7  ";
+            color: #c9788b;
+        }
+        
+        .mapping-list .arrow {
+            display: none;
+        }
+        
+        .mapping-list .new {
+            color: var(--accent-dark);
+            font-weight: 600;
+            text-align: left;
+        }
+        
+        .mapping-list .new::before {
+            content: "\2713  ";
+            color: var(--accent);
+        }
+        /* ---- placeholders ---- */
+        
+        .placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60vh;
+            border: 2px dashed var(--hairline);
+            border-radius: 12px;
+            color: var(--muted);
+            font-style: italic;
+            font-size: 0.6em;
+            background: #fbfcfd;
+        }
+        /* ---- full-slide images ---- */
+        
+        .image-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60vh;
+        }
+        
+        .image-slide img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 24px rgba(20, 30, 40, 0.12);
+        }
+        /* ---- adoption chart (vertical bars, 1.10 - 1.27, chronological) ---- */
+        
+        .chart-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .chart-row {
+            display: flex;
+            align-items: stretch;
+            width: 100%;
+            gap: 10px;
+        }
+        
+        .axis-y-label {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            white-space: nowrap;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--muted);
+            padding-bottom: 26px;
+        }
+        
+        .axis-x-label {
+            margin-top: 10px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--muted);
+        }
+        
+        .vchart {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 12px;
+            flex: 1;
+            height: 240px;
+            padding: 0 4px;
+            border-bottom: 2px solid var(--hairline);
+        }
+        
+        .vbar-col {
+            flex: 1;
+            max-width: 52px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100%;
+        }
+        
+        .vbar-value {
+            font-family: "JetBrains Mono", Consolas, monospace;
+            font-size: 12px;
+            color: var(--muted);
+            margin-bottom: 6px;
+            white-space: nowrap;
+        }
+        
+        .vbar {
+            width: 30px;
+            background: #bfe6ef;
+            border-radius: 3px 3px 0 0;
+        }
+        
+        .vbar-col.highlight .vbar {
+            background: var(--accent);
+        }
+        
+        .vbar-col.highlight .vbar-value {
+            color: var(--accent-dark);
+            font-weight: 700;
+        }
+        
+        .vbar-label {
+            margin-top: 8px;
+            font-family: "JetBrains Mono", Consolas, monospace;
+            font-size: 13px;
+            color: var(--muted);
+        }
+        
+        .vbar-col.highlight .vbar-label {
+            color: var(--accent-dark);
+            font-weight: 700;
+        }
+        
+        .callout {
+            margin-top: 48px;
+            font-size: 0.46em;
+            font-weight: 600;
+            color: var(--ink);
+            border-left: 4px solid var(--accent);
+            padding-left: 0.8em;
+        }
+        
+        .citation {
+            font-size: 0.42em;
+            color: var(--muted);
+            margin-top: -0.4em;
+        }
+        
+        .reveal .fragment-list {
+            font-size: 0.62em;
+            line-height: 1.5;
+        }
+        
+        .reveal .fragment-list .fragment {
+            margin: 0.7em 0;
+        }
+        
+        .reveal .fragment-list .fragment b {
+            color: var(--accent-dark);
+        }
+        /* ---- centred, top-aligned slide (Go 1 Compatibility) ---- */
+        
+        .chapter-slide blockquote {
+            text-align: center;
+            border-left: none;
+            border-top: 4px solid var(--accent);
+            padding: 0.6em 0 0;
+            max-width: 820px;
+            margin: 0.3em auto 0.5em;
+        }
+        
+        .chapter-slide .citation {
+            text-align: center;
+        }
+        
+        .chapter-slide .fragment-list {
+            text-align: center;
+            max-width: 780px;
+            margin: 0.6em auto 0;
+        }
+        
+        .reveal .progress {
+            color: var(--accent);
+        }
+        
+        .reveal .controls {
+            color: var(--accent-dark);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section>
+                <div class="title-slide">
+                    <h1>What's new in Go 1.27</h1>
+                    <div class="title-rule"></div>
+                    <div class="subtitle">17th September 2026 &middot; Max Craig</div>
+                </div>
+                <aside class="notes">
+                    Hello everyone, my name is Max, and I've been programming in Go for over two and a half years in my professional career &mdash; infatuated with the language ever since I started. I've had the opportunity to work at ANZ and Macquarie Bank on APIs, Kubernetes
+                    Operators, and internal developer platforms, all written in Go, and these properties of the language have let us build software quickly, safely, and consistently.
+                </aside>
+            </section>
+
+            <section>
+                <div class="stack">
+                    <h2>Benefits of Go</h2>
+                    <img src="images/golang-gopher.png" alt="Go gopher">
+                    <div class="pillars">
+                        <div class="pillar">Type safety</div>
+                        <div class="pillar">High performance</div>
+                        <div class="pillar">Native concurrency</div>
+                    </div>
+                </div>
+                <aside class="notes">
+                    As many of you would agree, the type safety, high performance, and native concurrency are among the many strong suits that have kept me tied to the language.
+                </aside>
+            </section>
+
+            <section>
+                <div class="image-slide"><img src="images/go.svg" alt="golang/go GitHub repository card"></div>
+                <aside class="notes">
+                    One thing that also really drew me to the language was the release cadence, and how active the community is in shaping Go through new versions. During my time with the language I've been through five new releases, and each one has brought improvements
+                    that I don't think people actively seek out as much as they should.
+                </aside>
+            </section>
+
+            <section class="chapter-slide">
+                <div class="chapter-head">
+                    <h2>Go Version Adoption</h2>
+                    <blockquote>&ldquo;How many people are using the 2 latest releases of Go?&rdquo;</blockquote>
+                </div>
+
+                <div class="chart-wrap">
+                    <div class="chart-row">
+                        <div class="axis-y-label">Public GitHub Packages</div>
+                        <div class="vchart">
+                            <div class="vbar-col">
+                                <div class="vbar-value">164</div>
+                                <div class="vbar" style="height: 1px;"></div>
+                                <div class="vbar-label">1.10</div>
+                            </div>
+                            <div class="vbar-col">
+                                <div class="vbar-value">2,100</div>
+                                <div class="vbar" style="height: 2px;"></div>
+                                <div class="vbar-label">1.11</div>
+                            </div>
+                            <div class="vbar-col">
+                                <div class="vbar-value">23,040</div>
+                                <div class="vbar" style="height: 27px;"></div>
+                                <div class="vbar-label">1.12</div>
+                            </div>
+                            <div class="vbar-col">
+                                <div class="vbar-value">31,808</div>
+                                <div class="vbar" style="height: 37px;"></div>
+                                <div class="vbar-label">1.13</div>
+                            </div>
+                            <div class="vbar-col">
+                                <div class="vbar-value">37,888</div>
+                                <div class="vbar" style="height: 44px;"></div>
+                                <div class="vbar-label">1.14</div>
+                            </div>
+                            <div class="vbar-col">
+                                <div class="vbar-value">34,496</div>
+                                <div class="vbar" style="height: 40px;"></div>
+                                <div class="vbar-label">1.15</div>
+                            </div>
+                            <div class="vbar-col">
+                                <div class="vbar-value">43,008</div>
+                                <div class="vbar" style="height: 50px;"></div>
+                                <div class="vbar-label">1.16</div>
+                            </div>
+                            <div class="vbar-col">
+                                <div class="vbar-value">54,976</div>
+                                <div class="vbar" style="height: 64px;"></div>
+                                <div class="vbar-label">1.17</div>
+                            </div>
+                            <div class="vbar-col">
+                                <div class="vbar-value">63,232</div>
+                                <div class="vbar" style="height: 74px;"></div>
+                                <div class="vbar-label">1.18</div>
+                            </div>
+                            <div class="vbar-col">
+                                <div class="vbar-value">68,224</div>
+                                <div class="vbar" style="height: 80px;"></div>
+                                <div class="vbar-label">1.19</div>
+                            </div>
+                            <div class="vbar-col">
+                                <div class="vbar-value">75,008</div>
+                                <div class="vbar" style="height: 88px;"></div>
+                                <div class="vbar-label">1.20</div>
+                            </div>
+                            <div class="vbar-col">
+                                <div class="vbar-value">132,864</div>
+                                <div class="vbar" style="height: 156px;"></div>
+                                <div class="vbar-label">1.21</div>
+                            </div>
+                            <div class="vbar-col">
+                                <div class="vbar-value">168,960</div>
+                                <div class="vbar" style="height: 198px;"></div>
+                                <div class="vbar-label">1.22</div>
+                            </div>
+                            <div class="vbar-col">
+                                <div class="vbar-value">159,232</div>
+                                <div class="vbar" style="height: 187px;"></div>
+                                <div class="vbar-label">1.23</div>
+                            </div>
+                            <div class="vbar-col">
+                                <div class="vbar-value">170,496</div>
+                                <div class="vbar" style="height: 200px;"></div>
+                                <div class="vbar-label">1.24</div>
+                            </div>
+                            <div class="vbar-col">
+                                <div class="vbar-value">169,984</div>
+                                <div class="vbar" style="height: 199px;"></div>
+                                <div class="vbar-label">1.25</div>
+                            </div>
+                            <div class="vbar-col highlight">
+                                <div class="vbar-value">90,368</div>
+                                <div class="vbar" style="height: 106px;"></div>
+                                <div class="vbar-label">1.26</div>
+                            </div>
+                            <div class="vbar-col highlight">
+                                <div class="vbar-value">11,520</div>
+                                <div class="vbar" style="height: 14px;"></div>
+                                <div class="vbar-label">1.27</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="axis-x-label">Go Version</div>
+                </div>
+
+                <div class="callout">7.6% out of 1.2 million Golang Packages on Github are using version 1.26 or 1.27</div>
+
+                <aside class="notes">
+                    In writing this presentation I asked myself that question, and while I expected to be disappointed, I was genuinely surprised: of over 1.2 million public Go packages on GitHub, less than 8% were using the last two Go releases. These numbers don't account
+                    for deprecated or archived packages, but it shows how little people upgrade their Go programs once they've written them.
+                </aside>
+            </section>
+
+            <section class="chapter-slide">
+                <div class="chapter-head">
+                    <h2>Go 1 Compatibility</h2>
+                </div>
+                <blockquote>&ldquo;It is intended that programs written to the Go&nbsp;1 specification will continue to compile and run correctly, unchanged, over the lifetime of that specification.&rdquo;</blockquote>
+                <p class="citation"><a href="https://go.dev/doc/go1compat" target="_blank" rel="noopener">go.dev/doc/go1compat</a></p>
+
+                <div class="fragment-list">
+                    <div class="fragment fade-up"><b>1.</b> I can freely upgrade my Go toolchain and use new language features without worrying about unexpected behaviour.</div>
+                    <div class="fragment fade-up"><b>2.</b> I can leave my code exactly as it is once I've written it.</div>
+                </div>
+
+                <aside class="notes">
+                    One thing people tend to forget is Go's version 1 compatibility guarantee, in place since 2012. This gets read two ways by Go developers: you can freely upgrade your toolchain without fear, or you can leave your code untouched forever. But that's not
+                    the spirit of programming &mdash; as developers we should actively seek out ways to improve our code, both for maintainability and developer experience. Staying close to the standard library reduces the ambiguity that comes with third-party
+                    packages, and in this age of zero-day vulnerabilities, keeping dependencies current is an increasingly important part of the operational lifecycle. So while this talk walks through what's new in Go 1.27, I'd also like you to take it
+                    as a chance to reconsider your view of Go &mdash; not as a language where compatibility is guaranteed no matter when you wrote your software, but as one that's continuously changing to improve both your quality of life and the quality
+                    of your code. Go 1.27 was released a little under a month ago, on August 19th, and I believe it's one of the more substantial releases in a while. This was meant to be a lightning talk, so I'll move quickly through the new features
+                    &mdash; these are my own examples of what each addition means for you, from someone who recently updated our toolchain to Go 1.27, in the hope of convincing you to update yours too.
+                </aside>
+            </section>
+
+            <section class="chapter-slide">
+                <div class="chapter-head">
+                    <h2>Upgrading Your Toolchain</h2>
+                </div>
+                <div class="title-rule"></div>
+
+                <div class="benefits">
+                    <div class="benefit-card">
+                        <h3>Performance</h3>
+                        <p>Runtime and compiler improvements.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Fewer dependencies</h3>
+                        <p>More features in the standard libraries.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Fewer vulnerabilities</h3>
+                        <p>Bugs and Security patches.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Developer experience</h3>
+                        <p>New language features and tooling.</p>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    These are the concrete payoffs of staying current: better performance out of the box every release, fewer third-party dependencies to audit as the standard library keeps growing, faster patching of known vulnerabilities, and earlier access to new language
+                    and tooling improvements &mdash; all on a predictable six-month cadence.
+                </aside>
+            </section>
+
+            <section class="chapter-slide">
+                <div class="chapter-head">
+                    <h2>Go 1.27</h2>
+                    <div class="chapter-subtitle">Released 19th August</div>
+                </div>
+                <div class="title-rule"></div>
+
+                <div class="agenda-label">Features</div>
+                <ul class="agenda-list">
+                    <li>Generic Methods</li>
+                    <li>Struct Literals</li>
+                    <li>JSON</li>
+                    <li>UUID</li>
+                    <li>SIMD</li>
+                    <li>Post Quantum</li>
+                    <li>CutLast</li>
+                </ul>
+            </section>
+
+            <section class="chapter-slide">
+                <div class="chapter-head">
+                    <h2>Generics</h2>
+                    <div class="chapter-subtitle">Generic Methods</div>
+                </div>
+                <div class="title-rule"></div>
+                <div class="chapter-body">
+                    <ul class="chapter-bullets">
+                        <li>Generics added in Go 1.18 (2022)</li>
+                        <li>Go 1.27 adds support for <b>generic methods</b></li>
+                        <li>One method now replaces many type-specific ones</li>
+                    </ul>
+                    <div class="chapter-example">
+                        <div class="column-heading">math/rand</div>
+                        <div class="code-compare">
+                            <div class="code-label">Before</div>
+                            <pre class="code-block"><code class="language-go" data-trim data-noescape>func (r *Rand) Int32N(n int32) int32
+func (r *Rand) Int64N(n int64) int64
+func (r *Rand) IntN(n int) int
+// ...repeated per integer type</code></pre>
+                            <div class="code-label">After</div>
+                            <pre class="code-block"><code class="language-go" data-trim data-noescape>type intType interface {
+    ~int | ~int8 | ~int16 | ~int32 | ~int64 | ~uint |
+    ~uint8 | ~uint16 | ~uint32 | ~uint64 | ~uintptr
+}
+
+func (r *Rand) N[Int intType](n Int) Int</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Prior to 1.27, generics were limited to types and functions &mdash; there was no way to define a generic method on a package-level struct. A popular example is math/rand, where a separate method had to be added for every integer type. With generic methods,
+                    that collapses into a single method that works for all integer types via a type constraint interface like this one.
+                </aside>
+            </section>
+
+            <section class="chapter-slide">
+                <div class="chapter-head">
+                    <h2>Generics</h2>
+                    <div class="chapter-subtitle">Not on Interfaces</div>
+                </div>
+                <div class="title-rule"></div>
+                <div class="chapter-body">
+                    <div class="chapter-example">
+                        <div class="code-columns">
+                            <div class="code-column">
+                                <ul class="chapter-bullets">
+                                    <li>Interface methods can't declare type parameters</li>
+                                </ul>
+                                <pre class="code-block"><code class="language-go" data-trim data-noescape>type Foo interface {
+    Bar[T any](v T) T // not allowed
+}</code></pre>
+                            </div>
+                            <div class="code-column">
+                                <ul class="chapter-bullets">
+                                    <li>Generic methods can&rsquo;t satisfy interface methods</li>
+                                </ul>
+                                <pre class="code-block"><code class="language-go" data-trim data-noescape>type Foo interface {
+    Bar(v int) int
+}
+
+type FooImpl struct{}
+
+func (FooImpl) Bar[T any](v T) T { return v }
+
+var _ Foo = FooImpl{} // doesn't compile</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside class="notes">
+                    This is a fundamental limitation, not an oversight: a generic method's compiled code depends on which type argument is supplied, and that gets resolved at compile time. A call through an interface, by contrast, is dispatched at runtime based on whatever
+                    concrete type happens to be stored in the interface value &mdash; the call site only knows the interface type, not a concrete type it could use to pick the right instantiation. There's no way to reconcile compile-time generic instantiation
+                    with runtime interface dispatch, so the language disallows it outright: interface methods can't declare type parameters, and a generic method can't be used to satisfy an interface's method set.
+                </aside>
+            </section>
+
+            <section class="chapter-slide">
+                <div class="chapter-head">
+                    <h2>Struct Literals</h2>
+                    <div class="chapter-subtitle">Implicit Fields</div>
+                </div>
+                <div class="title-rule"></div>
+                <div class="chapter-body">
+                    <ul class="chapter-bullets">
+                        <li>Embedded fields settable without naming the type</li>
+                        <li>Less boilerplate when initialising</li>
+                    </ul>
+                    <div class="chapter-example">
+                        <div class="code-compare">
+                            <div class="code-label">Types</div>
+                            <pre class="code-block"><code class="language-go" data-trim data-noescape>type Habitat struct {
+    Burrow string
+}
+
+type Gopher struct {
+    Name string
+    Habitat
+}</code></pre>
+                            <div class="code-label">Struct literal</div>
+                            <pre class="code-block"><code class="language-go" data-trim data-noescape>// before
+g := Gopher{
+    Name:    "Gopher",
+    Habitat: Habitat{Burrow: "Burrow #42"},
+}
+
+// after
+g := Gopher{
+    Name:   "Gopher",
+    Burrow: "Burrow #42",
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <aside class="notes">
+                    You can now declare struct literals without naming the embedded type &mdash; the field is implied when initialising. That cuts a lot of the boilerplate around embedded structs.
+                </aside>
+            </section>
+
+            <section class="chapter-slide reshaping-slide">
+                <div class="chapter-head">
+                    <h2>Struct Literals</h2>
+                    <div class="chapter-subtitle">Reshaping Without Refactoring</div>
+                </div>
+                <div class="title-rule"></div>
+                <div class="chapter-body">
+                    <div class="chapter-example">
+                        <div class="code-columns">
+                            <div class="code-column">
+                                <div class="code-label">Before</div>
+                                <pre class="code-block"><code class="language-go" data-trim data-noescape>type Identity struct { Age int }
+
+type Gopher struct {
+    Name string // I want to move this
+    Identity
+}</code></pre>
+                                <div class="code-label">pre-1.27</div>
+                                <pre class="code-block"><code class="language-go" data-trim data-noescape>g := Gopher{
+    Name: "Gopher",
+    Identity: Identity{
+        Age: 13,
+    },
+}</code></pre>
+                                <div class="code-label">1.27</div>
+                                <pre class="code-block code-block-accent"><code class="language-go" data-trim data-noescape>g := Gopher{Name: "Gopher", Age: 13}</code></pre>
+                            </div>
+                            <div class="code-column">
+                                <div class="code-label">After Name moved into Identity</div>
+                                <pre class="code-block"><code class="language-go" data-trim data-noescape>type Identity struct {
+    Age  int
+    Name string // Moved
+}
+
+type Gopher struct { Identity }</code></pre>
+                                <div class="code-label">pre-1.27</div>
+                                <pre class="code-block"><code class="language-go" data-trim data-noescape>g := Gopher{
+    Identity: Identity{
+        Name: "Gopher", // have to move the field everywhere
+        Age:  13,
+    },
+}</code></pre>
+                                <div class="code-label">1.27 (unchanged)</div>
+                                <pre class="code-block code-block-accent"><code class="language-go" data-trim data-noescape>g := Gopher{Name: "Gopher", Age: 13}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside class="notes">
+                    A benefit that isn't in the release notes but I think is just as important: because the literal's position is implied rather than tied to the embedded type's name, you can reshape which struct a field lives in without having to refactor every call site
+                    that constructs it. Here, moving Name from Gopher into Identity doesn't require touching the literal at all.
+                </aside>
+            </section>
+
+            <section class="chapter-slide">
+                <div class="chapter-head">
+                    <h2>encoding/json v2</h2>
+                </div>
+                <div class="title-rule"></div>
+                <ul class="chapter-bullets wide">
+                    <li>New <code>encoding/json/v2</code> package which can be imported separately</li>
+                    <li><code>encoding/json</code> (v1) now runs on the v2 engine internally, unchanged behaviour</li>
+                    <li>Marshalling is (up to) roughly 2.6 times faster. Unmarshalling is (up to) roughly 2.5 times faster</li>
+                    <li>Stricter error handling is available as part of <code>encoding/json/v2</code></li>
+                </ul>
+                <aside class="notes">
+                    Go introduces a version 2 of the encoding/json package with real improvements to both performance and usability. It's a separate import path, not a swap-in replacement &mdash; existing code importing "encoding/json" keeps compiling and behaving exactly
+                    as before, satisfying the Go 1 compatibility promise. Under the hood, v1 is now implemented in terms of v2 with options that pin the old behaviour, so v1 gets the same faster engine for free. Unmarshalling is consistently faster, up
+                    to 2.3x on general data. Marshalling is more workload-dependent, not a flat win &mdash; independent benchmarks (Lemire, Aug 2026) show up to 2x faster for untyped `any` values, but around 1.5x slower than v1 for typed structs, which
+                    is the more common case. That's separate from the map-sorting change on the next slide, which only affects marshalling maps specifically. The stricter defaults (invalid UTF-8, duplicate keys, case-sensitive matching, and nil slices/maps
+                    marshalling to empty [] / {}) are opt-in too: you only get them by explicitly importing encoding/json/v2. The next few slides walk through each of those changes individually.
+                </aside>
+            </section>
+
+            <section class="chapter-slide">
+                <div class="chapter-head">
+                    <h2>encoding/json v2</h2>
+                    <div class="chapter-subtitle">No Automatic Sorting</div>
+                </div>
+                <div class="title-rule"></div>
+                <div class="chapter-body">
+                    <ul class="chapter-bullets">
+                        <li>Map keys are no longer sorted when marshalled</li>
+                        <li>Re-enable it with the <code>Deterministic</code> option</li>
+                    </ul>
+                    <div class="chapter-example">
+                        <div class="code-compare">
+                            <div class="code-label">Before</div>
+                            <pre class="code-block"><code class="language-go" data-trim data-noescape>import "encoding/json"
+
+m := map[string]int{"z": 1, "a": 2}
+json.Marshal(m)
+// {"a":2,"z":1}</code></pre>
+                            <div class="code-label">After</div>
+                            <pre class="code-block"><code class="language-go" data-trim data-noescape>import "encoding/json/v2"
+
+m := map[string]int{"z": 1, "a": 2}
+json.Marshal(m)
+// {"z":1,"a":2} (unsorted)
+
+json.Marshal(m, json.Deterministic(true))
+// {"a":2,"z":1} (opt back in)</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <aside class="notes">
+                    v1 always sorted map keys before marshalling, purely to give you deterministic output. v2 skips that sort by default, which measurably speeds up marshalling maps specifically &mdash; it's not what drives the bigger unmarshalling speedup, though, that
+                    comes from a separately rewritten decoder. If you still need stable, sorted output for something like a golden-file test or a hash, you can opt back in with the Deterministic option.
+                </aside>
+            </section>
+
+            <section class="chapter-slide">
+                <div class="chapter-head">
+                    <h2>encoding/json v2</h2>
+                    <div class="chapter-subtitle">Stricter Defaults</div>
+                </div>
+                <div class="title-rule"></div>
+                <div class="chapter-body">
+                    <ul class="chapter-bullets">
+                        <li>Invalid UTF-8 now errors instead of being replaced</li>
+                        <li>Duplicate object keys now error</li>
+                        <li>Unmatched fields are ignored unless you opt in to <code>RejectUnknownMembers</code></li>
+                    </ul>
+                    <div class="chapter-example">
+                        <div class="code-label">Rejected by encoding/json/v2</div>
+                        <pre class="code-block"><code class="language-json" data-trim data-noescape>// duplicate key
+{
+    "Name": "a",
+    "Name": "b"
+}
+
+// invalid UTF-8
+{
+    "Name": "\xff\xfe"
+}</code></pre>
+                        <div class="code-label">Ignored, not rejected</div>
+                        <pre class="code-block"><code class="language-json" data-trim data-noescape>// wrong case
+{
+    "name": "a"
+}
+// opt in: json.RejectUnknownMembers(true)</code></pre>
+                    </div>
+                </div>
+                <aside class="notes">
+                    v1 was fairly forgiving: invalid UTF-8 got silently replaced and duplicate keys just meant last-value-wins. v2 tightens both of those up by default &mdash; they now return an error instead of quietly doing something you probably didn't intend. Field matching
+                    is a subtler change: v1 actually falls back to a case-insensitive match, so {"name":"a"} silently populates a Name field &mdash; not an error, but a surprising match. v2 requires an exact case match; if nothing matches, the member
+                    is just as silently dropped as an unknown field, still no error by default. If you want that to be a hard error, opt in with the RejectUnknownMembers option.
+                </aside>
+            </section>
+
+            <section class="chapter-slide">
+                <div class="chapter-head">
+                    <h2>encoding/json v2</h2>
+                    <div class="chapter-subtitle">Nil Slices &amp; Maps</div>
+                </div>
+                <div class="title-rule"></div>
+                <div class="chapter-body">
+                    <ul class="chapter-bullets">
+                        <li><code>nil</code> slices/maps used to marshal to <code>null</code></li>
+                        <li>v2 marshals them as empty <code>[]</code> / <code>{}</code> instead</li>
+                        <li>Matches what most JSON consumers expect</li>
+                    </ul>
+                    <div class="chapter-example">
+                        <div class="code-compare">
+                            <div class="code-label">Before</div>
+                            <pre class="code-block"><code class="language-go" data-trim data-noescape>import "encoding/json"
+
+type T struct {
+    Items []int
+    Meta  map[string]int
+}
+
+json.Marshal(T{})
+// {"Items":null,"Meta":null}</code></pre>
+                            <div class="code-label">After</div>
+                            <pre class="code-block"><code class="language-go" data-trim data-noescape>import "encoding/json/v2"
+
+type T struct {
+    Items []int
+    Meta  map[string]int
+}
+
+json.Marshal(T{})
+// {"Items":[],"Meta":{}}</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <aside class="notes">
+                    A zero-value slice or map used to marshal as JSON null, which is a common source of bugs for consumers expecting an array or object they can iterate directly. v2 marshals the zero value as an empty [] or {} instead, matching what most JSON APIs and clients
+                    actually expect.
+                </aside>
+            </section>
+
+            <section class="chapter-slide">
+                <div class="chapter-head">
+                    <h2>UUID</h2>
+                    <div class="chapter-subtitle">New stdlib Package</div>
+                </div>
+                <div class="title-rule"></div>
+                <div class="chapter-body">
+                    <ul class="chapter-bullets">
+                        <li>New stdlib <code>uuid</code> package (RFC 9562)</li>
+                        <li>V4 and V7 supported</li>
+                        <li>v1 / v3 / v5 and namespaced UUIDs are not</li>
+                    </ul>
+                    <div class="chapter-example">
+                        <div class="code-label">V4 &mdash; random</div>
+                        <pre class="code-block"><code class="language-go" data-trim data-noescape>id := uuid.NewV4()
+// 3f29a1d2-6b7e-4c1a-9f3d-8e2b7a4c5d6f</code></pre>
+                        <div class="code-label">V7 &mdash; time-ordered</div>
+                        <pre class="code-block"><code class="language-go" data-trim data-noescape>id := uuid.NewV7()
+// 018f4d2a-7b3c-7e21-9f4a-1234567890ab</code></pre>
+                        <div class="code-label">Example</div>
+                        <pre class="code-block"><code class="language-go" data-trim data-noescape>id := uuid.NewV4()
+
+id = uuid.NewV7()
+
+id, err := uuid.Parse(s)
+
+id.String()</code></pre>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Go has introduced a new stdlib uuid package implementing RFC 9562. It supports generating and parsing V4 and V7 UUIDs; if you still need v1, v3, v5, or namespaced UUIDs, those aren't supported yet. V4 is fully random, while V7 embeds a millisecond timestamp
+                    up front, so V7 IDs sort in the order they were created &mdash; useful as a database primary key where you want insert order to match ID order.
+                </aside>
+            </section>
+
+            <section class="chapter-slide uuid-replace-slide">
+                <div class="chapter-head">
+                    <h2>UUID</h2>
+                    <div class="chapter-subtitle">Replacing google/uuid</div>
+                </div>
+                <div class="title-rule"></div>
+                <div class="chapter-body">
+                    <div class="chapter-visual">
+                        <img src="images/uuid.svg" alt="google/uuid GitHub repository card">
+                        <ul class="chapter-bullets">
+                            <li>Used by 477k+ GitHub repositories today</li>
+                        </ul>
+                    </div>
+                    <div class="chapter-example">
+                        <div class="column-heading">google/uuid &rarr; stdlib uuid</div>
+                        <div class="mapping-list">
+                            <div class="row">
+                                <div class="row-title">V4</div>
+                                <div class="old">uuid.New()</div>
+                                <div class="arrow">&rarr;</div>
+                                <div class="new">uuid.NewV4()</div>
+                            </div>
+                            <div class="row">
+                                <div class="row-title">V7</div>
+                                <div class="old">uuid.NewV7()</div>
+                                <div class="arrow">&rarr;</div>
+                                <div class="new">uuid.NewV7()</div>
+                            </div>
+                            <div class="row">
+                                <div class="row-title">Compare</div>
+                                <div class="old">bytes.Compare(u[:], v[:])</div>
+                                <div class="arrow">&rarr;</div>
+                                <div class="new">u.Compare(v)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside class="notes">
+                    It's almost an identical drop-in replacement for google's uuid package, currently used by over 477,000 GitHub repositories &mdash; most of the API lines up, with a handful of renames like NewRandom (or New) becoming NewV4, now without the error handling
+                    or panic risk. NewV7 keeps its name but drops the error return too &mdash; both are guaranteed not to fail. There's also a genuine Compare method instead of comparing the underlying bytes yourself.
+                </aside>
+            </section>
+
+            <section class="chapter-slide">
+                <div class="chapter-head">
+                    <h2>SIMD</h2>
+                    <div class="chapter-subtitle">Single Instruction, Multiple Data</div>
+                </div>
+                <div class="title-rule"></div>
+                <div class="chapter-body">
+                    <ul class="chapter-bullets">
+                        <li>SIMD is <b>data-level</b> parallelism, not thread-level like goroutines</li>
+                        <li>One instruction executes across many data elements at once</li>
+                        <li>Uses built-in hardware instructions to perform vector operations</li>
+                    </ul>
+                    <div class="chapter-visual">
+                        <img class="diagram-img" src="images/SIMD.svg" alt="Diagram of SIMD: a single instruction pool feeding multiple processing units, each operating on its own slice of a shared data pool">
+                    </div>
+                </div>
+                <aside class="notes">
+                    SIMD stands for Single Instruction, Multiple Data &mdash; it's data-level parallelism: one instruction stream operates on many data elements at once, using vector registers built into the CPU. That's different from the thread-level parallelism you get
+                    from goroutines, where multiple independent instruction streams run concurrently, each doing its own thing. With SIMD there's still only one instruction pool driving every processing unit, just a wider data pool feeding it.
+                </aside>
+            </section>
+
+            <section class="chapter-slide">
+                <div class="chapter-head">
+                    <h2>SIMD</h2>
+                </div>
+                <div class="title-rule"></div>
+                <div class="chapter-body">
+                    <ul class="chapter-bullets">
+                        <li>New experimental package for hardware SIMD instructions</li>
+                        <li>An abstraction over <code>simd/archsimd</code> (Go 1.26)</li>
+                        <li>No need to define vector shape or target architecture</li>
+                        <li>Enable with <code>GOEXPERIMENT=simd</code></li>
+                    </ul>
+                    <div class="chapter-example">
+                        <div class="code-compare">
+                            <div class="code-label">archsimd</div>
+                            <pre class="code-block"><code class="language-go" data-trim data-noescape>var a, b archsimd.Int32x8 // AVX2, 8 lanes
+a = archsimd.LoadInt32x8(s1) // load 8 int32s
+b = archsimd.LoadInt32x8(s2) // load 8 int32s
+a.Add(b).Store(dst) // add + store</code></pre>
+                            <div class="code-label">simd</div>
+                            <pre class="code-block"><code class="language-go" data-trim data-noescape>a := simd.LoadInt32s(s1) // width inferred
+b := simd.LoadInt32s(s2)
+a.Add(b).Store(dst) // add + store</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Go 1.27 introduces a new experimental SIMD package that lets you use the hardware SIMD instructions built into your CPU to operate on vectors of data at once. It's an abstraction over the simd/archsimd package from Go 1.26 &mdash; archsimd ties you to
+                    a specific vector width and instruction set (Int32x8 for AVX2, Int32x16 for AVX-512, and so on), while simd infers the shape and target architecture for you.
+                </aside>
+            </section>
+
+            <section class="chapter-slide">
+                <div class="chapter-head">
+                    <h2>Post-Quantum Signatures</h2>
+                </div>
+                <div class="title-rule"></div>
+                <div class="chapter-body">
+                    <ul class="chapter-bullets">
+                        <li>New <code>crypto/mldsa</code> package implementing ML-DSA</li>
+                        <li><code>crypto/x509</code>, <code>crypto/tls</code> also implement ML-DSA</li>
+                        <li>TLS 1.3 auth, CA certificate signing</li>
+                    </ul>
+                    <div class="chapter-example">
+                        <div class="code-label">Example</div>
+                        <pre class="code-block"><code class="language-go" data-trim data-noescape>priv, _ := mldsa.GenerateKey(mldsa.MLDSA65())
+pub := priv.PublicKey()
+
+opts := &amp;mldsa.Options{}
+sig, _ := priv.Sign(nil, message, opts)
+err := mldsa.Verify(pub, message, sig, opts)</code></pre>
+                    </div>
+                </div>
+                <div class="callout" style="text-align:center; border-left:none; border-top:4px solid var(--accent); padding:14px 0 0; margin-top:26px;">Industry deadline: classical algorithms deprecated by 2030</div>
+                <div style="text-align:center; font-size:12px; color:var(--muted); margin-top:6px;">Source: NIST IR 8547</div>
+                <aside class="notes">
+                    Go introduces a new crypto/mldsa package implementing the post-quantum ML-DSA signature scheme from FIPS 204. As we move into a future where RSA and elliptic-curve encryption may eventually be broken by quantum computers, more companies are adopting quantum-resistant
+                    signing algorithms. PrivateKey implements the standard crypto.Signer interface, the same shape as ed25519 and ecdsa &mdash; generate a key pair for one of three parameter sets (MLDSA44/65/87), sign, and verify. Beyond TLS, post-quantum
+                    signatures matter anywhere trust has to hold for years: CAs signing root and intermediate certificates, code and firmware signing where the artifact needs to stay verifiable long after release, and anywhere secrets are at risk of "harvest
+                    now, decrypt later" &mdash; an attacker recording encrypted traffic today to decrypt once a quantum computer is available. That's why NIST IR 8547 (initial public draft, November 2024) sets concrete migration deadlines: deprecate classical
+                    algorithms like RSA and elliptic-curve by 2030, and disallow them entirely by 2035.
+                </aside>
+            </section>
+
+            <section class="chapter-slide">
+                <div class="chapter-head">
+                    <h2>CutLast</h2>
+                </div>
+                <div class="title-rule"></div>
+                <div class="chapter-body">
+                    <div class="chapter-example">
+                        <div class="code-columns">
+                            <div class="code-column">
+                                <div class="column-heading">Changes</div>
+                                <ul class="chapter-bullets">
+                                    <li>New <code>CutLast</code> in <code>bytes</code> and <code>strings</code></li>
+                                    <li>Splits around the <b>last</b> occurrence of a separator</li>
+                                </ul>
+                                <div class="code-label">Before</div>
+                                <pre class="code-block"><code class="language-go" data-trim data-noescape>i := bytes.LastIndex(s, sep)
+before, after := s[:i], s[i+len(sep):]</code></pre>
+                                <div class="code-label">After</div>
+                                <pre class="code-block code-block-accent"><code class="language-go" data-trim data-noescape>before, after, found := bytes.CutLast(s, sep)</code></pre>
+                            </div>
+                            <div class="code-column">
+                                <div class="column-heading">Use Cases</div>
+                                <div class="code-label">File extension</div>
+                                <pre class="code-block"><code class="language-go" data-trim data-noescape>before, after, _ := bytes.CutLast(s, []byte("."))
+// "archive.tar.gz" ->
+// before="archive.tar", after="gz"</code></pre>
+                                <div class="code-label">Path segment</div>
+                                <pre class="code-block"><code class="language-go" data-trim data-noescape>dir, file, _ := bytes.CutLast(s, []byte("/"))
+// "/var/log/app.log" ->
+// dir="/var/log", file="app.log"</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside class="notes">
+                    The bytes and strings packages now implement a CutLast function that slices around the last occurrence of a separator &mdash; replacing the common pattern of using LastIndex to find the position and then slicing manually. It's especially handy for getting
+                    file extensions, e.g. "archive.tar.gz" splits into "archive.tar" and "gz", or the final segment of a path, e.g. "/var/log/app.log" splits into "/var/log" and "app.log".
+                </aside>
+            </section>
+
+            <section>
+                <h2>What Wasn't Covered</h2>
+
+                <div style="
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        margin-top: 45px;
+    ">
+                    <div style="flex: 1;">
+                        <ul style="
+                font-size: 0.65em;
+                line-height: 1.7;
+                margin: 0;
+            ">
+                            <li>Goroutine leak profiling</li>
+                            <li>Faster memory allocation</li>
+                            <li>Go tool, link, fix changes</li>
+                        </ul>
+                    </div>
+
+                    <div style="
+            flex: 1;
+            border-left: 1px solid var(--hairline);
+            padding-left: 50px;
+            text-align: center;
+        ">
+                        <p style="
+                font-size: 0.7em;
+                color: var(--muted);
+                margin-bottom: 20px;
+            ">
+                            See the complete release notes
+                        </p>
+
+                        <p style="
+    font-size: 0.7em;
+    color: var(--muted);
+    margin-bottom: 20px;
+">
+                            https://go.dev/doc/go1.27
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/plugin/highlight/highlight.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            controls: true,
+            progress: true,
+            center: true,
+            transition: 'none',
+            width: 1100,
+            height: 700,
+            highlight: {
+                highlightOnLoad: true
+            },
+            plugins: [RevealNotes, RevealHighlight]
+        });
+    </script>
+</body>
+
+</html>
