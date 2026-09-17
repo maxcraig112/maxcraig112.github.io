@@ -672,10 +672,6 @@
                     <div class="title-rule"></div>
                     <div class="subtitle">17th September 2026 &middot; Max Craig</div>
                 </div>
-                <aside class="notes">
-                    Hello everyone, my name is Max, and I've been programming in Go for over two and a half years in my professional career &mdash; infatuated with the language ever since I started. I've had the opportunity to work at ANZ and Macquarie Bank on APIs, Kubernetes
-                    Operators, and internal developer platforms, all written in Go, and these properties of the language have let us build software quickly, safely, and consistently.
-                </aside>
             </section>
 
             <section>
@@ -688,17 +684,10 @@
                         <div class="pillar">Native concurrency</div>
                     </div>
                 </div>
-                <aside class="notes">
-                    As many of you would agree, the type safety, high performance, and native concurrency are among the many strong suits that have kept me tied to the language.
-                </aside>
             </section>
 
             <section>
                 <div class="image-slide"><img src="images/go.svg" alt="golang/go GitHub repository card"></div>
-                <aside class="notes">
-                    One thing that also really drew me to the language was the release cadence, and how active the community is in shaping Go through new versions. During my time with the language I've been through five new releases, and each one has brought improvements
-                    that I don't think people actively seek out as much as they should.
-                </aside>
             </section>
 
             <section class="chapter-slide">
@@ -808,10 +797,6 @@
 
                 <div class="callout">7.6% out of 1.2 million Golang Packages on Github are using version 1.26 or 1.27</div>
 
-                <aside class="notes">
-                    In writing this presentation I asked myself that question, and while I expected to be disappointed, I was genuinely surprised: of over 1.2 million public Go packages on GitHub, less than 8% were using the last two Go releases. These numbers don't account
-                    for deprecated or archived packages, but it shows how little people upgrade their Go programs once they've written them.
-                </aside>
             </section>
 
             <section class="chapter-slide">
@@ -826,14 +811,6 @@
                     <div class="fragment fade-up"><b>2.</b> I can leave my code exactly as it is once I've written it.</div>
                 </div>
 
-                <aside class="notes">
-                    One thing people tend to forget is Go's version 1 compatibility guarantee, in place since 2012. This gets read two ways by Go developers: you can freely upgrade your toolchain without fear, or you can leave your code untouched forever. But that's not
-                    the spirit of programming &mdash; as developers we should actively seek out ways to improve our code, both for maintainability and developer experience. Staying close to the standard library reduces the ambiguity that comes with third-party
-                    packages, and in this age of zero-day vulnerabilities, keeping dependencies current is an increasingly important part of the operational lifecycle. So while this talk walks through what's new in Go 1.27, I'd also like you to take it
-                    as a chance to reconsider your view of Go &mdash; not as a language where compatibility is guaranteed no matter when you wrote your software, but as one that's continuously changing to improve both your quality of life and the quality
-                    of your code. Go 1.27 was released a little under a month ago, on August 19th, and I believe it's one of the more substantial releases in a while. This was meant to be a lightning talk, so I'll move quickly through the new features
-                    &mdash; these are my own examples of what each addition means for you, from someone who recently updated our toolchain to Go 1.27, in the hope of convincing you to update yours too.
-                </aside>
             </section>
 
             <section class="chapter-slide">
@@ -861,10 +838,6 @@
                     </div>
                 </div>
 
-                <aside class="notes">
-                    These are the concrete payoffs of staying current: better performance out of the box every release, fewer third-party dependencies to audit as the standard library keeps growing, faster patching of known vulnerabilities, and earlier access to new language
-                    and tooling improvements &mdash; all on a predictable six-month cadence.
-                </aside>
             </section>
 
             <section class="chapter-slide">
@@ -916,10 +889,6 @@ func (r *Rand) N[Int intType](n Int) Int</code></pre>
                         </div>
                     </div>
                 </div>
-                <aside class="notes">
-                    Prior to 1.27, generics were limited to types and functions &mdash; there was no way to define a generic method on a package-level struct. A popular example is math/rand, where a separate method had to be added for every integer type. With generic methods,
-                    that collapses into a single method that works for all integer types via a type constraint interface like this one.
-                </aside>
             </section>
 
             <section class="chapter-slide">
@@ -956,11 +925,6 @@ var _ Foo = FooImpl{} // doesn't compile</code></pre>
                         </div>
                     </div>
                 </div>
-                <aside class="notes">
-                    This is a fundamental limitation, not an oversight: a generic method's compiled code depends on which type argument is supplied, and that gets resolved at compile time. A call through an interface, by contrast, is dispatched at runtime based on whatever
-                    concrete type happens to be stored in the interface value &mdash; the call site only knows the interface type, not a concrete type it could use to pick the right instantiation. There's no way to reconcile compile-time generic instantiation
-                    with runtime interface dispatch, so the language disallows it outright: interface methods can't declare type parameters, and a generic method can't be used to satisfy an interface's method set.
-                </aside>
             </section>
 
             <section class="chapter-slide">
@@ -1000,9 +964,6 @@ g := Gopher{
                         </div>
                     </div>
                 </div>
-                <aside class="notes">
-                    You can now declare struct literals without naming the embedded type &mdash; the field is implied when initialising. That cuts a lot of the boilerplate around embedded structs.
-                </aside>
             </section>
 
             <section class="chapter-slide reshaping-slide">
@@ -1053,10 +1014,6 @@ type Gopher struct { Identity }</code></pre>
                         </div>
                     </div>
                 </div>
-                <aside class="notes">
-                    A benefit that isn't in the release notes but I think is just as important: because the literal's position is implied rather than tied to the embedded type's name, you can reshape which struct a field lives in without having to refactor every call site
-                    that constructs it. Here, moving Name from Gopher into Identity doesn't require touching the literal at all.
-                </aside>
             </section>
 
             <section class="chapter-slide">
@@ -1070,13 +1027,6 @@ type Gopher struct { Identity }</code></pre>
                     <li>Marshalling is (up to) roughly 2.6 times faster. Unmarshalling is (up to) roughly 2.5 times faster</li>
                     <li>Stricter error handling is available as part of <code>encoding/json/v2</code></li>
                 </ul>
-                <aside class="notes">
-                    Go introduces a version 2 of the encoding/json package with real improvements to both performance and usability. It's a separate import path, not a swap-in replacement &mdash; existing code importing "encoding/json" keeps compiling and behaving exactly
-                    as before, satisfying the Go 1 compatibility promise. Under the hood, v1 is now implemented in terms of v2 with options that pin the old behaviour, so v1 gets the same faster engine for free. Unmarshalling is consistently faster, up
-                    to 2.3x on general data. Marshalling is more workload-dependent, not a flat win &mdash; independent benchmarks (Lemire, Aug 2026) show up to 2x faster for untyped `any` values, but around 1.5x slower than v1 for typed structs, which
-                    is the more common case. That's separate from the map-sorting change on the next slide, which only affects marshalling maps specifically. The stricter defaults (invalid UTF-8, duplicate keys, case-sensitive matching, and nil slices/maps
-                    marshalling to empty [] / {}) are opt-in too: you only get them by explicitly importing encoding/json/v2. The next few slides walk through each of those changes individually.
-                </aside>
             </section>
 
             <section class="chapter-slide">
@@ -1110,10 +1060,6 @@ json.Marshal(m, json.Deterministic(true))
                         </div>
                     </div>
                 </div>
-                <aside class="notes">
-                    v1 always sorted map keys before marshalling, purely to give you deterministic output. v2 skips that sort by default, which measurably speeds up marshalling maps specifically &mdash; it's not what drives the bigger unmarshalling speedup, though, that
-                    comes from a separately rewritten decoder. If you still need stable, sorted output for something like a golden-file test or a hash, you can opt back in with the Deterministic option.
-                </aside>
             </section>
 
             <section class="chapter-slide">
@@ -1148,11 +1094,6 @@ json.Marshal(m, json.Deterministic(true))
 // opt in: json.RejectUnknownMembers(true)</code></pre>
                     </div>
                 </div>
-                <aside class="notes">
-                    v1 was fairly forgiving: invalid UTF-8 got silently replaced and duplicate keys just meant last-value-wins. v2 tightens both of those up by default &mdash; they now return an error instead of quietly doing something you probably didn't intend. Field matching
-                    is a subtler change: v1 actually falls back to a case-insensitive match, so {"name":"a"} silently populates a Name field &mdash; not an error, but a surprising match. v2 requires an exact case match; if nothing matches, the member
-                    is just as silently dropped as an unknown field, still no error by default. If you want that to be a hard error, opt in with the RejectUnknownMembers option.
-                </aside>
             </section>
 
             <section class="chapter-slide">
@@ -1192,10 +1133,6 @@ json.Marshal(T{})
                         </div>
                     </div>
                 </div>
-                <aside class="notes">
-                    A zero-value slice or map used to marshal as JSON null, which is a common source of bugs for consumers expecting an array or object they can iterate directly. v2 marshals the zero value as an empty [] or {} instead, matching what most JSON APIs and clients
-                    actually expect.
-                </aside>
             </section>
 
             <section class="chapter-slide">
@@ -1227,10 +1164,6 @@ id, err := uuid.Parse(s)
 id.String()</code></pre>
                     </div>
                 </div>
-                <aside class="notes">
-                    Go has introduced a new stdlib uuid package implementing RFC 9562. It supports generating and parsing V4 and V7 UUIDs; if you still need v1, v3, v5, or namespaced UUIDs, those aren't supported yet. V4 is fully random, while V7 embeds a millisecond timestamp
-                    up front, so V7 IDs sort in the order they were created &mdash; useful as a database primary key where you want insert order to match ID order.
-                </aside>
             </section>
 
             <section class="chapter-slide uuid-replace-slide">
@@ -1270,10 +1203,6 @@ id.String()</code></pre>
                         </div>
                     </div>
                 </div>
-                <aside class="notes">
-                    It's almost an identical drop-in replacement for google's uuid package, currently used by over 477,000 GitHub repositories &mdash; most of the API lines up, with a handful of renames like NewRandom (or New) becoming NewV4, now without the error handling
-                    or panic risk. NewV7 keeps its name but drops the error return too &mdash; both are guaranteed not to fail. There's also a genuine Compare method instead of comparing the underlying bytes yourself.
-                </aside>
             </section>
 
             <section class="chapter-slide">
@@ -1292,10 +1221,6 @@ id.String()</code></pre>
                         <img class="diagram-img" src="images/SIMD.svg" alt="Diagram of SIMD: a single instruction pool feeding multiple processing units, each operating on its own slice of a shared data pool">
                     </div>
                 </div>
-                <aside class="notes">
-                    SIMD stands for Single Instruction, Multiple Data &mdash; it's data-level parallelism: one instruction stream operates on many data elements at once, using vector registers built into the CPU. That's different from the thread-level parallelism you get
-                    from goroutines, where multiple independent instruction streams run concurrently, each doing its own thing. With SIMD there's still only one instruction pool driving every processing unit, just a wider data pool feeding it.
-                </aside>
             </section>
 
             <section class="chapter-slide">
@@ -1324,10 +1249,6 @@ a.Add(b).Store(dst) // add + store</code></pre>
                         </div>
                     </div>
                 </div>
-                <aside class="notes">
-                    Go 1.27 introduces a new experimental SIMD package that lets you use the hardware SIMD instructions built into your CPU to operate on vectors of data at once. It's an abstraction over the simd/archsimd package from Go 1.26 &mdash; archsimd ties you to
-                    a specific vector width and instruction set (Int32x8 for AVX2, Int32x16 for AVX-512, and so on), while simd infers the shape and target architecture for you.
-                </aside>
             </section>
 
             <section class="chapter-slide">
@@ -1353,13 +1274,6 @@ err := mldsa.Verify(pub, message, sig, opts)</code></pre>
                 </div>
                 <div class="callout" style="text-align:center; border-left:none; border-top:4px solid var(--accent); padding:14px 0 0; margin-top:26px;">Industry deadline: classical algorithms deprecated by 2030</div>
                 <div style="text-align:center; font-size:12px; color:var(--muted); margin-top:6px;">Source: NIST IR 8547</div>
-                <aside class="notes">
-                    Go introduces a new crypto/mldsa package implementing the post-quantum ML-DSA signature scheme from FIPS 204. As we move into a future where RSA and elliptic-curve encryption may eventually be broken by quantum computers, more companies are adopting quantum-resistant
-                    signing algorithms. PrivateKey implements the standard crypto.Signer interface, the same shape as ed25519 and ecdsa &mdash; generate a key pair for one of three parameter sets (MLDSA44/65/87), sign, and verify. Beyond TLS, post-quantum
-                    signatures matter anywhere trust has to hold for years: CAs signing root and intermediate certificates, code and firmware signing where the artifact needs to stay verifiable long after release, and anywhere secrets are at risk of "harvest
-                    now, decrypt later" &mdash; an attacker recording encrypted traffic today to decrypt once a quantum computer is available. That's why NIST IR 8547 (initial public draft, November 2024) sets concrete migration deadlines: deprecate classical
-                    algorithms like RSA and elliptic-curve by 2030, and disallow them entirely by 2035.
-                </aside>
             </section>
 
             <section class="chapter-slide">
@@ -1396,10 +1310,6 @@ before, after := s[:i], s[i+len(sep):]</code></pre>
                         </div>
                     </div>
                 </div>
-                <aside class="notes">
-                    The bytes and strings packages now implement a CutLast function that slices around the last occurrence of a separator &mdash; replacing the common pattern of using LastIndex to find the position and then slicing manually. It's especially handy for getting
-                    file extensions, e.g. "archive.tar.gz" splits into "archive.tar" and "gz", or the final segment of a path, e.g. "/var/log/app.log" splits into "/var/log" and "app.log".
-                </aside>
             </section>
 
             <section>
