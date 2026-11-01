@@ -30,9 +30,20 @@ gantt
 
 ## Software Engineer
 
-<p class="job-subtitle">Macquarie Group · Sydney, Australia · Mar 2026 – Present</p>
+<p class="job-subtitle">ANZ Bank · Melbourne, Australia · September 2026 – Present</p>
+
+Working within the Core Platform team, developing and supporting tooling for ANZ's digital channel.
+* Performed Terraform state migration of over 22,000 GCP resources, cutting CI/CD time by over 80%.
+* Developed and deployed a custom agentic workflow testing workflow written entirely in Golang as a drop in replacement to [Promptfoo](https://github.com/promptfoo/promptfoo) in order to reduce CVE exposure.
+
+## Software Engineer
+
+<p class="job-subtitle">Macquarie Group · Sydney, Australia · Mar 2026 – September 2026</p>
 
 Working within the Software Development Lifecycle Team developing automated processes for provisioning GitHub Repositories and GitHub Advanced Security.
+* Designed, Developed and Deployed an API for generating short lived installation tokens for Github CI/CD Integration.
+* Designed and Implemented the migration of over 4,000 Bamboo plans to support Github Enterprise Migration
+* Supported Github Enterprise migration from Bitbucket, which oversaw the migration of over 20,000 source code repositories
 
 ## Platform Engineer
 
