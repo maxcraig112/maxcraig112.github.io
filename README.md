@@ -128,7 +128,7 @@ A mountain located within the Central Highlands of Tasmania, including a 12km lo
 
 ### The Great North Walk
 
-The Great North Walk is a 260km track that stretches from Sydney to Newcastle. I've completed parts of this trail and highly reccomend it!
+The Great North Walk is a 260km track that stretches from Sydney to Newcastle. I've completed parts of this trail and highly recommend it!
 
 <img src="/image/README/GreatNorthWalk.png" alt="CradleMountain" width="70%">
 
