@@ -2,7 +2,7 @@
 
 # About Me
 
-👋 I'm Max, a Software Engineer based in Sydney. I've lived my entire life in Melbourne, however I have moved up to pursue a career in the Software Engineering industry. Welcome!
+👋 I'm Max, a Software Engineer based in Melbourne. I currently work as a Core software engineer at ANZ, working with API, Kuberenetes Operators, and internal developer tooling.
 
 <img src="/image/README/Selfie.JPEG" alt="This is me" width="50%">
 
@@ -24,7 +24,8 @@ gantt
 
     section Engineering
     ANZ Bank                  :2024-01, 2026-02
-    Macquarie Group           :2026-03, 2027-01
+    Macquarie Group           :2026-03, 2026-07
+    ANZ Bank                  :2026-08, 2027-01
 ```
 
 ## Software Engineer
