@@ -65,6 +65,17 @@ Working within the Software Development Lifecycle Team developing automated proc
 
 ---
 
+# Talks
+
+## Golang Sydney Meetup
+[Meetup link](https://www.meetup.com/golang-syd/)
+
+Completed one of my first public talks at the Golang Sydney Meetup on the 17th September 2026. Within this talk I discussed what is new in Go 1.26, and why as a developer it is important to actively investigate and seek out improvements to your programming language.
+
+My talk slides are available [here](https://maxcraig.me/c/blog/whats-new-in-go-1.27/)!
+
+![alt text](/image/README/Golang-Sydney-Talk-September-2026.png)
+
 # Projects
 
 ## [Burrow](https://github.com/maxcraig112/burrow)
